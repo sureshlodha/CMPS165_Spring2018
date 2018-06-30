@@ -1,0 +1,33 @@
+.tool-tip {
+    position: absolute;
+    top: 30%;
+    left: -50px;
+    background: rgb(205, 208, 214);
+    width: 160px;
+    height:auto;
+}
+.tool-tip table {
+    word-wrap: break-word;
+    table-layout: fixed;
+    width: 160px;
+    height:200px;
+}
+.tool-tip tr td:first-child{
+    text-align: left;
+    padding:2px;
+    width: 60px;
+}
+.tool-tip tr td:last-child{
+    text-align: right;
+    padding:2px;
+    width:100px;
+}
+.tool-tip td {
+    border: solid 1px black;
+}
+.body-point:hover{
+    cursor:pointer;
+}
+.button:hover{
+    cursor:pointer;
+}

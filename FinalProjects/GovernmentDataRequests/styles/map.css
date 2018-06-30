@@ -1,0 +1,17 @@
+.country {
+  opacity: 0.8;
+  stroke: var(--border-color);;
+  stroke-width: 0.3;
+}
+
+.country:hover {
+  opacity: 1;
+  stroke: var(--hover-color);
+  stroke-width: 3;
+}
+
+.selected {
+  opacity: 1;
+  stroke: var(--selected-color);
+  stroke-width: 3;
+}

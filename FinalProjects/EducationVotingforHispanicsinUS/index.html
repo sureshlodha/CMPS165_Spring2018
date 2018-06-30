@@ -1,0 +1,83 @@
+<!-- Education and Voting Power of Hispanics in the US
+<--- Jonathan Ortiz
+<--- UCSC CMPS 165
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>LatinoEducation</title>
+        <!-- d3 -->
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <!-- Title -->
+        <h1 class="title font">Education and Voting Power of Hispanics</h1>
+        <!-- Container for columns -->
+        <div class="container" style="margin: 0;">
+            <div class="row">
+                <div class="col-sm leftcol">
+                    <p class="font">This data visualization is based off an article written for Pew Research Center by Jen Manuel Krogstad about hispanics and education(<a href="http://www.pewresearch.org/fact-tank/2016/07/28/5-facts-about-latinos-and-education/" class="font">Link</a>).</p>
+                    <p class="font">The data for this visulization was taken from Pew Research Center by Antonio Flores, Gustavo Lopez, and Jynnah Radford.(<a href="http://www.pewhispanic.org/2017/09/18/facts-on-u-s-latinos-trend-data/" class="font">Link</a>).</p>
+                    <p class="font">This visualization shows how important education is to the hispanic community and how over recent years it has improved. For example, the high school dropout rate has significantly dropped, college enrollment is on the up, and much more. Not only are education rates displayed but also voting trends. The data for this was also taken from Pew Research Center(<a href="http://www.pewresearch.org/fact-tank/2016/10/14/key-facts-about-the-latino-vote-in-2016/ft_16-10-17_latinovote_increases-1/" class="font">Link</a>). As the population rises, the hispanic communities' voting power has also increased. With more hispanics getting to the polls means more representation and more influence over public policy and elected officials.</p>
+                </div>
+                <div class="col-sm middlecol"></div>
+                <div class="col-sm rightcol">
+                    <button type="button" id="bt1" class="btn btn-default" onclick="edudata()">Education</button>
+                    <button type="button" id="bt2" class="btn btn-default" onclick="closer_look()">Closer Look</button>
+                    <button type="button" id="bt3" class="btn btn-default" onclick="votingdata()">Voting</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Container for info columns -->
+        <div class="container" style="margin: 0; text-align: center; margin-top: 80px;">
+            <h3 class="font" style="margin-bottom: 10px;">Created by</h3>
+            <p class="font">Jonathan Ortiz ~ jolortiz@ucsc.edu<br>
+                            Silmey Sevilla ~ scsevill@ucsc.edu<br>
+                            Chih-Wei Chen ~ kis87988@ucsc.edu</p>
+            <p class="font">Github ~ <a href="https://github.com/jolortiz/EducationVotingforHispanicsinUS" class="font">https://github.com/jolortiz/EducationVotingforHispanicsinUS</a></p>
+            <h3 class="font" style="margin-bottom: 10px;">Designed for</h3>
+            <p class="font">CMPS 165: Data Visualization, Spring 2018</p>
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-sm rightcol">
+                    <h3 class="font" style="margin-bottom: 10px;">Files Submitted</h3>
+                    <p class="font">index.html<br>
+                                    index.css<br>
+                                    closer_look.js<br>
+                                    education.csv(2)<br>
+                                    population.csv(2)<br>
+                                    multiline.js<br>
+                                    voting.csv</p>
+                </div>
+                <div class="col-sm rightcol">
+                    <h3 class="font" style="margin-bottom: 10px;">Data Sources</h3>
+                    <p class="font"><a href="http://www.pewhispanic.org/2017/09/18/facts-on-u-s-latinos-trend-data/" class="font">Education and Population Trends</a><br>
+                    <a href="http://www.pewresearch.org/fact-tank/2016/10/14/key-facts-about-the-latino-vote-in-2016/ft_16-10-17_latinovote_increases-1/" class="font">Voting Trends</a></p>
+                </div>
+                <div class="col-sm rightcol">
+                    <h3 class="font" style="margin-bottom: 10px;">Visualization Sources</h3>
+                    <p class="font"><a href="http://www.city-data.com/blog/5483-visualizing-hispanic-population/">Population</a><br>
+                    <a href="https://www.vox.com/2015/3/19/8219765/immigration-chart-history">Immigration</a></p>
+                </div>
+                <div class="col-sm rightcol">
+                    <h3 class="font" style="margin-bottom: 10px;">Code Sources</h3>
+                    <p class="font"><a href="https://stackoverflow.com/">Stack Overflow</a><br>
+                                    <a href="https://www.w3schools.com/">w3schools</a><br>
+                                    Interactive Data Visualization for the Web by Scott Murray</p>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="closer_look/closer_look.js"></script>
+        <script type="text/javascript" src="pop_voting/multiline.js"></script>
+        
+        <!-- Bootstrap and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Japanese Suicides: Why?</title>
+		<!-- Meta Tag -->
+		<meta charset="utf-8">
+		<!-- CSS Stylesheet -->
+		<!-- D3.js Source -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="slider.js"></script>
+		<script type="text/javascript" src="tooltip.js"></script>
+		<script type="text/javascript" src="japanmap.js"></script>
+		<script type="text/javascript" src="bar_graph.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">  
+	</head>
+
+	<body onload="main()">
+		
+		<table align="center" id="main_table">
+			<tr>
+				<td colspan="2">
+					<div class="center">
+						<h1>Japanese Suicide: Why?</h1>
+						<div class="text">
+							<p>
+								This project visualizes the japanese suicide rate throughout the years and show why and where Japanese people are suiciding the most.
+								There are examples such as Iwate, Akita, and Yamanashi Prefecture that has a constantly high suicide rate. Especially Yamanashi prefecture because is famous for Aokigahara, also known as the suicide forest. 
+								There is also a large mental health issue, where the category "health" outclasses all the other reasons by a large margin which say something about Japan's social structure that causes this depression epidemic.
+							</p>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<!-- Custom Slider: https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
+					<div class='center'>
+						<form>
+                            <div data-role="rangeslider">
+                                <label for="price-min"></label>
+                                <input type="range" name="price-min" id="price-min" value="2007" min="2007" max="2017" onchange="year_changed()">
+                                <label for="price-max"></label>
+                                <input type="range" name="price-max" id="price-max" value="2017" min="2007" max="2017" onchange="year_changed()">
+                            </div>
+                        </form>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class='center'>
+						<!-- viz#1 goes here --> 
+						
+						<div id="legend1"></div>
+						<svg id="viz_1" width="800" height="500"></svg> 
+					</div>
+				</td>
+				<td>
+					<div class='center'>
+						<form name="gender_form" id="gender_form">
+  							<input type="radio" name="gender" value="total" checked> Total
+  							<input type="radio" name="gender" value="male"> Male
+  							<input type="radio" name="gender" value="female"> Female
+						</form> 
+						<!-- viz#2 goes here -->
+						<svg id="viz_2" width="800" height="500"></svg> 
+
+					</div>
+				</td>
+			</tr>
+			
+            <tr>
+                <td colspan="2">
+                    <table id="res" width="100%" style="table-layout: fixed">
+                        <tr>
+                            <td width="33%">
+                                <div class="center"><h3>Contributors</h3></div>
+                            </td>
+                            <td width="33%">
+                                <div class="center"><h3>Data Sources</h3></div>
+                            </td>
+                            <td width="33%">
+                                <div class="center"><h3>Programming Resources</h3></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="33%">
+                                <div class="center">
+                                    <br/>
+                                    Noriaki Nakano: nnakano@ucsc.edu <br/><br/>
+
+                                    Evan Freeman: eafreema@ucsc.edu <br/><br/>
+
+                                    Luke Tanner: latanner@ucsc.edu <br/><br/>
+                                </div>
+                            </td>
+                            <td width="33%">
+                                <div class="center">
+                                <a href="https://www.npa.go.jp/publications/statistics/safetylife/jisatsu.html">National Police Agency: Suicide data</a>
+                                </div>
+                            </td>
+                            <td width="33%">
+                                <div class="center">
+                                	<a href="http://bl.ocks.org/pranitar/01305d9ad0eba73dbf80"> Double Slider </a> <br/><br/>
+                                	<a href="https://bl.ocks.org/john-guerra/43c7656821069d00dcbc">Load GeoJSON</a>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+			<!--
+			<tr>
+				<!--
+				<col width="50%">
+				<col width="50%">
+				<td>
+					
+					<div id="pref_info" class="tooltip">
+						<h3 align="center">Tokyo</h3><br/>
+						<p>&emsp;Information about the prefecture goes here</p>
+					</div>
+					<svg id="tooltip" width="600" height="400"></svg> 
+					
+				</td>
+				<td>
+					
+					<div id="year_info" class="tooltip">
+						<h3 align="center">Showa Era</h3> <br/>
+						<p>&emsp;Information about the time period goes here.</p>
+						
+					</div>
+						
+					<svg id="tooltip_2" width="600" height="400"></svg> 
+					
+				</td>
+				<td colspan="2">
+					<table width="100%">
+						<tr>
+							<td style="border-right:2px white solid">
+					
+								<div id="pref_info" class="tooltip">
+									<h3 align="center">Tokyo</h3><br/>
+									<p>&emsp;Information about the prefecture goes here</p>
+								</div>
+								<svg id="tooltip" width="600" height="400"></svg> 
+								
+							</td>
+							<td  style="border-left:2px white solid">
+								
+								<div id="year_info" class="tooltip">
+									<h3 align="center">Showa Era</h3> <br/>
+									<p>&emsp;Information about the time period goes here.</p>
+									
+								</div>
+									
+								<svg id="tooltip_2" width="600" height="400"></svg> 
+								
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>	
+			-->		
+		</table>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Government Data Requests</title>
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+  <center>
+    <h1>Government Surveillance of Social Media</h1>
+  </center>
+
+  <int1>
+  <p>
+    Government surveillance of social media and user data is on the rise worldwide, and over the past five years surveillance of Google and Facebook customers has doubled in countries like the US, India, the UK, Germany, and France. Currently the companies that hold this data are tasked with resisting requests that immorally or unlawfully infringe on user privacy.  This visualization is meant to give insight into governmental access imposed on the top social media and data collecting sites Google, Facebook, and Microsoft. By visualizing the data these companies have released in their transparency reports we show the worldwide decrease in online privacy by region as time progresses. 
+ </p>
+ </int1>
+    <br>
+
+    <div id="toggle-area">
+      <button id="select-facebook">Facebook</button>
+      <button id="select-google">Google</button>
+      <button id="select-microsoft">Microsoft</button>
+    </div>
+
+    <div id="chart-area">
+      <svg id="geomap"></svg>
+      <svg id="line-chart"></svg>
+    </div>
+    <svg id="double-slider"></svg>
+
+    <footer>
+      <p>
+            Facebook and Google have been fighting a losing battle against governments such as the US that have been increasing their data requests drastically each year.  It has been revealed by YAHOO that when companies choose to resist these requests they receive fines enough to bankrupt the entire company.  Microsoft has been one of the few companies with increasing success in the protection of its users, and sets the example for a company that protects user data.  In 2016 Microsoft successfully challenged a US government search warrant on customer emails, and helped apply the lawful protections physical information receives to cloud data. Microsoft has seen a decline in data requests across the majority of nations because of these successes.
+
+        <br>
+        <br>
+        
+        <strong>Products Included in Each Dataset:  </strong> 
+        <ul>
+        <li>Facebook: Facebook, Instagram, Facebook Messenger, and WhatsApp, and all other platforms owned by Facebook inc.</li>
+            
+        <li>Google: Google Search Engine, Gmail, 
+        Google Plus, Google hangouts, Cloud Storage platforms, and all other platforms owned by Google inc.</li>
+        
+        <li>Microsoft: Cloud Storage, Xbox, Outlook, 
+        Skype, as well as all other platforms owned by Microsoft inc.</li>
+        </ul>
+<center>
+        <strong>Created By:  </strong> Sean Gaudefroy, Will Ritson, Mike Pluguez
+        <br>
+        <strong>In Collaboration With:  </strong> Professor Suresh Lodha
+
+      </p>
+
+     <strong>Repository:</strong><br>
+      <a href="https://github.com/seangithub1/Facebook_maps">Github Repository</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://seangithub1.github.io/Facebook_maps/">Visualization Hosting</a>
+          
+
+
+      <p>
+        <strong>Data Sources: </strong><br>
+
+    <a href="https://transparency.facebook.com/">Facebook Transparency Data Source</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <a href="https://transparencyreport.google.com/?hl=en">Google Transparency Data Source</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    <a href="https://www.microsoft.com/en-us/about/corporate-responsibility/lerr">Microsoft Transparency Data Source</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+      </p>
+        
+        <p>
+        <strong>Further Research and Relevant Visualizations:</strong> <br>
+        <a href="https://blogs.microsoft.com/datalaw/initiative/legal-cases/microsofts-search-warrant-case/"> Microsoft's Pushback on Data Requests</a>&nbsp;&nbsp;&nbsp;&nbsp;    
+        <a href="http://theconversation.com/when-does-google-hand-over-your-data-to-governments-31779"> Companies Resisting Data Requests</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://transparency.facebook.com/government-data-requests"> Facebook's Visualization of Data</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://transparencyreport.google.com/user-data/overview?hl=en"> Google's Visualization of Data</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.microsoft.com/en-us/about/corporate-responsibility/lerr"> Microsoft's Visualization of Data</a>
+            
+            
+            
+      </p>
+
+      <p>
+        <strong>Code Sources:</strong> <br>
+        <a href="https://bl.ocks.org/andybarefoot/765c937c8599ef540e1e0b394ca89dc5">Andy Barefoot’s Interactive Worldmap</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://bl.ocks.org/mbostock/3884955">Mike Bostock’s Multi-Series Line Chart</a>   &nbsp;&nbsp;&nbsp;&nbsp; 
+        <a href="https://bl.ocks.org/mbostock/4573883">Mike Bostock’s Threshold Key</a>    &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://bl.ocks.org/larsenmtl/e3b8b7c2ca4787f77d78f58d41c3da91">Larsenmtl’s D3 Mouseover Multi-Line Chart </a>  &nbsp;&nbsp;&nbsp;&nbsp;  
+        <a href="https://github.com/d3/d3/releases">D3 Source Code</a> &nbsp;&nbsp;&nbsp;&nbsp;  
+        <a href="https://bl.ocks.org/mbostock/4349545">Mike Bostocks's Double Brush Slider Example</a> 
+          
+          
+      </p>
+    
+    </center>
+        
+
+    </footer>
+
+    <script src="scripts/lib/d3-slider.js"></script>
+    <script src="scripts/requests-map.js" type="module"></script>
+</body>
+
+</html>

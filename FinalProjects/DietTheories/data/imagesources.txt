@@ -1,0 +1,63 @@
+paleo_beef: https://goo.gl/asNNnV
+
+paleo_lamb: https://goo.gl/gyXTmJ
+
+paleo_oliveoil: https://goo.gl/CiRrEQ
+
+paleo_almonds: https://goo.gl/ooGLhw
+
+paleo_banana: https://goo.gl/vhxi8q
+
+paleo_broccoli: https://goo.gl/sPpHFM
+
+paleo_chicken: https://goo.gl/nDp6HP
+
+paleo_pork: https://goo.gl/7hJZZG
+
+zone_avocado: https://goo.gl/xqsJEQ
+
+zone_cheese: https://goo.gl/VGfNYS
+
+zone_lettuce: https://goo.gl/51eZGo
+
+zone_mayonnaise: https://goo.gl/MLebNt
+
+zone_salsa: https://goo.gl/Wai8ma
+
+zone_sweetpotato: https://goo.gl/oE3h8a
+
+zone_tomato: https://goo.gl/cPnJ8M
+
+zone_tortilla: https://goo.gl/mjH8Aw
+
+usda_apple: https://goo.gl/7fCKAv
+
+usda_bread: https://goo.gl/dmn7de
+
+usda_brownie: https://goo.gl/RNnFvV
+
+usda_fries: https://goo.gl/4NCeCG
+
+usda_macandcheese: https://goo.gl/Pmgzm3
+
+usda_meat: https://goo.gl/RfEFuY
+
+usda_salad: https://goo.gl/uHonRX
+
+usda_yogurt: https://goo.gl/QsBXAs
+
+vegan_oats: https://goo.gl/Kzu3TK
+
+vegan_celery: https://goo.gl/vjenAW
+
+vegan_chickpeas: https://goo.gl/vKL4Js
+
+vegan_lentils: https://goo.gl/o6HZwE
+
+vegan_spinach: https://goo.gl/QBBKJz
+
+vegan_strawberry: https://goo.gl/Xw1Dwq
+
+vegan_tofu: https://goo.gl/eCjGGu
+
+vegan_walnut: https://goo.gl/XVPu5n

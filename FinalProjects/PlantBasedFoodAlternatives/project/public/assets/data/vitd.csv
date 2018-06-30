@@ -1,0 +1,13 @@
+food,nutrient,category,nutrientAmt,size
+"Orange Juice","vitd","vegan",50,125
+"Soy Milk","vitd","vegan",86,244
+"Milk","vitd","vegetarian",104,244
+"Yogurt","vitd","vegetarian",70,174
+"Cheese","vitd","vegetarian",40,50
+"Eggs","vitd","vegetarian",70,174
+"Pork","vitd","animal",50,85
+"Beef","vitd","animal",150,72
+"Salmon","vitd","animal",630,178
+"Tuna","vitd","animal",200,150
+"Almond Milk","vitd","vegan",90,244
+"Sunlight","vitd","vegan",800,0

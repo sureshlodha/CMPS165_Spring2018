@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html> 
+    
+  <head>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <![endif]-->
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/hockey-inj.css">
+    <link rel="stylesheet" type="text/css" href="css/hockey_inj_sankey.css"> 
+    <!-- D3.js Source -->
+    <script type= "text/javascript" src="https://d3js.org/d3.v4.min.js"></script> 
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.2.5/d3-annotation.js'></script>
+  </head>
+    
+  <body>
+      <h1 style = "text-align:center; color:#3030FF"><bold>Hockey Injury Severity</bold></h1>
+    <div class="container">
+        <div class="row">
+            <div class="hockey-player col-sm-4">
+            <div class="tool-tip">
+                <table>
+                    <tr>
+                        <td>Injury Type</td>
+                        <td class="injury-type"></td>
+                    </tr>
+                    <tr>
+                        <td>Severity (# games missed)</td>
+                        <td class="severity"></td>
+                    </tr>
+                    <tr>
+                        <td>Included Injuries</td>
+                        <td class="inj-list"></td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            <div class="bar-chart col-sm-8"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="sankey col-sm-12"></div>
+        </div>
+    </div>
+    
+    <!-- Your D3.js code for making a Bar Graph -->
+    <script type="text/javascript" src="js/hockey_points.js"></script>
+    <script type="text/javascript" src="js/hockey_inj_bar.js"></script> 
+    <script type= "text/javascript" src="js/sankey.js"></script>
+    <script type="text/javascript" src="js/hockey_inj_sankey.js"></script> 
+      <!-- ADD YOUR NAME. REQUIRED -->
+  </body>
+</html>

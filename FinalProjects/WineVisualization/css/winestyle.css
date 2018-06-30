@@ -1,0 +1,198 @@
+/* CSS for Body */
+body {
+    font-family: sans-serif;
+    background-color: #F0F8FF;
+}
+a {                                             
+    font: 16px sans-serif;
+}
+.tooltip {
+    position: absolute;          
+    width: 225px;                                                    
+    font: 12px sans-serif;
+    background: white; 
+    border-style: solid;
+    border-color: #A80000 ;        
+    border-radius: 10px 0px 10px 10px;
+    border-width: 1px;         
+    pointer-events: none;
+    padding: 5px 5px 5px 5px;
+}
+
+.image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-top: 40px;
+    border: 1px solid red;
+}
+
+.grape {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    z-index: 1;
+}
+
+/* CSS for the index title "A Thousand Nights in Vegas */
+.maintitle {
+
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+
+/* CSS for simulation container */
+.simcontainer {
+    height: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-shadow: 0.5px 0.5px 0.5px #000;
+}
+
+.sun {
+    z-index: 0;
+    width: 60%;
+    text-align: center;
+}
+/* CSS for user game options */
+.optioncontainer {
+    height: 800px;
+    width: 55%;
+    float: left;
+    margin: 0px;
+    background-color:#CCFFFF;
+    font-size: 12px;
+    border-top: 2px solid #ddd;
+    border-color: transparent;
+}
+
+
+.clickAppear {
+    cursor: pointer;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+.clickAppear:hover {
+    background-color: #333;
+    color: #eee;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* CSS for the graph */
+.graphcontainer {
+    height: 800px;
+    width: 45%;
+    float: right;
+    background-color: #CCFFFF;
+    border-top: 2px solid #ddd;
+    border-color: transparent;
+}
+
+path{
+    stroke: black;
+    stroke-width: 1;
+    fill: none;
+    cursor: pointer;
+}
+#chart path{
+    stroke: black;
+    stroke-width: 0;
+    fill: none;
+    cursor: pointer;
+}
+.slice {
+    cursor: pointer;
+}
+
+.slice .main-arc {
+    stroke: #fff;
+    stroke-width: 1px;
+}
+
+.slice .hidden-arc {
+    fill: none;
+}
+
+.slice text {
+    pointer-events: none;
+    dominant-baseline: middle;
+    text-anchor: middle;
+}
+.brokeLine{
+    stroke:darkred;
+    stroke-width: 2;
+    fill: none;
+    opacity:0.2;
+}
+
+path:hover{
+    opacity:1;
+    stroke-width:4;
+}
+
+.ave{
+    stroke: black;
+    stroke-width: 2;
+    fill: none;
+    opacity:1;
+}
+
+.axis text {
+    font-size: 15px;
+}
+
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+
+/* CSS for additional info */
+.additionalinfo {
+    width: 1800px;
+    height: 230px;
+    margin: 0 auto;
+    text-align: left;
+    background-color:#6699FF;
+    margin-bottom: 0;
+
+}
+
+#memberslist {
+    float: left;
+    width: 150px;
+    height: 100%;
+    padding-left: 40px;
+}
+
+#classinfolist {
+    float: left;
+    width: 390px;
+    height: 100%;
+}
+
+#filesubmitlist {
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+
+#resourceslist {
+    float: left;
+    width: 450px;
+    height: 100%;
+}

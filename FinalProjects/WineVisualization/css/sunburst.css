@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+text {
+    pointer-events: none;
+    /* Make text "non selectable" */
+}
+button {
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+#leftButton {
+    border-radius: 10px 3px 3px 10px;
+}
+#rightButton {
+    border-radius: 3px 10px 10px 3px;
+}

@@ -1,0 +1,6 @@
+.netlify
+.DS_Store
+node_modules
+npm-debug.log
+vcs.xml
+.idea

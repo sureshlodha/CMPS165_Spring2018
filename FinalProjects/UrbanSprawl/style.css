@@ -1,0 +1,93 @@
+body {
+  font: 13px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bubbles {
+/*    float:left;*/
+  clip-path: url(#clip);
+
+}
+.dot {
+  stroke: #000;
+  clip-path: url(#clip);
+
+}
+#chart {
+    width: 960px;
+    float: left;
+}
+
+#maps {
+    width: 200px;
+    float: right;
+}
+
+.map1 {
+    float: right;
+/*    position: fixed;*/
+}
+
+.map2 {
+    float: right;
+/*    position: relative;*/
+}
+
+/*Add Tooltip Type here*/
+.tooltip {
+  font-size: large;
+  position: absolute;
+  line-height: 1.5;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 20px;
+}
+
+.info {
+    float: inherit;
+}
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
+
+.axis text {
+    font-family: sans-serif;
+    fill: black;
+}
+
+            .state:hover{
+                color: blue;
+            }
+            .msa:hover {
+                color: yellow;
+            }
+.slider{
+/*    background: black;*/
+/*    float: right;*/
+    margin-left: 40px;
+/*    align-content: flex-end;*/
+    
+}
+.col-sm-2{
+/*    background: black;*/
+/*    margin-left: 400px;*/
+/*    width: auto;*/
+    float: left;
+    display: contents;    
+}
+.columns {
+    column-count: 4;
+}
+.column {
+    text-align: center;
+    height: 250px;
+}

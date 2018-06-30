@@ -1,0 +1,51 @@
+{
+  "name": "cmps165-groupproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run webpack",
+    "webpack": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwhh/CMPS165-GroupProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hwhh/CMPS165-GroupProject/issues"
+  },
+  "homepage": "https://github.com/hwhh/CMPS165-GroupProject#readme",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.2"
+  },
+  "dependencies": {
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "create-react-class": "^15.6.3",
+    "css-loader": "^0.28.11",
+    "d3-tip": "^0.9.1",
+    "d3scription": "^1.0.1",
+    "rc-checkbox": "^2.1.5",
+    "react": "^16.4.0",
+    "react-bootstrap": "^0.32.1",
+    "react-checkbox-group": "^4.0.1",
+    "react-dom": "^16.4.0",
+    "react-modal": "^3.4.5",
+    "react-search-input": "^0.11.3",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0"
+  }
+}

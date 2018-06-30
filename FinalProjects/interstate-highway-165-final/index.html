@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- CSS borrowed from http://bettermotherfuckingwebsite.com/ -->
+ 
+        <link rel="stylesheet" type="text/css" href="index.css">
+        
+        <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://unpkg.com/d3-simple-slider@0.2.1/build/d3-simple-slider.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+        
+        <title>Interstate Highway System</title>
+    </head>
+    <body>
+        
+        <h1 class="text-center">Interstate Highway System Growth: Reduced Traffic Deaths</h1>
+        <div class="description">
+        <p> In 1956, President Dwight D. Eisenhower signed into law the Interstate Highway Act, funding a 41,000-mile network of highways across the United States. This has been called one of the best investments a nation ever made. By 1980, 40,000 miles of interstate highway were constructed. The Interstate Highway System is safer than other highways in the nation: fewer than 10 fatalities occur per 1 billion Vehicle Miles Travelled (VMT) on interstate highways.</p>
+        </div>
+        
+        <svg id="map"></svg>
+        <!--
+        <svg id="graph"></svg>
+        
+        
+        <svg id="budget"></svg>
+        
+        <svg id="scatterplot"></svg>
+-->
+        <br><br>
+        
+        <div class="description">
+            <p> * Other highways include other highways in the National Highway System, other Federal Aid Highways, and non-Federal Aid Highways.</p>
+            <p> ** Deaths mitigated for a year = rate of fatalities on other highways per VMT * VMT on interstates - rate of fatalities on interstates per VMT * VMT on interstates</p>
+        </div>
+        <p class="description">By Gabriel Hartman (ghartman@ucsc.edu) in collaboration with Suresh K. Lodha</p>
+        
+        <p class="description"><a href="https://github.com/ghartman1620/interstate-highway-165-final">GitHub link</a></p>
+        <div class="columns">
+            <div class="sources">
+                <span><strong>Files Submitted</strong></span>
+                <p>index.html</p>
+                <p>index.js</p>
+                <p>index.css</p>
+                <p>usroads.json</p>
+                <p>fatalitiesto2008.csv</p>
+            </div>
+            <div class="sources">
+                <p><strong>Data Sources</strong></p>
+                <p><a href="http://www.publicpurpose.com/hwy-intmiles.htm">USA Interstate Highway System: Miles/Kilometers Opened by Year (used 1967-1980)</a></p>
+                <p><a href="https://www.fhwa.dot.gov/policyinformation/statistics.cfm">Highway Statistics Series</a></p>
+                <p><a href="http://www.publicpurpose.com/freewaypdf.pdf">The Best Investment a Nation Ever Made: a Tribute to the Dwight D. Eisenhower System of Interstate and Defense Highways</a></p>
+                <p><a href="https://gist.github.com/bricedev/96d2113bd29f60780223">U.S. Road Map</a> geographic data compiled by Brice Pierre de la Briere</p>
+            </div>
+            <div class="sources">
+                <p><strong>Visualization Sources</strong></p>
+                <p><a href="https://www.fhwa.dot.gov/interstate/densitymap.cfm">Eisenhower Interstate Highway System - Interstate Density Map</a></p>
+                <p><a href="https://www.census.gov/dataviz/visualizations/031/">I-90 Population Density Profile, 2010</a></p>
+                <p><a href="http://www.visualcapitalist.com/wp-content/uploads/2017/10/interstate-highways-map.html">Interstate Highways Map</a></p>
+            </div>
+            <div class="sources">
+                <p><strong>Code Sources</strong></p>
+                <p><a href="https://bl.ocks.org/mbostock/3887051"> Grouped Bar Chart</a> by Mike Bostock</p>
+                <p><a href="https://bl.ocks.org/johnwalley/e1d256b81e51da68f7feb632a53c3518"> d3-simple-slider </a> by John Walley</p>
+                <p><a href="https://gist.github.com/bricedev/96d2113bd29f60780223">U.S. Road Map</a> by Brice Pierre de la Briere</p>
+            </div>
+            
+            
+                 
+        </div>
+
+        <script type="text/javascript" src="index.js"></script>
+
+    </body>
+</html>

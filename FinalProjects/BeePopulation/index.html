@@ -1,0 +1,198 @@
+<!DOCTYPE>
+<html>
+
+<head>
+        <link rel="stylesheet" type="text/css" href="d3.slider.css">
+        <link rel="stylesheet" type="text/css" href="dependencies/d3.geomap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+
+    <h6 style = "text-align:center; font-size:40px"><bold> The Effects of Climate Change on the U.S. Honey Bee Population </bold></h6>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-color.v1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+        <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="https://d3js.org/topojson.v2.min.js"></script>
+        <script src="dependencies/d3.geomap.js"></script>
+        <script type="text/javascript" src="d3.slider.js"></script>
+
+</head>
+    <body>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span1 id="text"> Honey Bees are the most major pollinators in the world, helping pollinate 90% of 
+                          all wild plants in the United States. However, honey bees are now dying off at a rapid rate due to a gradual increase in our planet’s temperature. Despite their numbers stabilizing in the U.S. within the last 10 years due to increased conservation efforts, the signs are clear that even hotter weather in the coming years will put increased pressure on their colonies. The following visualization provides and in-depth look at how staggering their decline has been, compared with increasing temperatures throughout the entire United States over the last 40 years.  </span1>
+        <p></p>
+        
+        <p></p>
+        <h2>
+            &nbsp;
+            <div id="bloc1"></div>
+        
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;
+            <div id="bloc2"> United States </div>  
+        </h2>
+    
+        
+        <script type="text/javascript" src="code.js"></script>
+        
+        <div id="tooltip" class = "hidden">
+        
+            <h1 class = "state-title"></h1>
+            <h3 class = "tooltip-values bees"></h3>
+            <h3 class = "tooltip-values temps"></h3>
+    
+        </div>
+        
+        <div class="verticalLine"></div>
+       
+		<div class = "button-container">  
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div id="bloc3">
+             &nbsp;
+            
+            <button class="button toggleData">Honey Bees</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="button toggleCity">Temperature</button>
+            </div>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+			
+			&nbsp;&nbsp;
+			
+             <div id="bloc4">
+            &nbsp;
+<!--            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<!--
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-->
+            
+            
+            
+            <button class="button toggleOverlap">Overlap Lines</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;
+<!--
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-->
+            <button class="button toggleSeparation">Separate Lines</button>
+                 &nbsp;
+            </div>
+        </div> 
+        <div id="bloc5">
+            <h1 class = "state-title2">United States</h1>
+            <h3 class = "tooltip-values bees2">Net Honey Bee Loss |&nbsp; 1,421,000 colonies</h3>
+            <h3 class = "tooltip-values temps2">Net Temp. Increase &nbsp;|&nbsp; 3.5 degrees</h3>
+            </div>
+    
+    <p></p>          
+        
+<div>
+    <br>
+</div>        
+                
+                
+    <div id ="ending" class="footer">
+
+            <div id = "endingtext">
+
+                <p><b>Created by: </b></p>
+                <span>Alex Williamson (alswilli@ucsc.edu),</span>
+                <span>Brooke Dalton (bdalton@ucsc.edu),</span>
+                <span>Kevin Serrano (kfserran@ucsc.edu)</span>
+                <p><b>In Collaboration with </b>Suresh K Lodha and Karthik Balakrishna</p>
+                <p></p><br><br>
+                <p><b>Github Link: </b><a href="https://github.com/alswilli/CMPS-165-Project-Sources-Part-1B-">https://github.com/alswilli/CMPS-165-Project-Sources-Part-1B-</a></p>
+                <p></p><br><br>
+                <p><b>Designed for:</b></p>
+                <span> CMPS 165: Data programming for Visualization, Spring 2018 </span>
+
+            </div>
+
+            <div class="columnFooter">
+
+                <p><em><b>Files Submitted</b></em></p>
+                    <ul>
+                        <li>index.html</li>
+
+                        <li>style.css</li>
+
+                        <li>data/usanew.json</li>
+                        
+                        <li>code.js</li>
+                        
+                        <li>data/newMergedBees.csv</li>
+                        
+                        <li>data/newMergedTemp.csv</li>
+                        
+                        <li>data/data.csv</li>
+                    </ul>
+
+            </div>
+            <div class="columnFooter">
+
+                <p><em><b>Data Sources</b></em></p>
+                    <ul>
+                        <li><a href="http://usda.mannlib.cornell.edu/MannUsda/viewDocumentInfo.do?documentID=1191">Bee Colony Population and Economic Data: 1980s-Present Day </a>--- (United States Department of Agriculture)</li>
+            <li><a href="https://www.ncdc.noaa.gov/cag/statewide/mapping">Temperature Averages and other climate data by State: 1980s-Present Day </a>--- (National Centers for Environmental Information)</li>
+<!--
+            <li><a href="https://web.archive.org/web/20070930020735/http://gears.tucson.ars.ag.gov/beeclass/Pollination.pdf">List of crops solely pollinated by Bees </a>--- (Beekeeper's Handbook, Sammataro/Avitabile ©1998.)</li>
+                    <li><a href="https://www.nass.usda.gov/Statistics_by_State/Ag_Overview/">State Agricultural Overviews 2017 </a>--- (United States Department of Agriculture)</li>
+-->
+                    </ul>
+
+            </div>
+            <div class="columnFooter">
+
+                <p><em><b>Relevant Visualizations</b></em></p>
+                    <ul>
+                        
+                        
+                        <li><a href="https://bip2.beeinformed.org/loss-map/">Bee Loss Map of U.S.</a> </li>
+                        <li><a href="https://www.ncdc.noaa.gov/cag/statewide/mapping">Temperature Change Map of U.S.</a> </li>
+<!--                        <li><a href="https://monsanto.com/innovations/modern-agriculture/articles/crop-map/">Major Crop Map of U.S.</a> </li>-->
+                    </ul>
+
+            </div>
+            <div class="columnFooter">
+
+                <p><em><b>Code Sources</b></em></p>
+                    <ul>
+            
+                        <li>Multiline Graph by <a href="https://stackoverflow.com/questions/34886070/multiseries-line-chart-with-mouseover-tooltip">Mark</a> </li>
+                        <li>Zoomable Map of U.S. by <a href="https://balakrishna-k.github.io/USData/">Karthik Balakrishna</a> </li>
+                        <li>Linear Regression Lines by <a href="https://bl.ocks.org/HarryStevens/be559bed98d662f69e68fc8a7e0ad097">Harry Stevens</a></li>
+                        <li>Line Loading Animation by <a href="https://bl.ocks.org/mbostock/5649592">Mike Bostock</a></li>
+                    </ul>
+
+            </div>
+
+                    
+        <div id = "endingtext">
+
+            <p><b>***</b>Bee data from 1982-1985 is interpolated<b>***</b></p>
+        </div>
+
+        </div>            
+                    
+</body>    
+    
+</html>
+

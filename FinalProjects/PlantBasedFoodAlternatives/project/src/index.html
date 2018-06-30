@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Plant-Based Food Alternatives</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+  <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+  <!-- <script src="sankey.js"></script> -->
+</head>
+
+<body>
+  <header>
+    <h1>Plant-Based Food Alternatives</h1>
+    <div class="spacer"></div>
+    <p>The purpose of this visualization is to give insight into how people can easily substitute animal products in their diet
+      to plant-based alternatives. We intend to show how a diet with limited or no animal products can still be nutritious,
+      flavorful, and affordable.</p>
+  </header>
+  <div id="state"></div>
+  <main>
+    <div class="substitution-list">
+      <div>
+        <div class="food-list-header">
+          <h2>Meat-Based Food</h2>
+          <p>Select meat items to supplement for.</p>
+        </div>
+        <div class="food-list animal"></div>
+      </div>
+      <div>
+          <div class="nutrient-dropdown">
+              <h4>Select a nutrient deficiency</h4>
+              <select name="nutrients" class="nutrients">
+                <option disabled>Select a nutrient</option>
+                <option value="iron">Iron</option>
+                <option value="protein" selected>Protein</option>
+                <option value="omega">Omega-3</option>
+                <option value="vitb">Vitamin B12</option>
+                <option value="calcium">Calcium</option>
+                <option value="vitd">Vitamin D</option>
+              </select>
+            </div>
+        
+      <div id="viz">
+        <p id="chart">
+          <div class="svg-div">
+          </div>
+        </p>
+      </div>
+    </div>
+      <div>
+        <div class="food-list-header">
+          <h2>Plant-Based Food</h2>
+          <p>Select plant based items to replace your meats.</p>
+        </div>
+        <div class="food-list veg"></div>
+      </div>
+    </div>
+
+        <div class=food-list-breakdown></div>
+    <div class="card">
+      <h3>Created by</h3>
+      <ul>
+        <li>Isha Martinez (<a href="mailto:iaggarwa@ucsc.edu">iaggarwa@ucsc.edu</a>)</li>
+        <li>Nathan McHone (<a href="mailto:nlhutchi@ucsc.edu">nlhutchi@ucsc.edu</a>)</li>
+        <li>Greg Wolff (<a href="mailto:gwolff@ucsc.edu">gwolff@ucsc.edu</a>)</li>
+        <li>In collaboration with Suresh Lodha</li>
+      </ul>
+      <p><a href="https://github.com/ishamartinez/CMPS165FinalProject" target="_blank">Github Link</a></p>
+      <p>Designed for CMPS 165 Data programming for Visualization, Spring 2018</p>
+      <div class="two-col">
+        <div>
+          <h5>Files submitted</h5>
+          <ul>
+            <li><code>assets/data/</code></li>
+            <li><code>assets/images/</code></li>
+            <li><code>index.html</code></li>
+            <li><code>index.js</code></li>
+            <li><code>style.scss</code></li>
+          </ul>
+        </div>
+        <div>
+            <h5>Data sources</h5>
+            <ul>
+              <li>
+                Iron:
+                <a href="https://www.vegsoc.org/facts/iron" target="_blank">vegetarian</a>,
+                <a href="https://www.vegansociety.com/resources/nutrition-and-health/nutrients/iron" target="_blank">vegan</a>
+              </li>
+              <li>
+                Protein:
+                <a href="https://www.vegsoc.org/facts/protein" target="_blank">vegetarian</a>,
+                <a href="https://www.vegansociety.com/resources/nutrition-and-health/nutrients/protein" target="_blank">vegan</a>
+              </li>
+              <li>
+                Omegas:
+                <a href="https://www.vegsoc.org/facts/fatsomegascholesterol" target="_blank">vegetarian</a>,
+                <a href="https://www.vegansociety.com/resources/nutrition-and-health/nutrients/omega-3-and-omega-6-fats" target="_blank">vegan</a>
+              </li>
+              <li>
+                Vitamin B12:
+                <a href="https://www.vegsoc.org/facts/B12" target="_blank">vegetarian</a>,
+                <a href="https://www.vegansociety.com/resources/nutrition-and-health/nutrients/vitamin-b12" target="_blank">vegan</a>
+              </li>
+              <li>
+                Calcium:
+                <a href="https://www.vegsoc.org/facts/vitaminsminerals" target="_blank">vegetarian</a>,
+                <a href="https://www.vegansociety.com/resources/nutrition-and-health/nutrients/calcium" target="_blank">vegan</a>
+              </li>
+              <li>
+                Vitamin D:
+                <a href="https://www.vegsoc.org/facts/vitaminsminerals" target="_blank">vegetarian</a>,
+                <a href="https://www.vegansociety.com/resources/nutrition-and-health/nutrients/vitamin-d" target="_blank">vegan</a>
+              </li>
+              <li><a href="https://www.dietitians.ca/" target="_blank">dietitians.ca</a></li>
+            </ul>
+          </div>
+          <div>
+              <h5>Relevant visualizations</h5>
+              <ul>
+                  <li>
+                      <a href="https://sureshlodha.github.io/CMPS165_Winter15_FinalProjects/FruitsAndVegetables/" target="_blank">Inside Fruits and Vegetables</a>
+                    </li>
+              </ul>
+            </div>
+    
+          <div>
+            <h5>Code sources</h5>
+            <ul>
+              <li><a href="http://bl.ocks.org/d3noob/c9b90689c1438f57d649" target="_blank">Sankey from csv with d3.js</a></li>
+            </ul>
+          </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

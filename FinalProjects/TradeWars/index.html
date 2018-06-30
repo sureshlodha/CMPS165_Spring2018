@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="stupid.css">
+      <script type= "text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+       <!--trying to add annotations, library by Susie Lu-->
+       <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <title>Trade War</title>
+   </head>
+   <body>
+      <!--using textbook version of tooltip instead of stupid.css-->
+      <div id="tooltip" class="hidden">
+         <p style="text-align: center"><strong><span id="tooltipheader">County, State</span></strong></p>
+         <p>
+         <p style="text-align:left;">
+            # of workers:
+            <span id="workers" style="float:right;">132</span>
+         </p>
+         <p style="text-align:left;">
+            % of workforce:
+            <span id="percent" style="float:right;">15%</span>
+         </p>
+      </div>
+      <div class="padded center">
+         <h3>Concentration of Industries Affected by a Trade War</h3>
+        The United States and China have been firing the initial shots of a trade war in recent months, announcing sets of tariffs to protect their own domestic industry and retaliate against each other's industries. We set out to examine a subset of these tariffs and their potential impact by mapping employment in the industries that produce those goods, showing which regions of the country would be most affected. To provide a clue about the magnitude of the tarrifs' impact, we also show the US imports and exports of the goods under tariff to discover how much of the total is going to and from China.
+        <h6>Note:</h6>
+         Data is sparse for employment in specific industries at the county level due to the Bureau of Labor Statistics' confidentiality rules protecting the identity of certain employers. To learn more, <a href="https://www.bls.gov/cew/cewfaq.htm#Q13" target="_blank">click here</a>
+      </div>
+      <br><br><br><br>
+      <div class="visualization container">
+         <script type="text/javascript" src="prototype.js"></script>
+         <div style="margin-left: 13%;">
+            <form>
+               <div id="outer">
+                  <div class="inner">
+                     <div class="impact_tooltip">Positive impact
+                        <span class="tooltiptext">
+                           The tariffs enacted by the U.S. intend to protect these industries.
+                        </span>
+                     </div>
+                     <input type="radio" name="commodity" value="Steel" onclick="updateSteel()"> Steel<br>
+                     <input type="radio" name="commodity" value="Aluminum" onclick="updateAluminum()"> Aluminum<br>
+                     <input type="radio" name="commodity" value="Consumer Electronics/High-Tech" onclick="updateHighTech()"> Consumer Electronics/High-Tech<br>
+                  </div>
+                  <div class="inner" style="margin-left:80px;">
+                     <div class="impact_tooltip">Negative impact
+                        <span class="tooltiptext">
+                           The retaliatory tariffs enacted by the China intend to harm these industries.
+                        </span>
+                     </div>
+                     <input type="radio" name="commodity" value="Pork" onclick="updatePork()" checked> Pork<br>
+                     <input type="radio" name="commodity" value="Soybeans" onclick="updateSoybeans()"> Soybeans<br>
+                     <input type="radio" name="commodity" value="Transportation" onclick="updateTransportation()"> Transportation <br>
+                  </div>
+                  <div class="inner" style="margin-left: 160px; margin-bottom: 20px;">
+                     <input type="radio" name="measurement" value="raw" onclick="updateMeasurementRaw()" checked> Raw employment numbers<br>
+                     <input type="radio" name="measurement" value="raw" onclick="updateMeasurementPercent()"> Employment percent<br><br>
+                  </div>
+            </form>
+            
+            </div>
+            <br>
+         </div>
+         <div id="commodity" style="display: inline; font-weight: bold; margin-left: 5%;"><b>Pork employment by county</b></div>
+      </div>
+      </div>
+      <div class="container">
+         <div class="center">
+
+         <!--
+            <h3>Insights</h3>
+               Chinese agriculture tarrifs would mostly harm the Midwest.<br><br>
+               Chinese transportation tarrifs affects most of the United States, particularly Washington, Detroit, Kentucky, and Tennessee.<br>
+
+            <h3>Limitations</h3>
+               The data at county-industry level is often sparse because of the Bureau of Labor Statistic's <a href="https://www.bls.gov/cew/cewfaq.htm#Q13" target="_blank">confidentiality rules</a>. Some local data is hidden to protect information that would identify specific employers. Those values are included in the overall county data
+         -->
+            <br><br><br><br><br><br><br>
+            William Coates (wcoates@ucsc.edu)</br>
+            Kunal Dhillon (kusdhill@ucsc.edu)</br>
+            Xianlin Shao (xshao7@ucsc.edu)</br> 
+            in collaboration with Suresh K Lodha, Karthik Balakrishna, Christopher Bui and Janesh Chhabra.</br></br>
+            <a href="https://github.com/wcoatesucsc/CMPS165-final-project" target="_blank">GitHub Link</a></br>
+            Designed for CMPS 165: Data programming for Visualization, Spring 2018
+         </div>
+         </br>
+         </br>
+         <footer class="black container padded">
+            <div class="quarter compressible center">
+               <h6>Files</h6>
+               <a href="https://github.com/wcoatesucsc/CMPS165-final-project/blob/master/phaseIII/prototype.js" target="_blank">prototype.js</a></br>
+               <a href="https://github.com/wcoatesucsc/CMPS165-final-project/blob/master/phaseIII/gz_2010_us_050_00_500k.json" target="_blank">us_geomap.json</a></br>
+               <a href="https://github.com/wcoatesucsc/CMPS165-final-project/blob/master/phaseIII/stupid.css" target="_blank">CSS Stylesheet</a><br>
+               <a href="https://github.com/wcoatesucsc/CMPS165-final-project/blob/master/Data/USTariffsAll" target="_blank">US Tariffs</a><br>
+               <a href="https://github.com/wcoatesucsc/CMPS165-final-project/blob/master/Data/US_Imports/Aluminum_Items_Tariffed/aluminum_display_transposed.csv" target="_blank">Aluminum Imports</a><br>
+               <a href="https://github.com/wcoatesucsc/CMPS165-final-project/blob/master/Data/US_Imports/High_Tech_85_Items_Tariffed/85Data_display_transpose.csv" target="_blank">Consumer Electronics Imports</a><br>
+               <a href="https://github.com/wcoatesucsc/CMPS165-final-project/blob/master/Data/US_Imports/Steel_Items_Tariffed/steel_display_transposed.csv" target="_blank">Steel Imports</a><br>
+               <a href="https://github.com/wcoatesucsc/CMPS165-final-project/blob/master/Data/US_Exports/oilseed/oilseed_display_transpose.csv" target="_blank">Oilseed Exports</a><br>
+               <a href="https://github.com/wcoatesucsc/CMPS165-final-project/blob/master/Data/US_Exports/pork/pork_display_transposed.csv" target="_blank">Pork Exports</a><br>
+               <a href="https://github.com/wcoatesucsc/CMPS165-final-project/blob/master/Data/US_Exports/transportation/trans_display_transposed.csv" target="_blank">Transportation Exports</a><br>
+               <a href="https://github.com/wcoatesucsc/CMPS165-final-project/blob/master/python_parsing/all.csv" target="_blank">County Employment Data</a><br>
+
+            </div>
+            <div class="quarter compressible center">
+               <h6>Visual Sources</h6>
+               <a href="https://www.brookings.edu/blog/the-avenue/2018/04/09/how-chinas-tariffs-could-affect-u-s-workers-and-industries/" target="_blank">Brookings Institution</a></br>
+               <a href="https://www.spglobal.com/marketintelligence/en/news-insights/blog/companies-and-sectors-most-impacted-by-u-s-chinese-tariffs" target="_blank">S&amp;P Global</a></br>
+                <a href="https://si.wsj.net/public/resources/images/P1-CE549B_TRADE_16U_20180603190316.jpg" target="_blank">Wall Street Journal</a>
+            </div>
+            <div class="quarter compressible center">
+               <h6>Code Sources</h6>
+               <a href="https://mdipierro.github.io/stupid.css/index.html" target="_blank">CSS: stupid.css</a> by Massimo Di Pierro<br>
+               <a href="http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" target="_blank">Color Brewer 2.0</a> by Cynthia Brewer, Mark Harrower<br>
+               <a href="https://bl.ocks.org/mbostock/3886208" target="_blank">Bostock Stacked Bar Chart</a><br>
+               <a href="https://bl.ocks.org/d3noob/3c040800ff6457717cca586ae9547dbf" target="_blank">Rotated axis labels</a><br>
+               <a href="http://d3-annotation.susielu.com" target="_blank">D3-Annotation</a> by Susie Lu<br>
+               <a href="http://api.jquery.com/fadein/" target="_blank">jQuery .fadeIn()</a><br>
+               <a href="https://www.w3schools.com/howto/howto_css_tooltip.asp" target="_blank">CSS tooltips</a> by w3schools<br>
+            </div>
+            <div class="quarter compressible center">
+               <h6>Data Sources</h6>
+
+               <a href="http://images.mofcom.gov.cn/www/201803/20180326085959196.pdf" target="_blank">China's tariff list against steel and aluminum tariff</a><br>
+                <a href="http://m.mof.gov.cn/czxw/201804/P020180404656137253124.pdf" target="_blank">China's second list of tariff commodities</a><br>
+               <a href="https://ustr.gov/sites/default/files/files/Press/Releases/301FRN.pdf" target="_blank">US tariff list</a><br>
+            <a href="https://www.bls.gov/cew/datatoc.htm" target="_blank">US Employment by Industry and County</a><br>
+            <a href="https://dataweb.usitc.gov" target="_blank">US International Trade Commission Data Web</a><br>
+            <a href="https://gadm.org/download_country_v3.html" target="_blank">US GeoMap by county</a>
+                
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>

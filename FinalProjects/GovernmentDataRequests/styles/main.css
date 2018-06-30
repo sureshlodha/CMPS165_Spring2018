@@ -1,0 +1,98 @@
+/* Import the color scheme*/
+@import "colors.css";
+/* Import the CSS for the GeoMap */
+@import "map.css";
+/* Import the CSS for the Line Chart */
+@import "graph.css";
+/* Import the CSS for the tooltips*/
+@import "tooltip.css";
+
+
+#double-slider {
+  margin-bottom: -50px;
+  position: relative;
+  left: 190px;
+  top: -130px;
+}
+
+#line-chart {
+  margin-left: -20px;
+}
+
+#toggle-area {
+  margin-top: -50px;
+  position: relative;
+  width: 470px;
+  left: 280px;
+  bottom: -60px;
+}
+
+#toggle-area button {
+  border: 2px solid;
+  padding: 14px 28px;
+  font-size: 16px;
+  width: 150px;
+  cursor: pointer;
+}
+
+#toggle-area button:hover {
+  filter: brightness(125%);
+}
+#toggle-area button:disabled {
+  filter: brightness(75%);
+  border: none;
+}
+
+#select-facebook {
+  background-color: var(--facebook-theme-color);
+  color: white;
+}
+
+#select-google {
+  background-color: var(--google-theme-color);
+  color: white;
+}
+
+#select-microsoft {
+  background-color: var(--microsoft-theme-color);
+  color: white;
+}
+
+
+/* Define the CSS for the rest of the document (header, layout, ect) */
+h1 {
+  text-align: center;
+}
+
+int1 {
+      width: 95%;
+  overflow: hidden;
+  float: left;
+    background: rgb(224,224,224);
+    border-radius: 25px;
+    padding: 15px;
+    text-align:justify;
+}
+
+.details {
+  color: white;
+}
+
+#chart-area {
+  width: 100%;
+}
+
+#chart-area svg {
+  float: left;
+}
+
+footer {
+  width: 95%;
+  overflow: hidden;
+  float: left;
+    background: rgb(224,224,224);
+    border-radius: 25px;
+    padding: 30px;
+    text-align:justify;
+}
+

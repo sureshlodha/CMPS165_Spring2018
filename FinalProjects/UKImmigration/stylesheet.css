@@ -1,0 +1,188 @@
+/*Start Area Chart Styles*/
+div#stack_area_div {
+    display: block;
+    position: absolute;
+    top: 30px;
+}
+
+body {
+    /*background: #888;*/
+    font: 12px sans-serif;
+}
+            
+svg {
+    font: 12px sans-serif;
+}
+
+#header .title {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+#header .subtitle {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+#selector {
+    position: absolute;
+    top: 150px;
+}
+
+.legendTitle {
+    font: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info {
+    position: absolute;
+    top: 180px;
+}
+
+select#stack_area_type {
+    position: absolute;
+    left: 60px;
+    top: 100px;
+}
+
+
+div.info {
+    position: absolute;
+    width: 290px;
+    min-height: 100px;
+    padding: 10px;
+    font: 12px sans-serif;
+    /*background: #;*/
+    /*border: solid 1px #777;*/
+    border-radius: 3px;
+    pointer-events: none;
+}
+            
+div.info p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+            
+div.info h1, div.info h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+div.info h1, div.info h2, div.info h3{
+    font-weight: normal;
+}
+
+.adm_2 {
+    opacity: .8;
+    stroke: black;
+    stroke-width: 0.5px;
+}
+/*End Area Chart Styles*/
+
+/*Begin Pie Chart styles*/
+div#ro_visa_pies {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 850px;
+}
+
+.arc text {
+    font: 20px sans-serif;
+    text-anchor: middle;
+}
+
+.arc path {
+    stroke: none;
+}
+            
+.tooltip {
+    box-shadow: 0 0 5px #999999;
+    display: none;
+    font-size: 12px;
+    left: 130px;
+    padding: 10px;
+    position: absolute;
+    /*
+    text-align: center;
+    */
+    top: 95px;
+    z-index: 10;
+    line-height: 140%; /*Interlineado*/
+    
+    font-weight: 300;
+    background: rgba(210, 213, 219, 0.95);
+    color: #000;
+    border-radius: 2px;
+}
+
+pie{
+    display: inline-block;
+}
+/*End Pie Chart styles
+
+/*Begin Stacked Bar Chart */
+div#stack_svg_div {
+    display: block;
+    position: relative;
+    top: 10px;
+    
+}
+
+.axis .domain {
+    display: none;
+}
+/*End Stacked Bar Chart Styles*/
+
+/*Begin Info Styles*/
+.column {
+            float: left;
+            padding: 0px;
+        }
+        .left, .right {
+            width: 25%;
+        }
+        .middle1, .middle2 {
+            width: 25%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .author {
+            line-height: 1;
+            }
+         #chart{
+                position:absolute;
+            }
+        #note{
+            position:relative;
+            top: 10px;
+                
+            }
+        .note {
+            background-color: aliceblue;
+            }
+        .line {
+          fill: none;
+          stroke: #EF5285;
+          stroke-width: 2px;
+        }
+/*End Info Styles*/
+
+#blurb-div {
+    margin-top: 2rem;
+}
+
+/* index.html style*/
+ul {
+    list-style-type: none;
+}
+
+h4 {
+    text-align: left;
+}

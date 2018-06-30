@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+        <script
+  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+  crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+          <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+          <![endif]-->
+        <link rel="stylesheet" href="Final_Project/css/hockey-inj.css">
+        <link rel="stylesheet" href="Final_Project/css/hockey_inj_sankey.css">
+        <style>
+            .main_title {
+                font-family: sans-serif;
+                text-align: center;
+                font-weight: bold;
+                background: rgba(206, 225, 255, 0.7);
+            }
+            .title-div {
+                background:none;
+                background: url(https://www.reviewjournal.com/wp-content/uploads/2018/04/10451992_web1_ap_18022219821769_ne2018423171548230.jpg);
+                background-size: cover;                      /* <------ */
+                background-repeat: no-repeat;
+                background-position: center -150px;
+            }
+            
+            .center {
+                text-align:center;
+            }
+            .main {
+                font-size:1.65rem;
+            }
+            
+            hr {
+                display: block;
+                height: 1px;
+                border: 0;
+                border-top: 1px solid #ccc;
+                margin: 1em 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="jumbotron title-div">
+            <h1 class="main_title">Injuries in the National Hockey League</h1>
+        </div>
+        
+        <div class="main container">
+            <p> Ice hockey is one of the more dangerous sports out there. Players have to wear more protective gear than any other sport and the rate of injuries is still high in comparison. There are three positions in ice hockey that will be compared: Forwards, Defence, and Goalie.</p>
+            <p>This visualization will explore how players in each position get injured and the number and relative severity of those injuries.</p>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="hockey-player col-sm-4">
+                <div class="tool-tip">
+                    <table>
+                        <tr>
+                            <td>Injury Type</td>
+                            <td class="injury-type"></td>
+                        </tr>
+                        <tr>
+                            <td>Severity (# games missed)</td>
+                            <td class="severity"></td>
+                        </tr>
+                        <tr>
+                            <td>Included Injuries</td>
+                            <td class="inj-list"></td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+                <div class="bar-chart col-sm-8"></div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="sankey col-sm-12"></div>
+        </div>
+    </div>
+    <hr/>
+    <div class="container">
+        <div class="col-md-4 col-lg-4">
+            <h4>Articles</h4>
+            <ul>
+                <li><a href="https://www.nytimes.com/2017/05/15/sports/hockey/nhl-playoffs-injuries-erik-karlsson-alex-ovechkin.html">On the N.H.L.’s Playoff Ice, Injuries Are Risen Above. </a></li>
+                <li><a href="http://www.thehockeynews.com/news/article/injuries-cost-nhl-218m-a-year-in-lost-salaries-a-wallop-to-bottom-line-study">Injuries Cost NHL $218M a Year in Lost Salaries, a Wallop to Bottom Line: Study. </a></li>
+                <li><a href="http://www.healthgeomatics.com/predicting-nhl-hockey-injuries/">Health Genomics Hockey Injury Prediction Article</a></li>
+                <li><a href="https://www.theglobeandmail.com/life/health-and-fitness/health/when-it-comes-to-brain-injuries-how-dangerous-is-youthhockey/article36595825/">When It Comes to Brain Injuries, How Dangerous Is Youth Hockey?</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+            <h4>Related Visualizations</h4>
+            <ul>
+                <li><a href="http://nhlinjuryviz.blogspot.com/2018/04/201718-NHL-injury-list.html">NHL Injury Vis. </a></li>
+                <li><a href="https://venngage.com/blog/sports-injury-infographic/">Which Equipment Causes The Most Sports Injuries? </a></li>
+                <li><a href="http://nhlinjuryviz.blogspot.com/2017/10/201718-team-injury-breakdowns.html">2017/2018 Hockey Injuries</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-4 col-lg-4">
+            <h4>Data</h4>
+            <ul>
+                <li><a href="https://docs.google.com/spreadsheets/d/1f16CqNDHyu-v-Fyxqf237KkIqbWwnNJ4lH7kQqR7rF8/edit?usp=sharing">NHL Injury Data, 2009-2018. </a></li>
+                <li><a href="http://nhlinjuryviz.blogspot.com/2015/11/nhl-injury-database.html">sortable injury database</a></li>
+                <li><a href="http://developers.stattleship.com/#what-we-ask">Sattleship API</a></li>
+                <li><a href="http://www.hockeyabstract.com/testimonials">Hockey Goalie Injury Data</a></li>
+                <li><a href="http://www.hockeyabstract.com/thoughts/completelistofhockeyanalyticsdataresources">Hockey Related Data</a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script type="text/javascript" src="Final_Project/js/hockey_points.js"></script>
+    <script type="text/javascript" src="Final_Project/js/hockey_inj_bar.js"></script> 
+    <script type= "text/javascript" src="Final_Project/js/sankey.js"></script>
+    <script type="text/javascript" src="Final_Project/js/hockey_inj_sankey.js"></script>
+        
+    </body>
+    
+    <footer>
+        <div class="page-footer center">
+            Thomas Bryant, Matthew Shehan, Joseph Castelan<br>
+            In collaboration with Suresh K. Lodha, Karthik Balakrishnan, Christopher Bui, and Janesh Chhabra<br>
+            <a href="mailto:tcbryant@ucsc.edu, mshehan@ucsc.edu, jgcastel@ucsc.edu">tcbryant@ucsc.edu, mshehan@ucsc.edu, jgcastel@ucsc.edu</a><br>
+            <!-- <a href="./files/HockeyVisMockUp.pdf">Mock Up</a><br> -->
+            <a href="https://github.com/tccbryant/HockeyInjuryVis">Github</a><br>
+        </div>
+    </footer>
+</html>

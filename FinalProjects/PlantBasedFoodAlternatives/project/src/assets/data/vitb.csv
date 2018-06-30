@@ -1,0 +1,16 @@
+food,nutrient,category,nutrientAmt,size
+"Beef","vitb","animal",2.3,85
+"Pork","vitb","animal",0.8,85
+"Chicken","vitb","animal",0.5,110
+"Turkey","vitb","animal",2.0,85
+"Clams","vitb","animal",84.1,85
+"Mussels","vitb","animal",20.4,85
+"Crab","vitb","animal",9.8,85
+"Eggs","vitb","vegetarian",0.9,100
+"Milk","vitb","vegetarian",0.5,244
+"Soy Milk","vitb","vegan",1.2,244
+"Yogurt","vitb","vegetarian",0.5,175
+"Cheese","vitb","vegetarian",1.7,50
+"Bran Cereal","vitb","vegan",24,100
+"Corn Flakes","vitb","vegan",6,100
+"Cheerios","vitb","vegan",24,100

@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<style>
+    /* Create three equal columns that floats next to each other */
+    #chart1{
+        float: left;
+    }
+    #graph{
+        float: left;
+    }
+    .column {
+        float: left;
+        padding: 0px;
+    }
+    .left, .right {
+        width: 25%;
+    }
+    .middle1, .middle2 {
+        width: 25%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .author {
+        line-height: 1;
+    }
+    #chart{
+        position:absolute;
+    }
+    #note{
+        position:relative;
+
+
+    }
+    .note {
+        background-color: #f0f8ff;
+    }
+    .line {
+        fill: none;
+        stroke: #EF5285;
+        stroke-width: 2px;
+    }
+    #annotation {
+        position:relative;
+        stroke:	#00FFFF;
+        stroke-width: 2px;
+        width: 600px;
+        bottom: 600px;
+        left:70px;
+        Padding-top:30px;
+
+
+
+    }
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    body{
+        background-color: grey; 
+    }
+
+
+    /*https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_bottom_right*/
+    .bottomright {
+        position: absolute; /*forced*/
+        bottom: 8px; /*8px up from bottom*/
+        right: 16px; /*16px to right of edge*/
+        font-size: 18px;
+    }
+
+    /*https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_bottom_right*/
+    .middle {
+        position: absolute; /*forced*/
+        bottom: 30%; /*30% up from bottom*/
+        right: 50%; /*50% to right of edge*/
+        font-size: 18px;
+    }
+
+    .tooltip {
+        position: absolute;
+        font-size: 12px;
+        width:  auto;
+        height: auto;
+        pointer-events: none;
+        background-color: #BCC5F7;
+    }
+
+    .view {
+        fill: url(#gradient);
+        stroke: #000;
+    }  
+
+    /*Add .axis path and .axis line commans as described in the book */
+    /*axis path/line straight from book as we were told to do so, only 1 place found
+    in entire book via find function*/
+    .axis path, /*shorthand so modifiers affect both classes*/
+    .axis line{ /*how the line will look*/ 
+        fill: none; /*"hollow" single stroke*/
+        stroke: black; /*color of axis lines*/
+    }
+
+    /*obvious what it does*/
+    /*modifies axis text...*/
+    .axis text{
+        font: Times;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    /*next two are obvious no comment needed*/
+    body{
+        margin: 0;
+        font-family: arial, sans;
+        background-color: #E6E6E6; 
+    }
+
+
+    /*https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_bottom_right*/
+    .bottomright {
+        position: absolute; /*forced*/
+        bottom: 8px; /*8px up from bottom*/
+        right: 16px; /*16px to right of edge*/
+        font-size: 18px;
+    }
+
+    /*https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_bottom_right*/
+    .middle {
+        position: absolute; /*forced*/
+        bottom: 30%; /*30% up from bottom*/
+        right: 50%; /*50% to right of edge*/
+        font-size: 18px;
+    }
+
+
+    /*Add .axis path and .axis line commans as described in the book */
+    /*axis path/line straight from book as we were told to do so, only 1 place found
+    in entire book via find function*/
+    .axis path, /*shorthand so modifiers affect both classes*/
+    .axis line{ /*how the line will look*/ 
+        fill: none; /*"hollow" single stroke*/
+        stroke-width: 1px;
+        stroke: black; /*color of axis lines*/
+    }
+
+
+    /*obvious what it does*/
+    /*modifies axis text...*/
+    .axis text{
+        font: Times;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .label{
+        font-size: 15px;
+    }
+
+    .legend text,
+    .axis text {
+        font-size: 13px;
+        fill: #333;
+    }
+
+    .circle{
+        fill-opacity: 0.65;
+    }
+
+    .bubble{
+        opacity: 1;
+        transition: opacity 0.3s;
+        stroke: #000;
+    }
+
+    .bubble:hover text{
+        opacity: 1;
+    }
+
+    .bubble:hover circle{
+        fill-opacity: 1;
+    }
+
+    .legend rect{
+        fill-opacity: 0.75;
+    }
+
+    .legeng:hover rect{
+        fill-opacity:1;
+    }
+    .tooltip {
+        position: absolute;
+        font-size: 12px;
+        width:  auto;
+        height: auto;
+        pointer-events: none;
+        background-color: black;
+    }
+
+    .view {
+        fill: url(#gradient);
+        stroke: #000;
+    }
+</style>
+
+<body>
+    <center><p style="font-size:30px; font-weight:bold">Rigging Elections By Gerrymandering 
+        <br> <a style="font-size:20px; font-weight:normal">Contrasting Notable Districts in North Carolina and Maryland to a Healthy State</a></p></center>
+    <p style="padding: 10px">Gerrymandering is a tactic used by political parties to essentially "guarantee" wins in select states years before an actual election occurs. This is done, specifically, by manipulating the way the votes are tallied. Certain states, districts, and demographics are more susceptible than others due to party affiliaton of residents. Below is an interactable graph that displays the Gerrymander Index (GMI), and associated maps (on click) of three specific states: North Carolina, a historically high GMI republican state, Maryland, a historically high GMI democrat state, and Indiana, one of the healthiest GMI states in the country. 
+        <p style="padding-left: 20px; font-size: 12px;">GMI is calculated as follows (see sources for details): </p>
+        <p style="padding-left: 20px; font-size: 12px">GMI = 100 - (State’s Polsby-Popper Value)</p></p>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <div>
+
+        <script>
+
+            var margin = {top: 10, right: 40, bottom: 150, left: 50},
+                width = 560 - margin.left - margin.right,
+                height = 500 - margin.top - margin.bottom;
+
+            var myStats = d3.select("body")
+            .append("div")
+            .attr("id", "stats");
+
+            var svg = d3.select("#stats")
+            .append("div")
+            .attr("id", "graph").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + (margin.left + 15) + "," + margin.top + ")");
+
+
+            var xScale = d3.scaleBand().rangeRound([0, width]).padding(0.1);
+            var yScale = d3.scaleLinear().range([height, 0]);
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale).ticks(5).tickFormat( function(d) { return d });
+
+            function pinter(d) {
+                if (d.country == "North Carolina"){
+                    NC2000();
+                } else if (d.country == "Maryland"){
+                    MD2000();
+                } else {
+                    IN2000();
+                }
+            }
+
+
+            d3.csv("GMI.csv",function(error, data){
+                data.forEach(function(d) { //exhaustive for loop basically
+                    d.key = d.country;
+                    d.value = +d.gdp;
+                });
+
+                var tooltip = d3.select("body").append("div")
+                .attr("class", "toolTip")
+                .style("background",'#BCC5F7')
+                .style("position", "absolute");
+
+                xScale.domain(data.map(function(d){ return d.key; }));
+
+                yScale.domain([0,100]);
+
+                // Add comments to explain the code below
+                var ret = svg.selectAll("rect") //joins data to rect
+                .data(data)      //the data to join
+                .enter()         //enter the data
+                .append("rect")  //rect for function
+                //transition from RECT's current state to next state over DURATION in ms 
+                //I believe this is the "fly in" animation they do one at a time
+                // .transition().duration(1000) 
+                //delay each transition based off the iterator * 200
+                //  .delay( function(d,i) {return i * 200;}) 
+                //function to get the RECTs to appear on correct location
+                //determined by xScale
+                .attr("x", function(d) {
+                    return xScale(d.key);
+                }) //determined by yScale
+                .attr("y", function(d) {
+                    return yScale(d.value);
+                })
+                .attr("width", xScale.bandwidth()) //returns width of each xscale band
+                .attr("height", function(d) {  //get the Y coordinate of each RECT 
+                    return height - yScale(d.value) + 50;
+                })
+                // create increasing to decreasing shade of blue as shown on the output
+                .attr("fill", function(d) {
+                    console.log(d.color); return "#77dd77"
+                    //return String(d.color)
+                    //return "rgb(0, 0, " + Math.round(255 - d.value * 11 + 70) + ")";
+                    //return VALUE is just trial and error so the higher d.value is 
+                    //the darker the shade of blue
+                });
+
+                ret.on("mousemove", function(d){
+                    tooltip
+                        .style("left", d3.event.pageX - 50 + "px")
+                        .style("top", d3.event.pageY - 123 + "px")
+                        .style("display", "inline-block")
+                        .style("pointer-events", "none")
+                        .html("State: " + (d.country) + "<br>" 
+                              +"GMI: " + (d.gdp) +"" + "<br>"
+                              + "Ethnicity of " + (d.id) + ":" + "<br>"
+                              + "White: "  + (d.white) + "%"+"<br>"
+                              + "Black: " + (d.black) + "%" +"<br>"
+                              + "Other: "  + (d.other) + "%"+"<br>"
+                              + "(2010 Census Data)"
+                             );
+                })
+                    .on("mouseout", function(d){ tooltip.style("display", "none");})
+                    .on("click", function(d){ pinter(d);});
+
+                svg.append("g") 
+                    .attr("class", "x axis") 
+                    .attr("transform", "translate(0," + (height+50)  + ")") 
+                    .call(xAxis)
+                    .selectAll("text") //grab all text for x axis class
+                    .attr("dx", "-.8em") //x and y are absolute
+                    .attr("dy", ".25em") //dx and dy are relative to specified x,y 
+                    .style("text-anchor", "end") //align string based off "POINT"
+                    .attr("font-size", "10px")
+                    .attr("transform", "rotate(-60)"); //rotate all GROUPED elements 
+
+                //Same idea as above group, but applied to Y axis instead. 
+                svg.append("g")
+                    .attr("class", "y axis")
+                    .call(yAxis)
+                    .selectAll("text") //grab all text for y axis class
+                //.attr("dx", "-.8em")
+                    .attr("dy", ".25em")
+                    .style("text-anchor", "end")
+                    .attr("font-size", "10px")
+
+                // Draw yAxis and position the label
+                svg.append("text")
+                    .style("text-anchor", "end")
+                    .attr("transform", "translate("+ -41 +","+(height/2 - 80 )+")rotate(-90)")  
+                    .attr("font-size", "12px")
+                    .attr("font-weight", "600")
+                    .text("State GMI (Gerrymander Index Average)");
+
+                svg.append("text")
+                    .style("text-anchor", "end")
+                    .attr("transform", "translate("+ 250 +","+ 0 +")")  
+                    .attr("font-size", "12px")
+                    .attr("font-weight", "600")
+                    .text("(Click to Interact)");
+            });
+
+            var svg2 = d3.select("#stats").append("svg")
+            //.attr("id", "graph").append("svg")
+            .attr("width", width + margin.left + margin.right - 275)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + (margin.left + 15) + "," + margin.top + ")");
+
+            svg2.append("rect")
+                .attr("x", width-270)
+                .attr("y", (height+100)-195)
+                .attr("width", 230)
+                .attr("height", 115)
+                .attr("fill", "lightgrey")
+                .style("stroke-size", "1px");
+            
+            svg2.append("circle")
+                .attr("r", 15)
+                .attr("cx", width-100)
+                .attr("cy", (height+100)-175)
+                .style("fill", "blue");
+
+            svg2.append("circle")
+                .attr("r", 15)
+                .attr("cx", width-65)
+                .attr("cy", (height+100)-175)
+                .style("fill", "red");
+
+            svg2.append("circle")
+                .attr("r", 15)
+                .attr("cx", width-65)
+                .attr("cy", (height+100)-140)
+                .style("fill", "lightcoral");
+
+            svg2.append("circle")
+                .attr("r", 15)
+                .attr("cx", width-100)
+                .attr("cy", (height+100)-105)
+                .style("fill", "#007FFF");
+            
+            svg2.append("text")
+                .attr("class", "label")
+                .attr("x", width -85)
+                .attr("y", (height+100)-200)
+                .style("text-anchor", "end")
+                .style("font-weight", "bold")
+                .text("Map Legend (for below)");
+
+            svg2.append("text")
+                .attr("class", "label")
+                .attr("x", width -150)
+                .attr("y", (height+100)-172)
+                .style("text-anchor", "end")
+                .text("Notable Districts");
+
+            svg2.append("text")
+                .attr("class", "label")
+                .attr("x", width -150)
+                .attr("y", (height+100)-137)
+                .style("text-anchor", "end")
+                .text("Republican");
+
+            svg2.append("text")
+                .attr("class", "label")
+                .attr("x", width -150)
+                .attr("y",   (height+100)-102)
+                .style("text-anchor", "end")
+                .text("Democrat");
+
+            svg2.attr("transform", "translate(" + (-150) + "," + (0) + ")");
+
+
+            var	margin = {top: 30, right: 20, bottom: 30, left: 50},
+                width = 500 - margin.left - margin.right,
+                height = 350 - margin.top - margin.bottom;
+
+            var myGraphs = d3.select("body")
+            .append("div")
+            .attr("id", "chart1");
+
+            function NC2000() {
+                //d3.selectAll("svg > *").remove();
+                // d3.select("chart1").selectAll("g").remove();
+                d3.selectAll("#chart1 > *").remove(); 
+                
+                var myText = d3.select("#chart1")
+                .append("center")
+                .append("p")
+                .append("text")
+                .style("font-weight", "bold")
+                .text("North Carolina");
+
+                var myText2 = d3.select("#chart1")
+                .append("center")
+                .append("p")
+                .append("text")
+                .text("District 12 (in dark blue) has recieved scrutiny for it's irregularly shaped boarders. With awareness and great effort, the district's boarders have become more sensible.");
+
+                var	chart1 = d3.select("#chart1")
+                //.append("div")
+                //.attr("id", "chart1")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var	chart2 = d3.select("#chart1")
+                // .append("div")
+                //.attr("id", "chart2")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("id", "chart2")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var	chart3 = d3.select("#chart1")
+                //.append("div")
+                //.attr("id", "chart1")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var	chart4 = d3.select("#chart1")
+                // .append("div")
+                //.attr("id", "chart2")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                d3.json("North_Carolina_106_to_106.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection = d3.geoMercator().fitSize([width, height], topology);
+                    var path = d3.geoPath().projection(projection);
+
+                    chart1
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { console.log(d.properties.district + " " + d.properties.id); return d.properties.id;})
+                    //.attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path);
+
+                    chart1
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .text("2000 (106th Congress)");
+
+                });
+
+
+                d3.json("North_Carolina_107_to_107.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection2 = d3.geoMercator().fitSize([width, height], topology);
+                    var path2 = d3.geoPath().projection(projection2);
+
+                    chart2
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { console.log(d.properties.district + " " + d.properties.id);  return d.properties.id;})
+                    // .attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path2);
+                    //.attr("transform", "translate(0," + 150 + ")");
+                    chart2
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .text("2004 (107th Congress)");
+
+                });
+
+                d3.json("North_Carolina_108_to_112.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection = d3.geoMercator().fitSize([width, height], topology);
+                    var path = d3.geoPath().projection(projection);
+
+                    chart3
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { return d.properties.id;})
+                    //.attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path);
+
+                    chart3
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .text("2008 Results (110th Congress)");
+
+                });
+
+
+                d3.json("North_Carolina_current.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection = d3.geoMercator().fitSize([width, height], topology);
+                    var path = d3.geoPath().projection(projection);
+
+                    chart4
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { return d.properties.id;})
+                    // .attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path);
+
+                    chart4
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .text("2016 Results (115th Congress: Current)");
+
+                })
+
+            }
+
+
+            function MD2000() {
+                //d3.selectAll("svg > *").remove();
+                d3.selectAll("#chart1 > *").remove(); 
+                
+                var myText = d3.select("#chart1")
+                .append("center")
+                .append("p")
+                .append("text")
+                .style("font-weight", "bold")
+                .text("Maryland");
+
+                var myText2 = d3.select("#chart1")
+                .append("center")
+                .append("p")
+                .append("text")
+                .text("Districts 3 and 6 (in dark blue and red respectively) suffer the same tactics as district 12 in North Carolina, however they remain without repair.");
+                
+                var myText3 = d3.select("#chart1")
+                .append("center")
+                .append("p")
+                .append("text")
+                .text("Note: District 6 switched votes to democratic in 2016");
+                
+                
+
+                var	chart1 = d3.select("#chart1")
+                //.append("div")
+                //.attr("id", "chart1")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var	chart2 = d3.select("#chart1")
+                // .append("div")
+                //.attr("id", "chart2")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("id", "chart2")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var	chart3 = d3.select("#chart1")
+                //.append("div")
+                //.attr("id", "chart1")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var	chart4 = d3.select("#chart1")
+                // .append("div")
+                //.attr("id", "chart2")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");      
+
+                d3.json("Maryland_98_to_102.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection = d3.geoMercator().fitSize([width, height], topology);
+                    var path = d3.geoPath().projection(projection);
+
+                    chart1
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { console.log(d.properties.district + " " + d.properties.id); return d.properties.id;})
+                    // .attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path);
+
+                    chart1
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .text("1992 Results (102nd Congress)");
+
+                });
+
+
+                d3.json("Maryland_103_to_107.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection2 = d3.geoMercator().fitSize([width, height], topology);
+                    var path2 = d3.geoPath().projection(projection2);
+
+                    chart2
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { console.log(d.properties.district + " " + d.properties.id);  return d.properties.id;})
+                    //.attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path2);
+                    //.attr("transform", "translate(0," + 150 + ")");
+                    chart2
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .text("2000 Results (106th Congress)");
+
+                });
+
+                d3.json("Maryland_108_to_112.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection = d3.geoMercator().fitSize([width, height], topology);
+                    var path = d3.geoPath().projection(projection);
+
+                    chart3
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { return d.properties.id;})
+                    //.attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path);
+
+                    chart3
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .text("2008 Results (110th Congress)");
+
+                });
+
+
+                d3.json("MD-current.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection = d3.geoMercator().fitSize([width, height], topology);
+                    var path = d3.geoPath().projection(projection);
+
+                    chart4
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { console.log(d.properties);  return d.properties.id;})
+                    //.attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path);
+
+                    chart4
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .text("2016 Results (115th Congress: Current)");
+
+                })                
+
+                console.log("MD2K BBY");
+            }
+
+            function IN2000() {
+                d3.selectAll("#chart1 > *").remove(); 
+                
+                var myText = d3.select("#chart1")
+                .append("center")
+                .append("p")
+                .append("text")
+                .style("font-weight", "bold")
+                .text("Indiana");
+
+                var myText2 = d3.select("#chart1")
+                .append("center")
+                .append("p")
+                .append("text")
+                .text("Indiana maintains one of the healthiest GMI's of any state in the US due to its sensible boarders.");
+
+
+                var	chart1 = d3.select("#chart1")
+                //.append("div")
+                //.attr("id", "chart1")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var	chart2 = d3.select("#chart1")
+                // .append("div")
+                //.attr("id", "chart2")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("id", "chart2")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var	chart3 = d3.select("#chart1")
+                //.append("div")
+                //.attr("id", "chart1")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var	chart4 = d3.select("#chart1")
+                // .append("div")
+                //.attr("id", "chart2")
+                .append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                d3.json("Indiana_98_to_102.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection = d3.geoMercator().fitSize([width, height], topology);
+                    var path = d3.geoPath().projection(projection);
+
+                    chart1
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { console.log(d.properties.district + " " + d.properties.id); return d.properties.id;})
+                    //.attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path);
+
+                    chart1
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .attr("dy", function(d){return -5})
+                        .text("1992 Results (102nd Congress)");
+
+                });
+
+
+                d3.json("Indiana_103_to_107.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection2 = d3.geoMercator().fitSize([width, height], topology);
+                    var path2 = d3.geoPath().projection(projection2);
+
+                    chart2
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { console.log(d.properties.district + " " + d.properties.id);  return d.properties.id;})
+                    //.attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path2);
+                    //.attr("transform", "translate(0," + 150 + ")");
+                    chart2
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .attr("dy", function(d){return -5})
+                        .text("2000 Results (106th Congress)");
+
+                });
+
+                d3.json("Indiana_108_to_112.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection = d3.geoMercator().fitSize([width, height], topology);
+                    var path = d3.geoPath().projection(projection);
+
+                    chart3
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { return d.properties.id;})
+                    //.attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path);
+
+                    chart3
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .attr("dy", function(d){return -5})
+                        .text("2008 Results (110th Congress)");
+
+                });
+
+
+                d3.json("IN-current.json", function(error, topology) {
+                    if (error) throw error;
+
+                    console.log(topology);
+                    var projection = d3.geoMercator().fitSize([width, height], topology);
+                    var path = d3.geoPath().projection(projection);
+
+                    chart4
+                        .selectAll("path")
+                        .data(topology.features)
+                        .enter().append("path")
+                        .attr("fill", function(d) { return d.properties.id;})
+                    //.attr("fill", "white")
+                        .attr("stroke", "#000")
+                        .attr("stroke-width", 2)
+                        .attr("stroke-opacity", 0.3)
+                        .attr("d", path);
+
+                    chart4
+                        .append("text")
+                        .attr("dx", function(d){return -20})
+                        .attr("dy", function(d){return -5})
+                        .text("2016 Results (115th Congress: Current)");
+
+                })
+
+                console.log("IN2K BBY");
+            }
+
+
+        </script>
+    </div>
+
+
+    <p style="font-size:7px; text-align: right;">(͠≖ ͜ʖ͠≖).</p>
+
+
+    <div class = "note" id ="note"  style="position:relative;right:0px; font-size:16px; text-align:center;" id="myParagraph">
+        <div class = 'author'>
+            <h4 style="font-weight: bold"><br/>Created by</h4>
+            <p style="position:relative;top:0px;right:0px; font-size:18px; text-align:center;" id="myParagraph">
+                Alex Arndt (acarndt@ucsc.edu) in collaboration with Suresh K Lodha</p>
+            <p>Github Link: <a href="https://arndtman.github.io/CS165Final/">https://arndtman.github.io/CS165Final</a></p>
+            <p>Github Repo: <a href="https://github.com/Arndtman/CS165Final">https://github.com/Arndtman/CS165Final</a></p>
+            <h4 style="font-weight: bold"><br/>Designed for</h4>
+            <p id="myParagraph">CMPS 163: Data Visualization, Spring 2018</p>
+        </div>
+
+        <div class="row">
+            <div class="column left">
+                <b>Files Submitted</b>
+                <p>index.html<br>
+                    GMI.csv<br>
+                    Indiana_98_to_102.json<br>
+                    Indiana_103_to_107.json<br>
+                    Indiana_108_to_112.json<br>
+                    IN-current.json<br>
+                    Maryland_98_to_102.json<br>
+                    Maryland_103_to_107.json<br>
+                    Maryland_108_to_112.json<br>
+                    MD-current.json<br>
+                    North_Carolina_106_to_106.json<br>    
+                    North_Carolina_107_to_107.json<br>  
+                    North_Carolina_108_to_112.json<br>  
+                    North_Carolina_current.json<br>  
+                </p>
+            </div>
+            <div class="column middle1">
+                <b>Data Sources</b>
+                <p>
+                    <a data-brackets-id='62' href="https://docs.google.com/document/d/1Y8XHyoRR2uOKfc5BncWRiAigworASKCTLmT3iX0vQuM/edit?usp=sharing">Google Doc of sources due to sheer volume</a><br>
+                </p>
+            </div>
+            <div class="column middle2">
+                <b>Visualization sources</b>
+                <p id="myParagraph">
+                    <a data-brackets-id='62' href="https://bl.ocks.org/ashenfad/48b4621bd3a9f1bb884a">Gerrymandering Grades</a>
+                    <br/>
+                    <a data-brackets-id='62' href="https://www.economist.com/sites/default/files/imagecache/640-width/20171007_USM970.png">General Map Concepts</a>
+                </p>
+            </div>
+            <div class="column right">
+                <b>Code Sources</b>
+                <p>None</p>
+            </div>
+        </div>
+    </div>
+
+</body>

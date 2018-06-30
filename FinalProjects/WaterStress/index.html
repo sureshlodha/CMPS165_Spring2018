@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Water Stress: Current and Future</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/jumbotron.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/blog.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+    <!--<script src="https://raw.githubusercontent.com/GlobalWebIndex/d3scription/master/dist/d3scription.js"></script>-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="//d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider@0.2.1/build/d3-simple-slider.js"></script>
+    <script src="//d3js.org/topojson.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script type= "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+
+    <!--<link rel="" href="Data/" />-->
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Global Water Stress: Current and Future</h1>
+        <hr width="850">
+        <p id="insight">The lack of sufficient available water resources to meet the demands of water usage already affects every continent and around 2.8 billion people around the world at least one month out of every year. According to the Food and Agriculture Organization of United Nations, by 2025, 1.8 billion people will experience absolute water scarcity, and 2/3 of the world will be living under water-stressed conditions. This visualization focuses on the water stress level in every country from 1960 to 2017, as well as predicting the future water stress level up to 2040, by looking at the ratio between the water withdrawal and the total available water in each nation annually. Where 0 is the lowest and 500 is the highest stress level. The predications for the future are based on three categories: Pessimistic, Optimistic, and Business as Usual.</p>
+    </div>
+    <br>
+
+
+    <div id="root"></div>
+
+    <script src="./dist/bundle.js"></script>
+
+
+    <div style="text-align: center" id="slider3"></div>
+    <!--<div id="slider3"></div>-->
+    <br>
+    <center><b>Future variables:</b></center>
+    <form id="dimensions" style="text-align: center;">
+        <input  type='radio' id="bau" name="mode" checked disabled> Business As Usual</input>
+        <input type='radio' id="optimistic" name="mode" disabled> Optimistic</input>
+        <input type='radio' id="pessimistic" name="mode" disabled> Pessimistic</input>
+    </form>
+    <center>
+        <ul style="text-align: center; list-style-position: inside;">
+            <li><b>Business As Usual:</b> Scenario continues the same as the past, where there's no factor affecting the water stress.</li>
+            <li><b>Optimistic:</b> Best case scenario, the maximum improvement in water stress the country can reach.</li>
+            <li><b>Pessmistic:</b> Worst case scenario, where the worst deterioration in water the country can reach.</li>
+        </ul>
+    </center>
+
+    <br>
+    <div style="text-align: center;">
+        <b>Created By:</b><br>
+        <p>Henry Hargreaves (hhargrea@ucsc.edu)<br>
+            Hei Lim Hailey Pun (hpun@ucsc.edu)<br>
+            Alfredo Cuevas (acuevas5@ucsc.edu)<br>
+            in collaboration with Suresh K Lodha</p>
+        <b>Github link:</b>
+        <p>
+            <a href="https://hwhh.github.io/CMPS165-GroupProject/">https://hwhh.github.io/CMPS165-GroupProject/</a>
+        </p>
+        <b>Designed for:</b>
+        <p>CMPS 165: Data programming for Visualization, Spring 2018</p>
+        <hr width="850">
+        <div class="row" id="source">
+            <div class="col-md-3">
+                <b>Files</b>
+                    <p> index.html<br>
+                        styles.css<br>
+                        index.js<br>
+                        line_chart.js<br>
+                        map.js<br>
+                        slider.js<br>
+                        line_chart.js<br>
+                        variables.js<br>
+                        country_search.js<br>
+                        countries.geojson<br>
+                        bau_predictions.csv<br>
+                        opt_predictions.csv<br>
+                        pst_predictions.csv<br>
+                        water_stress_levels.csv<br>
+                        total_exploitable.csv<br>
+                        total_external.csv<br>
+                        total_internal.csv<br>
+                        total_withdrawn.csv<br>
+                        
+
+                    </p>
+            </div>
+            <div class="col-md-3">
+                <b>Data Sources</b>
+                <p>
+                    <a href="http://www.fao.org/nr/water/aquastat/data/query/">Food and Agriculture Organization of United Nations, AQUASTAT (1960 - 2017)</a><br>
+                    <a href="https://wri.org/resources/data-sets/aqueduct-projected-water-stress-country-rankings">World Resource Institute: Aqueduct Projected Water Stress Country Rankings</a>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <b>Relevant Visualization</b>
+                <p>
+                    <a href="https://wri.org/resources/data-sets/aqueduct-projected-water-stress-country-rankings">World Resource Institute: Water Stress by Country, 2040</a><br>
+                    <a href="https://ourworldindata.org/water-access-resources-sanitation">Our World in Data: Water Access, Resources & Sanitation</a>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <b>Code Sources</b>
+                <p>
+                    <a href="https://bl.ocks.org/johnwalley/e1d256b81e51da68f7feb632a53c3518">Simple Slider</a><br>
+                    <a href="https://bl.ocks.org/mbostock/5562380">California Population Density (legend)</a><br>
+                    <a href="http://d3-legend.susielu.com/#color">D3 SVG Legend</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+</body>
+</html>

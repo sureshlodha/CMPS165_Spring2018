@@ -1,0 +1,14 @@
+food,nutrient,category,nutrientAmt,size
+"Pork","protein","animal",23,85
+"Beef","protein","animal",22,85
+"Chicken","protein","animal",23,85
+"Salmon","protein","animal",39,178
+"Mixed Nuts","protein","vegan",6,28
+"Beans","protein","vegan",21,100
+"Lentils","protein","vegan",9,100
+"Chickpeas","protein","vegan",19,100
+"Tofu","protein","vegan",8,100
+"Milk","protein","vegetarian",8,244
+"Yogurt","protein","vegetarian",17,170
+"Cheese","protein","vegetarian",7,28
+"Eggs","protein","vegetarian",13,100

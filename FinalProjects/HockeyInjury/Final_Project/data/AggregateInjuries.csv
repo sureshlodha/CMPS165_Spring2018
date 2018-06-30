@@ -1,0 +1,71 @@
+injury_type,num_injuries,total_severity,injuries_f,injuries_d,injuries_g
+Lower body,1443,9007,788,510,145
+Upper body,1404,8240,860,491,53
+Undisclosed,563,2045,341,194,28
+Illness,536,1346,323,166,47
+Knee,454,7353,248,157,49
+Concussion,401,6851,231,137,33
+Groin,348,2803,175,84,89
+Flu,315,555,186,102,27
+Shoulder,294,3433,201,89,4
+Back,230,3089,134,76,20
+Foot,229,1962,159,67,3
+Leg,223,2466,136,77,10
+Hand,218,2225,136,74,8
+Ankle,209,2688,116,81,12
+Head,149,1070,89,48,12
+Hip,105,1401,56,37,12
+Finger,83,769,49,28,6
+Facial,82,420,53,27,2
+Wrist,79,1298,48,29,2
+Neck,74,820,44,20,10
+Arm,55,726,32,23,0
+Ribs,38,272,24,13,1
+Thumb,34,345,18,16,0
+Eye,32,211,21,9,2
+Jaw,29,374,16,12,1
+Abdominal,26,416,14,9,3
+Elbow,25,159,12,11,2
+Hamstring,24,274,13,8,3
+Hernia,22,706,14,8,0
+Soreness,21,58,12,8,1
+Oblique,21,154,12,9,0
+Collarbone,16,347,11,4,1
+Nose,15,76,10,5,0
+Chest,12,155,10,2,0
+Blood clots,12,580,9,1,2
+Orbital bone,10,193,8,2,0
+Appendectomy,10,56,9,0,1
+Achilles,9,310,6,2,1
+Heart,8,165,4,2,2
+Cheek,7,29,2,5,0
+Throat,6,54,2,3,1
+Thigh,6,28,5,1,0
+Torso,5,17,5,0,0
+Dizziness,4,39,3,0,1
+Pectoral,4,77,3,1,0
+Mouth,4,13,2,2,0
+Headache,3,113,1,2,0
+Fatigue,3,5,0,2,1
+Ear,3,10,2,0,1
+Bronchitis,3,3,2,0,1
+Stomach,3,8,1,2,0
+Sinus,3,11,3,0,0
+Heel,3,96,1,2,0
+Calf,2,6,0,2,0
+Charley horse,2,4,2,0,0
+Spleen,2,78,2,0,0
+Pubic bone,1,44,1,0,0
+Vertigo,1,8,0,0,1
+Toe,1,2,1,0,0
+Pinched nerve,1,1,1,0,0
+Migraine,1,4,1,0,0
+Pneumonia,1,7,1,0,0
+Thyroid,1,6,0,1,0
+Mid-body,1,7,1,0,0
+Colon,1,12,1,0,0
+Skin infection,1,82,1,0,0
+Infection,1,3,0,0,1
+Bicep,1,3,0,1,0
+Kidney stones,1,1,1,0,0
+Kidney,1,4,1,0,0

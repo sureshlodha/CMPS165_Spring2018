@@ -1,0 +1,22 @@
+
+
+Add ribion charts -- Alfredo
+fix the mouse over for the predicted lines / Zoom on mouse over
+Add interactive Legend for line chart
+
+
+
+///DONE
+Add new website layout
+Add the back to map button
+Add zoom for charts
+style the tool tip
+Fix line chart - Henry
+Make sure its colour blind friendly -- Alfredo
+Add radio buttons pes, op, bas - Hailey
+Convert the water stress level to a score between 0-5 //Y = (X-A)/(B-A) * (D-C) + C --Henry
+Add interactive Legend for map
+Have the end of the slider a different colour -- Alfredo
+Gray Out Counties that have no data
+Increase performance
+Fix the slider - get rid of the lag

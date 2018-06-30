@@ -1,0 +1,300 @@
+/*corresponds to title element*/
+h1 {
+    text-align: left;
+    color: ;
+    font-size: 23px;
+    margin-left: 160px;
+}
+
+#bloc1
+{
+    display:inline;
+}
+
+#bloc2
+{
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    display:inline;
+}
+
+#bloc3
+{
+    display:inline;
+    background-color:#f8f8f8;
+    margin-left: 250px;
+    padding: 22px 10px; 
+    border-bottom-right-radius:0.8em;
+    border-bottom-left-radius:0.8em;
+    border-top-left-radius:0.8em;
+    border-top-right-radius:0.8em;
+}
+
+#bloc4
+{
+    display:inline;
+    background-color:#f8f8f8;
+    margin-left: 417px;
+    padding: 22px 10px; 
+    border-bottom-right-radius:0.8em;
+    border-bottom-left-radius:0.8em;
+    border-top-left-radius:0.8em;
+    border-top-right-radius:0.8em;
+}
+
+#bloc5 {
+/*    display:inline;*/
+	float: center;
+    background-color:antiquewhite;
+    margin-left: 738px;
+    margin-right: 650px;
+    padding: 10px 10px; 
+    border-bottom-right-radius:0.8em;
+    border-bottom-left-radius:0.8em;
+    border-top-left-radius:0.8em;
+    border-top-right-radius:0.8em;
+    height:120;
+    width:300;
+}
+
+h2 {
+    color: ;
+    font-size: 23px;
+	margin-top: 80px;
+    margin-left: 235px;
+    margin-right: 100px;
+}
+
+h6 {
+    margin-bottom: 10px;
+    margin-right: 650px;
+    width:1800px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+p1 {
+    font-size: 24px;
+}
+
+span1 {
+	position: absolute;
+    font-size: 21px; 
+	width:1800px;
+	/*margin-right: 650px;*/
+}
+
+#ending{
+                height:700px;
+                /*height:auto;*/
+                min-height:580px;
+                margin-right: 650px;
+                width:1800px;
+                background-color:rgb(241,241,241);
+                border-bottom-right-radius:2em;
+                border-bottom-left-radius:2em;
+                border-top-left-radius:2em;
+                border-top-right-radius:2em;
+                font-size: 16px;
+                font-family: sans-serif;
+                line-height: 70%;
+                margin-bottom: 30px;
+            }
+
+.columnFooter {
+                float: left;
+                width: 23.6%;
+                padding: 10px;
+                padding-left: 10px;
+                height: 40%;
+                line-height: 30px;
+            }
+
+#endingtext{
+                padding: 10px;
+                width:1000px;
+                margin:0 auto;
+                text-align:center;
+            }
+
+.footer{
+                margin-top: 20px;
+                transform: translate(0%,10%);
+            }
+
+/*relate to the grid not the axis*/
+.grid .tick {             
+    stroke: lightgrey;
+    opacity: 0.1;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+/*relates to the axis not the grid*/
+.axis path,
+.axis line {
+    /*  Color of path and line  */
+    stroke: gray; 
+    /*  Appearence/font of path and line  */
+    shape-rendering: crispEdges;
+/*    opacity: 0.3;*/
+}
+
+.visualization {
+    background-color:antiquewhite
+}
+
+.visualization2 {
+    background-color:antiquewhite
+}
+
+.line {
+  fill: none;
+  stroke: purple;
+  stroke-width: 3.2px;
+}
+
+.axisSteelBlue text{
+  fill: purple;
+}
+
+.axisRed text{
+  fill: red;
+}
+
+.background {
+    fill: none;
+    pointer-events: all;
+}
+
+button {
+/*    border: 1px solid black;*/
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    top: 191px;
+    left: 420px;
+    background-color:#ededed;
+}
+
+button:focus {
+  background: #dcdcdc;
+}
+
+button:active {
+  background: #bfbfbf;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+}
+
+button:hover {
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+}
+
+/*Add Tooltip Type here. Formats various rendering aspects for tooltip label*/
+#tooltip {
+        position: absolute;
+        width: 300px;
+        height: 100;
+        padding: 10px;
+        background-color:#F8F8F8;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+}
+
+/*Define what the keyword "hidden" does on the tooltip when called*/
+#tooltip.hidden {
+        display: none;
+}
+
+/*Defines the paragraph layout of the actual tooltip label*/
+#tooltip p {
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+}
+
+.state-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.bees {
+    color:purple;
+    font-size: 17px;
+}
+
+.temps {
+    color:red;
+    font-size: 17px;
+}
+
+.state-title2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.bees2 {
+    color:purple;
+    font-size: 17px;
+}
+
+.temps2 {
+    color:red;
+    font-size: 17px;
+}
+
+#dotted1 {
+/*    stroke: orange;*/
+    stroke: purple;
+    opacity: 0.7
+}
+
+.regression {
+  stroke-width: 2px;
+  stroke: salmon;
+  stroke-dasharray: 10,5;
+}
+.equation {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tooltip-values bees {
+    font-size: 14px
+}
+
+.tooltip-values temps {
+    font-size: 14px
+}
+
+.state-labels {
+    fill: white;
+    pointer-events: none;
+}

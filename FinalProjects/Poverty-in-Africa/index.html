@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Poverty and HDI in Africa</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="PovertyAfrica.css">
+    </head>
+    <body onload="btnForm.reset();">
+        <h1>Poverty and HDI in Africa</h1>
+        <h4>This visualization displays the progress these African countries have made in the last 20 years. We are able to see a decrease in poverty rate along with a steady imporovment in the standard of living, knowledge and life expectancy throughout the continent all while population continues to grow.</h4>
+        <div class='project-container'>
+            <div class="staticTooltip hidden">
+				<p>Country: <span class="ttValues" id="ttCountry"></span></p>
+				<p>Population: <span class="ttValues"  id="ttPop"></span></p>
+				<p>Poverty Rate: <span class="ttValues"  id="ttPov"></span></p>
+				<p>HDI: <span class="ttValues"  id="ttHDI"></span></p>
+				<p>Life Expectancy: <span class="ttValues"  id="ttLifeEx"></span></p>
+				<p>Gini Coefficient: <span class="ttValues"  id="ttGini"></span></p>
+				<p>Population Density: <span class="ttValues"  id="ttPopDens"></span></p>
+			</div>
+            
+            <div class='svgContainer'></div>
+            
+            <div class='details'>
+            <strong>Human Development Index (HDI):</strong> a composite statistic of life expectancy, education, and per capita income indicators, which are used to rank countries into four tiers of human development.
+            <br/><br/>
+            <strong>Gini Coefficient:</strong> a statistical measure of the degree of variation or inequality represented in a set of values. A higher value means more inequality. 
+            </div>
+            <div class='slider-container'>
+                <label class="year" type="updateYR">Data shown for: <span class="yearVal" id = "update">1998</span></label>
+                <input class="slider" id = "reset" type="range" min="0" max="19" step="1" value="0">
+            </div>
+            <div class='right-container'>
+                <div class='buttons'>
+                    <form name='btnForm'>
+                        <label class="radio-inline">
+                          <input type="radio" name="variable" value='0' checked=true onclick = "resetSlider()" > Poverty Rate
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="variable" value='2' onclick = "resetSlider()">HDI
+                        </label> 
+                        <label class="radio-inline">
+                          <input type="radio" name="variable" value='3' onclick = "resetSlider()">Life Expectancy
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="variable" value='4' onclick = "resetSlider()">Gini Coefficient
+                        </label>
+                        <br />
+                        <label class="radio-inline" style="text-align:center">
+                          <input type="radio" name="variable" value='1' onclick = "resetSlider()">Population Density
+                        </label>
+                      </form>
+                </div>
+<!--                <div class='legend-container'></div>-->
+            </div>
+            
+            
+        </div>
+        
+        <div class='project-description' id='project-description' style="position:relative;right:0px; font-size:16px; text-align:center;">
+        <div class="author">
+            <h4 style="font-weight: bold"><br>Created by</h4>
+                <p style="position:relative;top:0px;right:0px; font-size:16px; text-align:center;" id="myParagraph">
+                    Danay Weldegabriel (dweldega@ucsc.edu)<br> 
+                    Aaron Steele (atsteele@ucsc.edu)<br>
+                    in collaboration with Suresh K Lodha</p>
+                <p>Github Link: <a href="https://dweldega.github.io/Poverty-in-Africa/">https://dweldega.github.io/Poverty-in-Africa/</a></p>
+            <h4 style="font-weight: bold"><br>Course</h4>
+                <p id="myParagraph">CMPS 165: Data Visualization, Spring 2018</p>
+        </div>
+        
+    
+        <div class="row">
+          <div class="column left">
+            <b>Files Submitted</b>
+            <p>index.html<br>PoveryAfrica.css<br>PovertyAfrica.js<br>NumberOfPoor.csv<br>LifeExpectancy.csv<br>HDI.csv<br>GiniData.csv<br>AfricaPopulation.csv<br>AfricaArea.csv<br>GeoAfrica.json</p>
+          </div>
+          <div class="column middle1">
+            <b>Data Sources</b>
+            <p>
+            <a data-brackets-id="62" href="https://en.wikipedia.org/wiki/List_of_African_countries_by_Human_Development_Index">HDI info</a><br>
+            <a data-brackets-id="62" href="https://sureshlodha.github.io/CMPS165_Winter15_FinalProjects/Measles/">Class Example</a><br>
+            <a data-brackets-id="62" href="http://databank.worldbank.org/data/reports.aspx?source=poverty-and-equity-database">Poverty</a><br>
+            <a data-brackets-id="62" href="https://data.worldbank.org/indicator/SI.POV.GINI?locations=ZA">GINI </a>    
+                
+            </p>
+          </div>
+          <div class="column middle2">
+            <b>Visualizations </b>
+            <p id="myParagraph">
+            <a data-brackets-id="62" href="http://povertydata.worldbank.org/poverty/category/LIC">Poverty data</a>
+            <br>
+            <a data-brackets-id="62" href="http://esango.un.org/sp/ldc_gemu/web/StatPlanet.html?_ga=2.55964971.1092007903.1527814164-277299507.1527814164">Sample visualization</a>
+    
+            <br>
+            <a data-brackets-id="62" href='https://bl.ocks.org/mbostock/5562380'> CA Population Density</a>
+        </p>
+          </div>
+          <div class="column right">
+            <b>Code Sources</b><br>
+            <a href='https://github.com/d3/d3-scale-chromatic'>D3 Scale Chromatic</a>
+            <br>
+            <a href='https://bl.ocks.org/mbostock/5562380'>California Population Density</a>
+            <br>
+            <a href='http://bl.ocks.org/almccon/fe445f1d6b177fd0946800a48aa59c71'>Basic D3 Map</a>
+            
+          </div>
+        </div>
+    </div>
+        
+        <script type="text/javascript" src="PovertyAfrica.js"></script>
+    </body>
+</html>

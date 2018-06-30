@@ -1,0 +1,100 @@
+we can use the DAtaWeb source to take each individual commodity that has a proposed tariff on it and look up the percent of the total US market for that commodity that comes from China, relatively easily
+
+
+
+BLS Tables:
+https://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables
+
+
+
+
+
+want to see "symmetry": he really likes the brookings institute maps, but he wants us to show how industries/regions could benefit from the tariffs
+
+
+challenge with county-wide: space constraint
+
+
+USA population density (pre-existing class visualization) shows that it's possible technically
+
+US Geomap by county
+	variables on the right to change between: % population/total, and adversely affected by Chinese tariffs/positively impacted by US tariffs
+
+	also show industry by industry (six products)
+
+market share stuff (total dollar amount): maybe an extra visualization (chart alongside? he wants some more ideas) he wants the impact in total dollar amount
+	-Chris likes this idea: add a tooltip on that pie chart showing raw amounts(or bar chart? Suresh might not like pie charts)
+	-stacked bar chart?
+
+maybe add a multiline chart or something
+
+differentiation between the negative/positive impact buttons and the individual commodity buttons. Make sure the user can't pick the "negative impact" and "aluminum" buttons at the same time simultaneously
+	-maybe hide the positive when showing the negative
+	-pick view by industry or view by impact
+
+chord diagram might be a good alternative (either way, should have only three segments: China, US, rest of world)
+
+radar chart/spider chart might be another alternative
+keep the same green/red color for all industries
+	maybe pick diverging scale 
+
+
+page layout is important: figure out where to place the buttons, map, legend, other visualization
+
+think about annotations showing why the data shows what it does: telling the story
+	-library: d3-annotation by Susie Lu (she also has a legend library)
+	-highlight something interesting in the data, focus attention
+	-ex: steel jobs are concentrated in the Rust Belt, something about that 
+	-don't feel like we need to force an annotation, only do one if it's interesting
+
+pick a default display that's the most interesting 
+
+---------------------------------------------------------
+He doesn't like it anymore!
+---------------------------------------------------------
+-He got the wrong impression in our first meeting, he thought we had data/were going to visualize a projection of how the tariffs would impact employment, rather than just showing the current state of employment/geographic distribution of the affected industries is.
+-He would rather see us find data for a projection of how the tariff would impact employment in maybe one product rather than just showing the current state of employment/market share from China of commodities/industries
+-If we can't find good data for that (we can't) we should move ahead with what we're doing now, although he doesn't like it very much
+-Regardless, we need to have very clear titles/labels/legend so that there's no confusion about what we're visualizing. If we can't claim to show a projection of what the impact will be, don't say something like "The Impact of Trade War", say something more like "Where Industries that Will Be Affected by Trade War are Concentrated"
+-He thinks the project as he currently sees it is too shallow
+
+--------------------------------------------------------
+Tuesday, June 5 in class feedback
+
+Chris -
+	add border lines to make viewing easier, or a zoom in feature
+	hide radio buttons based on button clicked
+
+Janesh - 
+	make pie chart look better
+		perhaps dont evne use pie chart, use donut and put % or raw # in middle
+
+Suresh -
+	gave us WSJ newspaper, offers good context
+	"market share" is confusing, change to "US imports/Exports", something like that
+		either remove or put something that makes more sense, like stacked bar chart
+
+Karthik -
+	add legend
+	make color differences more clear
+	increase stroke for state borders, not county borders
+	do stacked bar chart from WSJ
+
+--------------------------------------------------------
+Thursday, June 7 in class feedback
+
+Chris -
+	if you put side by side, look out for width of bar, labels, etc
+
+Janesh - 
+	perhaps a different color scale
+	try using a pastel scale, want it to look different from the geomap
+
+Suresh -
+	Make China red,
+	specify year on geomap (could also say something like 'Current Year')
+	consider doing stacked area chart, put year on left hand side	
+
+Karthik -
+	scott murray script in book, chloropleth example in ch4 or 5
+	.toString()

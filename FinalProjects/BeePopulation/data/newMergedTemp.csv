@@ -1,0 +1,2001 @@
+ST,state,Temp,date
+AL,Alabama,61.9,1978
+AL,Alabama,61.4,1979
+AL,Alabama,62.5,1980
+AL,Alabama,62,1981
+AL,Alabama,63.3,1982
+AL,Alabama,61.2,1983
+AL,Alabama,62.8,1984
+AL,Alabama,62.8,1985
+AL,Alabama,64.1,1986
+AL,Alabama,63,1987
+AL,Alabama,62.1,1988
+AL,Alabama,62.2,1989
+AL,Alabama,64.9,1990
+AL,Alabama,64,1991
+AL,Alabama,62.1,1992
+AL,Alabama,62.3,1993
+AL,Alabama,63.1,1994
+AL,Alabama,63,1995
+AL,Alabama,62.1,1996
+AL,Alabama,62.4,1997
+AL,Alabama,65.1,1998
+AL,Alabama,64.1,1999
+AL,Alabama,63.6,2000
+AL,Alabama,63,2001
+AL,Alabama,63.6,2002
+AL,Alabama,62.7,2003
+AL,Alabama,63.3,2004
+AL,Alabama,63.4,2005
+AL,Alabama,64.2,2006
+AL,Alabama,64.4,2007
+AL,Alabama,62.9,2008
+AL,Alabama,62.9,2009
+AL,Alabama,62.7,2010
+AL,Alabama,63.8,2011
+AL,Alabama,64.9,2012
+AL,Alabama,62.6,2013
+AL,Alabama,62,2014
+AL,Alabama,64.6,2015
+AL,Alabama,65.3,2016
+AL,Alabama,65,2017
+AK,Alaska,29.1,1978
+AK,Alaska,27.6,1979
+AK,Alaska,26.4,1980
+AK,Alaska,29.2,1981
+AK,Alaska,25.3,1982
+AK,Alaska,26.9,1983
+AK,Alaska,25.2,1984
+AK,Alaska,26.3,1985
+AK,Alaska,26.9,1986
+AK,Alaska,27.5,1987
+AK,Alaska,27.1,1988
+AK,Alaska,26.8,1989
+AK,Alaska,25.4,1990
+AK,Alaska,27.0,1991
+AK,Alaska,25.0,1992
+AK,Alaska,29.9,1993
+AK,Alaska,26.2,1994
+AK,Alaska,27.8,1995
+AK,Alaska,25.1,1996
+AK,Alaska,28.1,1997
+AK,Alaska,28.4,1998
+AK,Alaska,24.0,1999
+AK,Alaska,28.4,2000
+AK,Alaska,27.3,2001
+AK,Alaska,30.1,2002
+AK,Alaska,29.1,2003
+AK,Alaska,29.3,2004
+AK,Alaska,29.2,2005
+AK,Alaska,26.4,2006
+AK,Alaska,28.1,2007
+AK,Alaska,25.1,2008
+AK,Alaska,26.8,2009
+AK,Alaska,27.4,2010
+AK,Alaska,27.0,2011
+AK,Alaska,24.3,2012
+AK,Alaska,27.8,2013
+AK,Alaska,30.3,2014
+AK,Alaska,30.0,2015
+AK,Alaska,31.9,2016
+AK,Alaska,29.3,2017
+AR,Arkansas,58.9,1978
+AR,Arkansas,58,1979
+AR,Arkansas,60.5,1980
+AR,Arkansas,60.2,1981
+AR,Arkansas,60,1982
+AR,Arkansas,58.9,1983
+AR,Arkansas,60,1984
+AR,Arkansas,59.8,1985
+AR,Arkansas,61.5,1986
+AR,Arkansas,61,1987
+AR,Arkansas,59.8,1988
+AR,Arkansas,59,1989
+AR,Arkansas,61.8,1990
+AR,Arkansas,61.3,1991
+AR,Arkansas,59.9,1992
+AR,Arkansas,59.3,1993
+AR,Arkansas,60.4,1994
+AR,Arkansas,60.5,1995
+AR,Arkansas,59.6,1996
+AR,Arkansas,59.7,1997
+AR,Arkansas,63.1,1998
+AR,Arkansas,62.1,1999
+AR,Arkansas,60.9,2000
+AR,Arkansas,61.2,2001
+AR,Arkansas,60.6,2002
+AR,Arkansas,60.3,2003
+AR,Arkansas,61,2004
+AR,Arkansas,62,2005
+AR,Arkansas,62,2006
+AR,Arkansas,61.8,2007
+AR,Arkansas,59.9,2008
+AR,Arkansas,59.9,2009
+AR,Arkansas,61.2,2010
+AR,Arkansas,61.8,2011
+AR,Arkansas,63.6,2012
+AR,Arkansas,59.6,2013
+AR,Arkansas,58.7,2014
+AR,Arkansas,61.4,2015
+AR,Arkansas,62.8,2016
+AR,Arkansas,62.5,2017
+AZ,Arizona,59.8,1978
+AZ,Arizona,58.8,1979
+AZ,Arizona,60.2,1980
+AZ,Arizona,61.3,1981
+AZ,Arizona,58.7,1982
+AZ,Arizona,59.2,1983
+AZ,Arizona,59.4,1984
+AZ,Arizona,59.6,1985
+AZ,Arizona,60.6,1986
+AZ,Arizona,59.3,1987
+AZ,Arizona,60.2,1988
+AZ,Arizona,61.2,1989
+AZ,Arizona,59.7,1990
+AZ,Arizona,59.2,1991
+AZ,Arizona,59.6,1992
+AZ,Arizona,59.8,1993
+AZ,Arizona,60.6,1994
+AZ,Arizona,61,1995
+AZ,Arizona,61.9,1996
+AZ,Arizona,60.5,1997
+AZ,Arizona,59.3,1998
+AZ,Arizona,60.8,1999
+AZ,Arizona,61.7,2000
+AZ,Arizona,61.2,2001
+AZ,Arizona,61.2,2002
+AZ,Arizona,61.9,2003
+AZ,Arizona,60.4,2004
+AZ,Arizona,61.1,2005
+AZ,Arizona,61.1,2006
+AZ,Arizona,61.6,2007
+AZ,Arizona,60.6,2008
+AZ,Arizona,61.1,2009
+AZ,Arizona,60.4,2010
+AZ,Arizona,60.3,2011
+AZ,Arizona,62.1,2012
+AZ,Arizona,60.4,2013
+AZ,Arizona,62.2,2014
+AZ,Arizona,61.8,2015
+AZ,Arizona,62.2,2016
+AZ,Arizona,63,2017
+CA,California,57.6,1978
+CA,California,57.7,1979
+CA,California,58.1,1980
+CA,California,59.3,1981
+CA,California,56.3,1982
+CA,California,57.6,1983
+CA,California,58.2,1984
+CA,California,57.3,1985
+CA,California,58.9,1986
+CA,California,58.3,1987
+CA,California,58.7,1988
+CA,California,58.1,1989
+CA,California,58,1990
+CA,California,58.1,1991
+CA,California,59.3,1992
+CA,California,57.7,1993
+CA,California,58,1994
+CA,California,58.9,1995
+CA,California,59.6,1996
+CA,California,59.1,1997
+CA,California,56.7,1998
+CA,California,58,1999
+CA,California,58.8,2000
+CA,California,59.1,2001
+CA,California,58.8,2002
+CA,California,59.4,2003
+CA,California,58.9,2004
+CA,California,58.6,2005
+CA,California,58.6,2006
+CA,California,58.9,2007
+CA,California,58.9,2008
+CA,California,58.8,2009
+CA,California,57.7,2010
+CA,California,57.4,2011
+CA,California,59.5,2012
+CA,California,59.3,2013
+CA,California,61.4,2014
+CA,California,60.8,2015
+CA,California,60.1,2016
+CA,California,60.3,2017
+CO,Colorado,44.5,1978
+CO,Colorado,43.5,1979
+CO,Colorado,45.6,1980
+CO,Colorado,47.1,1981
+CO,Colorado,44.1,1982
+CO,Colorado,44.4,1983
+CO,Colorado,43.7,1984
+CO,Colorado,44.1,1985
+CO,Colorado,46.3,1986
+CO,Colorado,45.2,1987
+CO,Colorado,45.1,1988
+CO,Colorado,45.4,1989
+CO,Colorado,45.6,1990
+CO,Colorado,45,1991
+CO,Colorado,45.3,1992
+CO,Colorado,43.8,1993
+CO,Colorado,46.5,1994
+CO,Colorado,45.7,1995
+CO,Colorado,45.8,1996
+CO,Colorado,44.8,1997
+CO,Colorado,46.2,1998
+CO,Colorado,46.6,1999
+CO,Colorado,47,2000
+CO,Colorado,46.8,2001
+CO,Colorado,46.1,2002
+CO,Colorado,47,2003
+CO,Colorado,45.8,2004
+CO,Colorado,46.8,2005
+CO,Colorado,46.5,2006
+CO,Colorado,46.2,2007
+CO,Colorado,44.9,2008
+CO,Colorado,45.2,2009
+CO,Colorado,46.2,2010
+CO,Colorado,45.4,2011
+CO,Colorado,48.3,2012
+CO,Colorado,45.1,2013
+CO,Colorado,46.1,2014
+CO,Colorado,47.4,2015
+CO,Colorado,47.3,2016
+CO,Colorado,47.9,2017
+CT,Connecticut,46.7,1978
+CT,Connecticut,48.8,1979
+CT,Connecticut,47.9,1980
+CT,Connecticut,48.4,1981
+CT,Connecticut,47.9,1982
+CT,Connecticut,49.4,1983
+CT,Connecticut,49,1984
+CT,Connecticut,48.7,1985
+CT,Connecticut,48.5,1986
+CT,Connecticut,48.8,1987
+CT,Connecticut,48.3,1988
+CT,Connecticut,47.9,1989
+CT,Connecticut,51.1,1990
+CT,Connecticut,51,1991
+CT,Connecticut,47.7,1992
+CT,Connecticut,48.6,1993
+CT,Connecticut,48.9,1994
+CT,Connecticut,49,1995
+CT,Connecticut,48.4,1996
+CT,Connecticut,48.6,1997
+CT,Connecticut,51.6,1998
+CT,Connecticut,50.8,1999
+CT,Connecticut,48.5,2000
+CT,Connecticut,50.2,2001
+CT,Connecticut,50.5,2002
+CT,Connecticut,48.2,2003
+CT,Connecticut,48.8,2004
+CT,Connecticut,49.5,2005
+CT,Connecticut,51.1,2006
+CT,Connecticut,49.5,2007
+CT,Connecticut,49.7,2008
+CT,Connecticut,48.8,2009
+CT,Connecticut,51.4,2010
+CT,Connecticut,50.9,2011
+CT,Connecticut,52.5,2012
+CT,Connecticut,49.8,2013
+CT,Connecticut,48.7,2014
+CT,Connecticut,49.8,2015
+CT,Connecticut,51.8,2016
+CT,Connecticut,50.9,2017
+DE,Delaware,52.9,1978
+DE,Delaware,53.8,1979
+DE,Delaware,54.1,1980
+DE,Delaware,53.6,1981
+DE,Delaware,54,1982
+DE,Delaware,54.9,1983
+DE,Delaware,54.7,1984
+DE,Delaware,55.3,1985
+DE,Delaware,55.1,1986
+DE,Delaware,54.9,1987
+DE,Delaware,54.1,1988
+DE,Delaware,54.2,1989
+DE,Delaware,57.2,1990
+DE,Delaware,56.9,1991
+DE,Delaware,53.9,1992
+DE,Delaware,54.8,1993
+DE,Delaware,55,1994
+DE,Delaware,55.1,1995
+DE,Delaware,54,1996
+DE,Delaware,54.8,1997
+DE,Delaware,57.4,1998
+DE,Delaware,56.5,1999
+DE,Delaware,54.7,2000
+DE,Delaware,56.1,2001
+DE,Delaware,57.1,2002
+DE,Delaware,54.6,2003
+DE,Delaware,55.8,2004
+DE,Delaware,55.7,2005
+DE,Delaware,57.3,2006
+DE,Delaware,56.3,2007
+DE,Delaware,56.3,2008
+DE,Delaware,55.4,2009
+DE,Delaware,56.7,2010
+DE,Delaware,57.4,2011
+DE,Delaware,58.5,2012
+DE,Delaware,55.8,2013
+DE,Delaware,54.7,2014
+DE,Delaware,56.4,2015
+DE,Delaware,57.4,2016
+DE,Delaware,57.5,2017
+FL,Florida,69.7,1978
+FL,Florida,69.9,1979
+FL,Florida,69.9,1980
+FL,Florida,69.3,1981
+FL,Florida,71.5,1982
+FL,Florida,69.3,1983
+FL,Florida,70,1984
+FL,Florida,70.8,1985
+FL,Florida,71.5,1986
+FL,Florida,70.2,1987
+FL,Florida,69.7,1988
+FL,Florida,71,1989
+FL,Florida,72.5,1990
+FL,Florida,71.8,1991
+FL,Florida,70.3,1992
+FL,Florida,70.3,1993
+FL,Florida,71.6,1994
+FL,Florida,70.8,1995
+FL,Florida,69.9,1996
+FL,Florida,71.1,1997
+FL,Florida,72.5,1998
+FL,Florida,71.2,1999
+FL,Florida,70.6,2000
+FL,Florida,70.9,2001
+FL,Florida,71.3,2002
+FL,Florida,70.9,2003
+FL,Florida,70.8,2004
+FL,Florida,70.8,2005
+FL,Florida,71.4,2006
+FL,Florida,71.8,2007
+FL,Florida,70.8,2008
+FL,Florida,71.2,2009
+FL,Florida,69.2,2010
+FL,Florida,71.7,2011
+FL,Florida,71.9,2012
+FL,Florida,71.7,2013
+FL,Florida,70.6,2014
+FL,Florida,73.4,2015
+FL,Florida,72.5,2016
+FL,Florida,72.7,2017
+GA,Georgia,62.6,1978
+GA,Georgia,62.3,1979
+GA,Georgia,63,1980
+GA,Georgia,62.4,1981
+GA,Georgia,63.9,1982
+GA,Georgia,61.9,1983
+GA,Georgia,63.3,1984
+GA,Georgia,63.8,1985
+GA,Georgia,65,1986
+GA,Georgia,63.3,1987
+GA,Georgia,62.4,1988
+GA,Georgia,63.2,1989
+GA,Georgia,65.7,1990
+GA,Georgia,64.5,1991
+GA,Georgia,62.7,1992
+GA,Georgia,63.2,1993
+GA,Georgia,63.6,1994
+GA,Georgia,63.5,1995
+GA,Georgia,62.6,1996
+GA,Georgia,63.2,1997
+GA,Georgia,65.7,1998
+GA,Georgia,64.5,1999
+GA,Georgia,63.3,2000
+GA,Georgia,63.9,2001
+GA,Georgia,64.4,2002
+GA,Georgia,63.3,2003
+GA,Georgia,64,2004
+GA,Georgia,63.8,2005
+GA,Georgia,64.5,2006
+GA,Georgia,64.8,2007
+GA,Georgia,63.5,2008
+GA,Georgia,63.4,2009
+GA,Georgia,63,2010
+GA,Georgia,64.6,2011
+GA,Georgia,65.5,2012
+GA,Georgia,63.4,2013
+GA,Georgia,63,2014
+GA,Georgia,65.3,2015
+GA,Georgia,65.8,2016
+GA,Georgia,65.8,2017
+IA,Iowa,45.3,1978
+IA,Iowa,45.1,1979
+IA,Iowa,48,1980
+IA,Iowa,49,1981
+IA,Iowa,46.1,1982
+IA,Iowa,47.6,1983
+IA,Iowa,47.8,1984
+IA,Iowa,45.9,1985
+IA,Iowa,48.6,1986
+IA,Iowa,51.2,1987
+IA,Iowa,48.7,1988
+IA,Iowa,46.6,1989
+IA,Iowa,49.5,1990
+IA,Iowa,48.6,1991
+IA,Iowa,47.8,1992
+IA,Iowa,45.7,1993
+IA,Iowa,47.5,1994
+IA,Iowa,47.3,1995
+IA,Iowa,45.2,1996
+IA,Iowa,47.1,1997
+IA,Iowa,50.9,1998
+IA,Iowa,49.7,1999
+IA,Iowa,48.6,2000
+IA,Iowa,49.1,2001
+IA,Iowa,49.2,2002
+IA,Iowa,47.9,2003
+IA,Iowa,48.5,2004
+IA,Iowa,49.6,2005
+IA,Iowa,50.4,2006
+IA,Iowa,48.9,2007
+IA,Iowa,45.9,2008
+IA,Iowa,46.7,2009
+IA,Iowa,48.2,2010
+IA,Iowa,48.4,2011
+IA,Iowa,52.1,2012
+IA,Iowa,46.7,2013
+IA,Iowa,45.5,2014
+IA,Iowa,49.3,2015
+IA,Iowa,50.7,2016
+IA,Iowa,50,2017
+ID,Idaho,42.4,1978
+ID,Idaho,42.4,1979
+ID,Idaho,43.3,1980
+ID,Idaho,44.3,1981
+ID,Idaho,41,1982
+ID,Idaho,42.9,1983
+ID,Idaho,40.8,1984
+ID,Idaho,39.7,1985
+ID,Idaho,44.1,1986
+ID,Idaho,44.5,1987
+ID,Idaho,44.2,1988
+ID,Idaho,42.8,1989
+ID,Idaho,43.4,1990
+ID,Idaho,43.3,1991
+ID,Idaho,45,1992
+ID,Idaho,40.9,1993
+ID,Idaho,44.3,1994
+ID,Idaho,43.6,1995
+ID,Idaho,43.2,1996
+ID,Idaho,43.2,1997
+ID,Idaho,44.3,1998
+ID,Idaho,43.6,1999
+ID,Idaho,43.9,2000
+ID,Idaho,44.2,2001
+ID,Idaho,43,2002
+ID,Idaho,45.4,2003
+ID,Idaho,44.2,2004
+ID,Idaho,43.6,2005
+ID,Idaho,44.2,2006
+ID,Idaho,44.8,2007
+ID,Idaho,42.5,2008
+ID,Idaho,42.8,2009
+ID,Idaho,43.3,2010
+ID,Idaho,42.4,2011
+ID,Idaho,45.1,2012
+ID,Idaho,43.7,2013
+ID,Idaho,45.1,2014
+ID,Idaho,46.4,2015
+ID,Idaho,45.1,2016
+ID,Idaho,44.2,2017
+IL,Illinois,49.6,1978
+IL,Illinois,49.4,1979
+IL,Illinois,51.3,1980
+IL,Illinois,51.8,1981
+IL,Illinois,50.7,1982
+IL,Illinois,52,1983
+IL,Illinois,51.8,1984
+IL,Illinois,50.6,1985
+IL,Illinois,52.8,1986
+IL,Illinois,54.1,1987
+IL,Illinois,52.1,1988
+IL,Illinois,50.4,1989
+IL,Illinois,53.6,1990
+IL,Illinois,53.7,1991
+IL,Illinois,51.9,1992
+IL,Illinois,50.9,1993
+IL,Illinois,52,1994
+IL,Illinois,51.6,1995
+IL,Illinois,50.1,1996
+IL,Illinois,51,1997
+IL,Illinois,55.2,1998
+IL,Illinois,53.5,1999
+IL,Illinois,52.2,2000
+IL,Illinois,53.4,2001
+IL,Illinois,53.2,2002
+IL,Illinois,51.7,2003
+IL,Illinois,52.6,2004
+IL,Illinois,53.7,2005
+IL,Illinois,54,2006
+IL,Illinois,53.7,2007
+IL,Illinois,50.9,2008
+IL,Illinois,51.4,2009
+IL,Illinois,52.9,2010
+IL,Illinois,53.1,2011
+IL,Illinois,55.8,2012
+IL,Illinois,51.1,2013
+IL,Illinois,49.5,2014
+IL,Illinois,52.9,2015
+IL,Illinois,54.7,2016
+IL,Illinois,54.4,2017
+IN,Indiana,49,1978
+IN,Indiana,49.2,1979
+IN,Indiana,50.5,1980
+IN,Indiana,50.8,1981
+IN,Indiana,50.7,1982
+IN,Indiana,51.8,1983
+IN,Indiana,51.3,1984
+IN,Indiana,51,1985
+IN,Indiana,52.4,1986
+IN,Indiana,53.2,1987
+IN,Indiana,51.3,1988
+IN,Indiana,50.2,1989
+IN,Indiana,53.3,1990
+IN,Indiana,53.7,1991
+IN,Indiana,51.3,1992
+IN,Indiana,50.8,1993
+IN,Indiana,51.5,1994
+IN,Indiana,51.5,1995
+IN,Indiana,50.1,1996
+IN,Indiana,50.5,1997
+IN,Indiana,55,1998
+IN,Indiana,53.2,1999
+IN,Indiana,51.6,2000
+IN,Indiana,53.2,2001
+IN,Indiana,53.1,2002
+IN,Indiana,51.1,2003
+IN,Indiana,52.2,2004
+IN,Indiana,52.8,2005
+IN,Indiana,53.4,2006
+IN,Indiana,53.3,2007
+IN,Indiana,51,2008
+IN,Indiana,51.3,2009
+IN,Indiana,52.6,2010
+IN,Indiana,53.1,2011
+IN,Indiana,55.1,2012
+IN,Indiana,51.2,2013
+IN,Indiana,49.4,2014
+IN,Indiana,52.3,2015
+IN,Indiana,54.2,2016
+IN,Indiana,54,2017
+KS,Kansas,52.7,1978
+KS,Kansas,52.3,1979
+KS,Kansas,55.1,1980
+KS,Kansas,55.7,1981
+KS,Kansas,53,1982
+KS,Kansas,53.2,1983
+KS,Kansas,54,1984
+KS,Kansas,52.5,1985
+KS,Kansas,56.2,1986
+KS,Kansas,55.4,1987
+KS,Kansas,54.7,1988
+KS,Kansas,53.1,1989
+KS,Kansas,55.5,1990
+KS,Kansas,55.7,1991
+KS,Kansas,54.2,1992
+KS,Kansas,51.9,1993
+KS,Kansas,54.9,1994
+KS,Kansas,53.9,1995
+KS,Kansas,53.1,1996
+KS,Kansas,53.7,1997
+KS,Kansas,56.3,1998
+KS,Kansas,56,1999
+KS,Kansas,55.5,2000
+KS,Kansas,55.9,2001
+KS,Kansas,55.2,2002
+KS,Kansas,55,2003
+KS,Kansas,55.1,2004
+KS,Kansas,55.9,2005
+KS,Kansas,56.9,2006
+KS,Kansas,55.1,2007
+KS,Kansas,53.6,2008
+KS,Kansas,53.6,2009
+KS,Kansas,55.3,2010
+KS,Kansas,55.2,2011
+KS,Kansas,58.2,2012
+KS,Kansas,53.7,2013
+KS,Kansas,53.7,2014
+KS,Kansas,56.3,2015
+KS,Kansas,57.2,2016
+KS,Kansas,56.5,2017
+KY,Kentucky,53.4,1978
+KY,Kentucky,53.4,1979
+KY,Kentucky,54.6,1980
+KY,Kentucky,54.3,1981
+KY,Kentucky,55.3,1982
+KY,Kentucky,55,1983
+KY,Kentucky,55.3,1984
+KY,Kentucky,55,1985
+KY,Kentucky,56.6,1986
+KY,Kentucky,56.5,1987
+KY,Kentucky,54.8,1988
+KY,Kentucky,54.3,1989
+KY,Kentucky,57.3,1990
+KY,Kentucky,57.4,1991
+KY,Kentucky,55.1,1992
+KY,Kentucky,55,1993
+KY,Kentucky,55.4,1994
+KY,Kentucky,55.4,1995
+KY,Kentucky,54.4,1996
+KY,Kentucky,54.5,1997
+KY,Kentucky,58.2,1998
+KY,Kentucky,57.3,1999
+KY,Kentucky,55.7,2000
+KY,Kentucky,56.6,2001
+KY,Kentucky,56.8,2002
+KY,Kentucky,55.2,2003
+KY,Kentucky,56.4,2004
+KY,Kentucky,56.8,2005
+KY,Kentucky,56.8,2006
+KY,Kentucky,57.7,2007
+KY,Kentucky,55.4,2008
+KY,Kentucky,55.4,2009
+KY,Kentucky,56,2010
+KY,Kentucky,56.9,2011
+KY,Kentucky,58.4,2012
+KY,Kentucky,55,2013
+KY,Kentucky,54.3,2014
+KY,Kentucky,56.6,2015
+KY,Kentucky,57.9,2016
+KY,Kentucky,57.7,2017
+LA,Louisiana,65.1,1978
+LA,Louisiana,64.5,1979
+LA,Louisiana,66,1980
+LA,Louisiana,66,1981
+LA,Louisiana,66.7,1982
+LA,Louisiana,64.4,1983
+LA,Louisiana,66.3,1984
+LA,Louisiana,66.4,1985
+LA,Louisiana,67.3,1986
+LA,Louisiana,66,1987
+LA,Louisiana,65.6,1988
+LA,Louisiana,65.5,1989
+LA,Louisiana,67.8,1990
+LA,Louisiana,66.9,1991
+LA,Louisiana,65.8,1992
+LA,Louisiana,65.6,1993
+LA,Louisiana,66.5,1994
+LA,Louisiana,66.8,1995
+LA,Louisiana,66.2,1996
+LA,Louisiana,66,1997
+LA,Louisiana,68.6,1998
+LA,Louisiana,67.8,1999
+LA,Louisiana,67.2,2000
+LA,Louisiana,66.7,2001
+LA,Louisiana,66.6,2002
+LA,Louisiana,66.4,2003
+LA,Louisiana,67.1,2004
+LA,Louisiana,67.5,2005
+LA,Louisiana,67.8,2006
+LA,Louisiana,67.4,2007
+LA,Louisiana,66.6,2008
+LA,Louisiana,66.8,2009
+LA,Louisiana,66.5,2010
+LA,Louisiana,67.7,2011
+LA,Louisiana,68.7,2012
+LA,Louisiana,66.2,2013
+LA,Louisiana,65.1,2014
+LA,Louisiana,68.1,2015
+LA,Louisiana,68.7,2016
+LA,Louisiana,68.7,2017
+MA,Massachusetts,45.7,1978
+MA,Massachusetts,47.9,1979
+MA,Massachusetts,46.6,1980
+MA,Massachusetts,47.2,1981
+MA,Massachusetts,46.8,1982
+MA,Massachusetts,48.5,1983
+MA,Massachusetts,48,1984
+MA,Massachusetts,47.2,1985
+MA,Massachusetts,47.2,1986
+MA,Massachusetts,47.4,1987
+MA,Massachusetts,47.2,1988
+MA,Massachusetts,46.6,1989
+MA,Massachusetts,49.7,1990
+MA,Massachusetts,49.6,1991
+MA,Massachusetts,46.4,1992
+MA,Massachusetts,47.3,1993
+MA,Massachusetts,47.7,1994
+MA,Massachusetts,47.8,1995
+MA,Massachusetts,47.3,1996
+MA,Massachusetts,47.4,1997
+MA,Massachusetts,50.4,1998
+MA,Massachusetts,49.8,1999
+MA,Massachusetts,47.5,2000
+MA,Massachusetts,49.1,2001
+MA,Massachusetts,49.3,2002
+MA,Massachusetts,47.1,2003
+MA,Massachusetts,47.6,2004
+MA,Massachusetts,48.4,2005
+MA,Massachusetts,50.1,2006
+MA,Massachusetts,48.3,2007
+MA,Massachusetts,48.6,2008
+MA,Massachusetts,47.7,2009
+MA,Massachusetts,50.4,2010
+MA,Massachusetts,49.7,2011
+MA,Massachusetts,51.3,2012
+MA,Massachusetts,48.8,2013
+MA,Massachusetts,47.7,2014
+MA,Massachusetts,48.5,2015
+MA,Massachusetts,50.3,2016
+MA,Massachusetts,49.5,2017
+MD,Maryland,52.5,1978
+MD,Maryland,53.1,1979
+MD,Maryland,53.6,1980
+MD,Maryland,53.1,1981
+MD,Maryland,53.6,1982
+MD,Maryland,54.2,1983
+MD,Maryland,54.2,1984
+MD,Maryland,54.8,1985
+MD,Maryland,54.6,1986
+MD,Maryland,54.7,1987
+MD,Maryland,53.7,1988
+MD,Maryland,53.5,1989
+MD,Maryland,56.6,1990
+MD,Maryland,56.5,1991
+MD,Maryland,53.5,1992
+MD,Maryland,54.2,1993
+MD,Maryland,54.4,1994
+MD,Maryland,54.4,1995
+MD,Maryland,53.2,1996
+MD,Maryland,54.1,1997
+MD,Maryland,57,1998
+MD,Maryland,55.7,1999
+MD,Maryland,54.1,2000
+MD,Maryland,55.3,2001
+MD,Maryland,56.3,2002
+MD,Maryland,53.9,2003
+MD,Maryland,55.2,2004
+MD,Maryland,55.2,2005
+MD,Maryland,56.5,2006
+MD,Maryland,55.7,2007
+MD,Maryland,55.3,2008
+MD,Maryland,54.6,2009
+MD,Maryland,55.9,2010
+MD,Maryland,56.5,2011
+MD,Maryland,57.5,2012
+MD,Maryland,54.7,2013
+MD,Maryland,53.6,2014
+MD,Maryland,55.5,2015
+MD,Maryland,56.5,2016
+MD,Maryland,56.6,2017
+ME,Maine,39.3,1978
+ME,Maine,41.8,1979
+ME,Maine,39.5,1980
+ME,Maine,41.8,1981
+ME,Maine,39.8,1982
+ME,Maine,42.1,1983
+ME,Maine,41.4,1984
+ME,Maine,39.9,1985
+ME,Maine,40.1,1986
+ME,Maine,41.1,1987
+ME,Maine,40.9,1988
+ME,Maine,39.3,1989
+ME,Maine,42.4,1990
+ME,Maine,41.7,1991
+ME,Maine,39.8,1992
+ME,Maine,40,1993
+ME,Maine,40.4,1994
+ME,Maine,40.9,1995
+ME,Maine,41,1996
+ME,Maine,39.8,1997
+ME,Maine,43.5,1998
+ME,Maine,43.8,1999
+ME,Maine,40.9,2000
+ME,Maine,42.7,2001
+ME,Maine,41.7,2002
+ME,Maine,40.4,2003
+ME,Maine,40.4,2004
+ME,Maine,41.8,2005
+ME,Maine,44,2006
+ME,Maine,40.7,2007
+ME,Maine,41.6,2008
+ME,Maine,40.9,2009
+ME,Maine,44.6,2010
+ME,Maine,42.8,2011
+ME,Maine,43.9,2012
+ME,Maine,42,2013
+ME,Maine,41.2,2014
+ME,Maine,41.2,2015
+ME,Maine,43.3,2016
+ME,Maine,42.4,2017
+MI,Michigan,42.4,1978
+MI,Michigan,42.4,1979
+MI,Michigan,42.8,1980
+MI,Michigan,44,1981
+MI,Michigan,43.2,1982
+MI,Michigan,44.7,1983
+MI,Michigan,44.3,1984
+MI,Michigan,43.5,1985
+MI,Michigan,44.5,1986
+MI,Michigan,46.9,1987
+MI,Michigan,44.5,1988
+MI,Michigan,42.6,1989
+MI,Michigan,45.7,1990
+MI,Michigan,45.8,1991
+MI,Michigan,43.3,1992
+MI,Michigan,43.2,1993
+MI,Michigan,43.9,1994
+MI,Michigan,44.2,1995
+MI,Michigan,42.5,1996
+MI,Michigan,43.5,1997
+MI,Michigan,48.2,1998
+MI,Michigan,46.4,1999
+MI,Michigan,45,2000
+MI,Michigan,46.8,2001
+MI,Michigan,45.7,2002
+MI,Michigan,44,2003
+MI,Michigan,44.6,2004
+MI,Michigan,46,2005
+MI,Michigan,47,2006
+MI,Michigan,46.1,2007
+MI,Michigan,44,2008
+MI,Michigan,43.8,2009
+MI,Michigan,47.1,2010
+MI,Michigan,45.6,2011
+MI,Michigan,48.4,2012
+MI,Michigan,44.1,2013
+MI,Michigan,41.9,2014
+MI,Michigan,45.1,2015
+MI,Michigan,47.4,2016
+MI,Michigan,46.3,2017
+MN,Minnesota,39,1978
+MN,Minnesota,37.8,1979
+MN,Minnesota,40.7,1980
+MN,Minnesota,42.6,1981
+MN,Minnesota,39,1982
+MN,Minnesota,41.4,1983
+MN,Minnesota,41.3,1984
+MN,Minnesota,38.7,1985
+MN,Minnesota,41.5,1986
+MN,Minnesota,45.3,1987
+MN,Minnesota,41.6,1988
+MN,Minnesota,39.1,1989
+MN,Minnesota,42.5,1990
+MN,Minnesota,41.7,1991
+MN,Minnesota,40.9,1992
+MN,Minnesota,38.9,1993
+MN,Minnesota,40.9,1994
+MN,Minnesota,40.3,1995
+MN,Minnesota,37.6,1996
+MN,Minnesota,40.6,1997
+MN,Minnesota,44.9,1998
+MN,Minnesota,43.7,1999
+MN,Minnesota,41.8,2000
+MN,Minnesota,43,2001
+MN,Minnesota,42,2002
+MN,Minnesota,41.5,2003
+MN,Minnesota,41.3,2004
+MN,Minnesota,43.1,2005
+MN,Minnesota,44.4,2006
+MN,Minnesota,42.4,2007
+MN,Minnesota,39.4,2008
+MN,Minnesota,40.1,2009
+MN,Minnesota,42.8,2010
+MN,Minnesota,42,2011
+MN,Minnesota,45.2,2012
+MN,Minnesota,39.3,2013
+MN,Minnesota,38.6,2014
+MN,Minnesota,43.5,2015
+MN,Minnesota,44.6,2016
+MN,Minnesota,42.7,2017
+MO,Missouri,52.6,1978
+MO,Missouri,52,1979
+MO,Missouri,55,1980
+MO,Missouri,54.9,1981
+MO,Missouri,53.5,1982
+MO,Missouri,54,1983
+MO,Missouri,54.4,1984
+MO,Missouri,53,1985
+MO,Missouri,55.9,1986
+MO,Missouri,56.3,1987
+MO,Missouri,54.6,1988
+MO,Missouri,53,1989
+MO,Missouri,56.2,1990
+MO,Missouri,56.1,1991
+MO,Missouri,54.5,1992
+MO,Missouri,53,1993
+MO,Missouri,54.7,1994
+MO,Missouri,54.2,1995
+MO,Missouri,52.9,1996
+MO,Missouri,53.7,1997
+MO,Missouri,57.2,1998
+MO,Missouri,56.4,1999
+MO,Missouri,55.1,2000
+MO,Missouri,55.8,2001
+MO,Missouri,55.3,2002
+MO,Missouri,54.5,2003
+MO,Missouri,55,2004
+MO,Missouri,56.2,2005
+MO,Missouri,56.8,2006
+MO,Missouri,56.2,2007
+MO,Missouri,53.4,2008
+MO,Missouri,54,2009
+MO,Missouri,55.2,2010
+MO,Missouri,55.6,2011
+MO,Missouri,58.5,2012
+MO,Missouri,53.6,2013
+MO,Missouri,52.9,2014
+MO,Missouri,55.8,2015
+MO,Missouri,57.4,2016
+MO,Missouri,57.1,2017
+MS,Mississippi,62.2,1978
+MS,Mississippi,61.6,1979
+MS,Mississippi,63.1,1980
+MS,Mississippi,63.1,1981
+MS,Mississippi,63.8,1982
+MS,Mississippi,61.7,1983
+MS,Mississippi,63.3,1984
+MS,Mississippi,63.2,1985
+MS,Mississippi,64.6,1986
+MS,Mississippi,63.5,1987
+MS,Mississippi,62.7,1988
+MS,Mississippi,62.4,1989
+MS,Mississippi,65.1,1990
+MS,Mississippi,64.3,1991
+MS,Mississippi,62.8,1992
+MS,Mississippi,62.7,1993
+MS,Mississippi,63.5,1994
+MS,Mississippi,63.6,1995
+MS,Mississippi,63,1996
+MS,Mississippi,62.9,1997
+MS,Mississippi,65.8,1998
+MS,Mississippi,65,1999
+MS,Mississippi,64.2,2000
+MS,Mississippi,63.7,2001
+MS,Mississippi,64,2002
+MS,Mississippi,63.3,2003
+MS,Mississippi,64,2004
+MS,Mississippi,64.3,2005
+MS,Mississippi,64.8,2006
+MS,Mississippi,65,2007
+MS,Mississippi,63.3,2008
+MS,Mississippi,63.6,2009
+MS,Mississippi,63.5,2010
+MS,Mississippi,64.4,2011
+MS,Mississippi,65.7,2012
+MS,Mississippi,63.1,2013
+MS,Mississippi,62.3,2014
+MS,Mississippi,65.3,2015
+MS,Mississippi,65.9,2016
+MS,Mississippi,65.9,2017
+MT,Montana,38.9,1978
+MT,Montana,40.2,1979
+MT,Montana,42.1,1980
+MT,Montana,44,1981
+MT,Montana,39,1982
+MT,Montana,41.8,1983
+MT,Montana,41.7,1984
+MT,Montana,39.1,1985
+MT,Montana,43,1986
+MT,Montana,44.6,1987
+MT,Montana,44.1,1988
+MT,Montana,40.8,1989
+MT,Montana,42.8,1990
+MT,Montana,42.9,1991
+MT,Montana,43.5,1992
+MT,Montana,39.6,1993
+MT,Montana,42.7,1994
+MT,Montana,41.7,1995
+MT,Montana,39.2,1996
+MT,Montana,42.2,1997
+MT,Montana,43.8,1998
+MT,Montana,44,1999
+MT,Montana,42.4,2000
+MT,Montana,43.6,2001
+MT,Montana,41.4,2002
+MT,Montana,43.3,2003
+MT,Montana,42.8,2004
+MT,Montana,43.1,2005
+MT,Montana,44.4,2006
+MT,Montana,44,2007
+MT,Montana,41.4,2008
+MT,Montana,41.1,2009
+MT,Montana,41.6,2010
+MT,Montana,41.6,2011
+MT,Montana,44.5,2012
+MT,Montana,42.4,2013
+MT,Montana,41.9,2014
+MT,Montana,44.9,2015
+MT,Montana,44.6,2016
+MT,Montana,43.2,2017
+NC,North Carolina,57.4,1978
+NC,North Carolina,57.6,1979
+NC,North Carolina,57.9,1980
+NC,North Carolina,57.2,1981
+NC,North Carolina,58.6,1982
+NC,North Carolina,57.8,1983
+NC,North Carolina,58.6,1984
+NC,North Carolina,59.2,1985
+NC,North Carolina,59.8,1986
+NC,North Carolina,58.5,1987
+NC,North Carolina,57.3,1988
+NC,North Carolina,58.2,1989
+NC,North Carolina,61.1,1990
+NC,North Carolina,60.2,1991
+NC,North Carolina,58.2,1992
+NC,North Carolina,58.7,1993
+NC,North Carolina,59,1994
+NC,North Carolina,58.4,1995
+NC,North Carolina,57.8,1996
+NC,North Carolina,58.1,1997
+NC,North Carolina,60.8,1998
+NC,North Carolina,59.7,1999
+NC,North Carolina,58.4,2000
+NC,North Carolina,59.4,2001
+NC,North Carolina,60,2002
+NC,North Carolina,58.7,2003
+NC,North Carolina,59.3,2004
+NC,North Carolina,59.4,2005
+NC,North Carolina,59.8,2006
+NC,North Carolina,60.5,2007
+NC,North Carolina,59.3,2008
+NC,North Carolina,58.9,2009
+NC,North Carolina,59,2010
+NC,North Carolina,60.4,2011
+NC,North Carolina,60.7,2012
+NC,North Carolina,58.6,2013
+NC,North Carolina,58.4,2014
+NC,North Carolina,60.5,2015
+NC,North Carolina,60.8,2016
+NC,North Carolina,61,2017
+ND,North Dakota,38.1,1978
+ND,North Dakota,37.2,1979
+ND,North Dakota,41.2,1980
+ND,North Dakota,43.2,1981
+ND,North Dakota,37.8,1982
+ND,North Dakota,41.1,1983
+ND,North Dakota,41,1984
+ND,North Dakota,38.2,1985
+ND,North Dakota,41.7,1986
+ND,North Dakota,45,1987
+ND,North Dakota,42.4,1988
+ND,North Dakota,39.4,1989
+ND,North Dakota,42.6,1990
+ND,North Dakota,42.3,1991
+ND,North Dakota,41.2,1992
+ND,North Dakota,38.3,1993
+ND,North Dakota,40,1994
+ND,North Dakota,39.6,1995
+ND,North Dakota,36.5,1996
+ND,North Dakota,40.7,1997
+ND,North Dakota,43.2,1998
+ND,North Dakota,43,1999
+ND,North Dakota,41.1,2000
+ND,North Dakota,42.2,2001
+ND,North Dakota,41,2002
+ND,North Dakota,40.8,2003
+ND,North Dakota,40.5,2004
+ND,North Dakota,42.4,2005
+ND,North Dakota,43.8,2006
+ND,North Dakota,41.8,2007
+ND,North Dakota,39.3,2008
+ND,North Dakota,38.5,2009
+ND,North Dakota,40.9,2010
+ND,North Dakota,40.7,2011
+ND,North Dakota,44.1,2012
+ND,North Dakota,38.8,2013
+ND,North Dakota,39,2014
+ND,North Dakota,43.4,2015
+ND,North Dakota,44.4,2016
+ND,North Dakota,42,2017
+NE,Nebraska,46.1,1978
+NE,Nebraska,46.5,1979
+NE,Nebraska,49.5,1980
+NE,Nebraska,50.5,1981
+NE,Nebraska,47,1982
+NE,Nebraska,47.9,1983
+NE,Nebraska,48.2,1984
+NE,Nebraska,46.8,1985
+NE,Nebraska,50.2,1986
+NE,Nebraska,50.8,1987
+NE,Nebraska,49.6,1988
+NE,Nebraska,48,1989
+NE,Nebraska,50,1990
+NE,Nebraska,50.1,1991
+NE,Nebraska,48.9,1992
+NE,Nebraska,46,1993
+NE,Nebraska,49.2,1994
+NE,Nebraska,48.6,1995
+NE,Nebraska,46.6,1996
+NE,Nebraska,48.6,1997
+NE,Nebraska,50.6,1998
+NE,Nebraska,51,1999
+NE,Nebraska,49.9,2000
+NE,Nebraska,50.3,2001
+NE,Nebraska,50,2002
+NE,Nebraska,49.8,2003
+NE,Nebraska,49.8,2004
+NE,Nebraska,50.7,2005
+NE,Nebraska,51.1,2006
+NE,Nebraska,50,2007
+NE,Nebraska,47.7,2008
+NE,Nebraska,47.6,2009
+NE,Nebraska,49.3,2010
+NE,Nebraska,48.8,2011
+NE,Nebraska,52.7,2012
+NE,Nebraska,48.5,2013
+NE,Nebraska,48,2014
+NE,Nebraska,50.8,2015
+NE,Nebraska,51.6,2016
+NE,Nebraska,50.7,2017
+NH,New Hampshire,41.2,1978
+NH,New Hampshire,43.5,1979
+NH,New Hampshire,41.7,1980
+NH,New Hampshire,43.2,1981
+NH,New Hampshire,42,1982
+NH,New Hampshire,44,1983
+NH,New Hampshire,43.6,1984
+NH,New Hampshire,42.4,1985
+NH,New Hampshire,42.7,1986
+NH,New Hampshire,43.1,1987
+NH,New Hampshire,42.7,1988
+NH,New Hampshire,41.7,1989
+NH,New Hampshire,45,1990
+NH,New Hampshire,44.5,1991
+NH,New Hampshire,41.8,1992
+NH,New Hampshire,42.5,1993
+NH,New Hampshire,42.7,1994
+NH,New Hampshire,43.3,1995
+NH,New Hampshire,43,1996
+NH,New Hampshire,42.3,1997
+NH,New Hampshire,46,1998
+NH,New Hampshire,45.4,1999
+NH,New Hampshire,43,2000
+NH,New Hampshire,44.6,2001
+NH,New Hampshire,44.5,2002
+NH,New Hampshire,42.5,2003
+NH,New Hampshire,43,2004
+NH,New Hampshire,44,2005
+NH,New Hampshire,45.8,2006
+NH,New Hampshire,43.1,2007
+NH,New Hampshire,43.8,2008
+NH,New Hampshire,43,2009
+NH,New Hampshire,46,2010
+NH,New Hampshire,44.9,2011
+NH,New Hampshire,46.6,2012
+NH,New Hampshire,44.2,2013
+NH,New Hampshire,43,2014
+NH,New Hampshire,43.6,2015
+NH,New Hampshire,45.7,2016
+NH,New Hampshire,44.8,2017
+NJ,New Jersey,50.2,1978
+NJ,New Jersey,51.6,1979
+NJ,New Jersey,51.6,1980
+NJ,New Jersey,51.5,1981
+NJ,New Jersey,51.4,1982
+NJ,New Jersey,52.6,1983
+NJ,New Jersey,52.2,1984
+NJ,New Jersey,52.5,1985
+NJ,New Jersey,52.3,1986
+NJ,New Jersey,52.4,1987
+NJ,New Jersey,51.6,1988
+NJ,New Jersey,51.4,1989
+NJ,New Jersey,54.4,1990
+NJ,New Jersey,54.4,1991
+NJ,New Jersey,51.2,1992
+NJ,New Jersey,52.2,1993
+NJ,New Jersey,52.2,1994
+NJ,New Jersey,52.5,1995
+NJ,New Jersey,51.5,1996
+NJ,New Jersey,52,1997
+NJ,New Jersey,55.1,1998
+NJ,New Jersey,54.1,1999
+NJ,New Jersey,52.2,2000
+NJ,New Jersey,53.6,2001
+NJ,New Jersey,54.3,2002
+NJ,New Jersey,51.8,2003
+NJ,New Jersey,53,2004
+NJ,New Jersey,53.4,2005
+NJ,New Jersey,55,2006
+NJ,New Jersey,53.6,2007
+NJ,New Jersey,53.6,2008
+NJ,New Jersey,52.7,2009
+NJ,New Jersey,54.7,2010
+NJ,New Jersey,54.9,2011
+NJ,New Jersey,55.9,2012
+NJ,New Jersey,53.2,2013
+NJ,New Jersey,51.9,2014
+NJ,New Jersey,53.8,2015
+NJ,New Jersey,54.9,2016
+NJ,New Jersey,54.6,2017
+NM,New Mexico,53.2,1978
+NM,New Mexico,51.8,1979
+NM,New Mexico,53.6,1980
+NM,New Mexico,54.4,1981
+NM,New Mexico,52.6,1982
+NM,New Mexico,52.5,1983
+NM,New Mexico,52.4,1984
+NM,New Mexico,52.8,1985
+NM,New Mexico,53.6,1986
+NM,New Mexico,51.9,1987
+NM,New Mexico,52.6,1988
+NM,New Mexico,54,1989
+NM,New Mexico,53.3,1990
+NM,New Mexico,52.5,1991
+NM,New Mexico,52.6,1992
+NM,New Mexico,53.1,1993
+NM,New Mexico,54.4,1994
+NM,New Mexico,54.3,1995
+NM,New Mexico,54.7,1996
+NM,New Mexico,52.9,1997
+NM,New Mexico,54.2,1998
+NM,New Mexico,54.3,1999
+NM,New Mexico,55.2,2000
+NM,New Mexico,54.6,2001
+NM,New Mexico,54.4,2002
+NM,New Mexico,55.5,2003
+NM,New Mexico,53.5,2004
+NM,New Mexico,54.7,2005
+NM,New Mexico,54.7,2006
+NM,New Mexico,54.2,2007
+NM,New Mexico,53.6,2008
+NM,New Mexico,54.3,2009
+NM,New Mexico,54.2,2010
+NM,New Mexico,54.6,2011
+NM,New Mexico,56,2012
+NM,New Mexico,53.7,2013
+NM,New Mexico,54.8,2014
+NM,New Mexico,54.9,2015
+NM,New Mexico,55.5,2016
+NM,New Mexico,56.3,2017
+NV,Nevada,49.4,1978
+NV,Nevada,49.6,1979
+NV,Nevada,50.4,1980
+NV,Nevada,51.8,1981
+NV,Nevada,48.1,1982
+NV,Nevada,49.5,1983
+NV,Nevada,48.8,1984
+NV,Nevada,48.7,1985
+NV,Nevada,51.4,1986
+NV,Nevada,50.6,1987
+NV,Nevada,50.7,1988
+NV,Nevada,50.1,1989
+NV,Nevada,50,1990
+NV,Nevada,49.9,1991
+NV,Nevada,51.4,1992
+NV,Nevada,48.6,1993
+NV,Nevada,50.8,1994
+NV,Nevada,50.9,1995
+NV,Nevada,51.5,1996
+NV,Nevada,50.6,1997
+NV,Nevada,49.2,1998
+NV,Nevada,50.6,1999
+NV,Nevada,51.5,2000
+NV,Nevada,51.6,2001
+NV,Nevada,50.8,2002
+NV,Nevada,52.2,2003
+NV,Nevada,50.8,2004
+NV,Nevada,50.7,2005
+NV,Nevada,50.8,2006
+NV,Nevada,51.5,2007
+NV,Nevada,50.4,2008
+NV,Nevada,50.4,2009
+NV,Nevada,50,2010
+NV,Nevada,49.6,2011
+NV,Nevada,52.4,2012
+NV,Nevada,50.5,2013
+NV,Nevada,53,2014
+NV,Nevada,52.9,2015
+NV,Nevada,51.9,2016
+NV,Nevada,52.2,2017
+NY,New York,42.9,1978
+NY,New York,44.6,1979
+NY,New York,43.6,1980
+NY,New York,44.6,1981
+NY,New York,44.4,1982
+NY,New York,45.5,1983
+NY,New York,45.2,1984
+NY,New York,44.7,1985
+NY,New York,45.1,1986
+NY,New York,45.7,1987
+NY,New York,44.8,1988
+NY,New York,43.8,1989
+NY,New York,47.3,1990
+NY,New York,47.1,1991
+NY,New York,43.8,1992
+NY,New York,44.2,1993
+NY,New York,44.3,1994
+NY,New York,45.2,1995
+NY,New York,44.5,1996
+NY,New York,44.3,1997
+NY,New York,48.3,1998
+NY,New York,46.9,1999
+NY,New York,44.9,2000
+NY,New York,46.9,2001
+NY,New York,46.8,2002
+NY,New York,44.5,2003
+NY,New York,45.2,2004
+NY,New York,46.2,2005
+NY,New York,47.6,2006
+NY,New York,45.7,2007
+NY,New York,45.8,2008
+NY,New York,45,2009
+NY,New York,47.2,2010
+NY,New York,47.1,2011
+NY,New York,48.8,2012
+NY,New York,45.7,2013
+NY,New York,44.5,2014
+NY,New York,45.7,2015
+NY,New York,47.6,2016
+NY,New York,46.9,2017
+OH,Ohio,48.3,1978
+OH,Ohio,48.9,1979
+OH,Ohio,49.3,1980
+OH,Ohio,49.6,1981
+OH,Ohio,50.3,1982
+OH,Ohio,51,1983
+OH,Ohio,50.4,1984
+OH,Ohio,50.4,1985
+OH,Ohio,51.6,1986
+OH,Ohio,52.3,1987
+OH,Ohio,50.4,1988
+OH,Ohio,49.4,1989
+OH,Ohio,52.7,1990
+OH,Ohio,53.1,1991
+OH,Ohio,50.3,1992
+OH,Ohio,50.4,1993
+OH,Ohio,50.5,1994
+OH,Ohio,50.3,1995
+OH,Ohio,49.5,1996
+OH,Ohio,49.9,1997
+OH,Ohio,54.1,1998
+OH,Ohio,52.3,1999
+OH,Ohio,50.8,2000
+OH,Ohio,52.4,2001
+OH,Ohio,52.5,2002
+OH,Ohio,50.2,2003
+OH,Ohio,51.3,2004
+OH,Ohio,51.8,2005
+OH,Ohio,52.7,2006
+OH,Ohio,52.3,2007
+OH,Ohio,50.6,2008
+OH,Ohio,50.5,2009
+OH,Ohio,51.7,2010
+OH,Ohio,52.3,2011
+OH,Ohio,54,2012
+OH,Ohio,50.9,2013
+OH,Ohio,49.2,2014
+OH,Ohio,51.6,2015
+OH,Ohio,53.6,2016
+OH,Ohio,53.2,2017
+OK,Oklahoma,58.5,1978
+OK,Oklahoma,57.4,1979
+OK,Oklahoma,60.5,1980
+OK,Oklahoma,60.4,1981
+OK,Oklahoma,59,1982
+OK,Oklahoma,58,1983
+OK,Oklahoma,59.4,1984
+OK,Oklahoma,58.7,1985
+OK,Oklahoma,60.8,1986
+OK,Oklahoma,59.6,1987
+OK,Oklahoma,59.1,1988
+OK,Oklahoma,58.1,1989
+OK,Oklahoma,60.7,1990
+OK,Oklahoma,60.3,1991
+OK,Oklahoma,59.3,1992
+OK,Oklahoma,58.1,1993
+OK,Oklahoma,59.7,1994
+OK,Oklahoma,59.4,1995
+OK,Oklahoma,59,1996
+OK,Oklahoma,58.7,1997
+OK,Oklahoma,62.1,1998
+OK,Oklahoma,61.3,1999
+OK,Oklahoma,60.3,2000
+OK,Oklahoma,60.8,2001
+OK,Oklahoma,59.4,2002
+OK,Oklahoma,59.9,2003
+OK,Oklahoma,60.1,2004
+OK,Oklahoma,60.8,2005
+OK,Oklahoma,62.2,2006
+OK,Oklahoma,60,2007
+OK,Oklahoma,59.6,2008
+OK,Oklahoma,59.4,2009
+OK,Oklahoma,60.3,2010
+OK,Oklahoma,61.6,2011
+OK,Oklahoma,63.2,2012
+OK,Oklahoma,58.8,2013
+OK,Oklahoma,58.9,2014
+OK,Oklahoma,60.8,2015
+OK,Oklahoma,62.3,2016
+OK,Oklahoma,61.8,2017
+OR,Oregon,46.5,1978
+OR,Oregon,46.9,1979
+OR,Oregon,47,1980
+OR,Oregon,47.8,1981
+OR,Oregon,45.4,1982
+OR,Oregon,47,1983
+OR,Oregon,45.6,1984
+OR,Oregon,44.6,1985
+OR,Oregon,48.1,1986
+OR,Oregon,48.3,1987
+OR,Oregon,47.9,1988
+OR,Oregon,46.5,1989
+OR,Oregon,47.4,1990
+OR,Oregon,47.6,1991
+OR,Oregon,49.4,1992
+OR,Oregon,45.5,1993
+OR,Oregon,47.8,1994
+OR,Oregon,48.1,1995
+OR,Oregon,47.6,1996
+OR,Oregon,47.8,1997
+OR,Oregon,47.8,1998
+OR,Oregon,47.2,1999
+OR,Oregon,47.5,2000
+OR,Oregon,47.8,2001
+OR,Oregon,47.7,2002
+OR,Oregon,49,2003
+OR,Oregon,48.4,2004
+OR,Oregon,47.7,2005
+OR,Oregon,47.9,2006
+OR,Oregon,47.8,2007
+OR,Oregon,46.8,2008
+OR,Oregon,47.3,2009
+OR,Oregon,47.1,2010
+OR,Oregon,46.3,2011
+OR,Oregon,48,2012
+OR,Oregon,47.6,2013
+OR,Oregon,49.6,2014
+OR,Oregon,50.4,2015
+OR,Oregon,48.8,2016
+OR,Oregon,48.1,2017
+PA,Pennsylvania,46.4,1978
+PA,Pennsylvania,47.5,1979
+PA,Pennsylvania,47.3,1980
+PA,Pennsylvania,47.5,1981
+PA,Pennsylvania,47.9,1982
+PA,Pennsylvania,48.7,1983
+PA,Pennsylvania,48.2,1984
+PA,Pennsylvania,48.5,1985
+PA,Pennsylvania,48.8,1986
+PA,Pennsylvania,49.2,1987
+PA,Pennsylvania,48.1,1988
+PA,Pennsylvania,47.5,1989
+PA,Pennsylvania,50.7,1990
+PA,Pennsylvania,50.7,1991
+PA,Pennsylvania,47.6,1992
+PA,Pennsylvania,48.2,1993
+PA,Pennsylvania,48,1994
+PA,Pennsylvania,48.5,1995
+PA,Pennsylvania,47.6,1996
+PA,Pennsylvania,48,1997
+PA,Pennsylvania,51.8,1998
+PA,Pennsylvania,50,1999
+PA,Pennsylvania,48.5,2000
+PA,Pennsylvania,49.9,2001
+PA,Pennsylvania,50.3,2002
+PA,Pennsylvania,48,2003
+PA,Pennsylvania,49.1,2004
+PA,Pennsylvania,49.5,2005
+PA,Pennsylvania,50.8,2006
+PA,Pennsylvania,49.5,2007
+PA,Pennsylvania,48.8,2008
+PA,Pennsylvania,48.4,2009
+PA,Pennsylvania,50.1,2010
+PA,Pennsylvania,50.4,2011
+PA,Pennsylvania,51.8,2012
+PA,Pennsylvania,49,2013
+PA,Pennsylvania,47.4,2014
+PA,Pennsylvania,49.5,2015
+PA,Pennsylvania,50.9,2016
+PA,Pennsylvania,50.6,2017
+RI,Rhode Island,47.4,1978
+RI,Rhode Island,49.7,1979
+RI,Rhode Island,48.5,1980
+RI,Rhode Island,48.9,1981
+RI,Rhode Island,48.6,1982
+RI,Rhode Island,50.3,1983
+RI,Rhode Island,49.8,1984
+RI,Rhode Island,49.2,1985
+RI,Rhode Island,49,1986
+RI,Rhode Island,49.1,1987
+RI,Rhode Island,49,1988
+RI,Rhode Island,48.6,1989
+RI,Rhode Island,51.5,1990
+RI,Rhode Island,51.4,1991
+RI,Rhode Island,48.4,1992
+RI,Rhode Island,49.3,1993
+RI,Rhode Island,49.6,1994
+RI,Rhode Island,49.9,1995
+RI,Rhode Island,49.1,1996
+RI,Rhode Island,49.4,1997
+RI,Rhode Island,52,1998
+RI,Rhode Island,51.8,1999
+RI,Rhode Island,49.4,2000
+RI,Rhode Island,51.1,2001
+RI,Rhode Island,51.2,2002
+RI,Rhode Island,49,2003
+RI,Rhode Island,49.3,2004
+RI,Rhode Island,50.1,2005
+RI,Rhode Island,51.8,2006
+RI,Rhode Island,50.3,2007
+RI,Rhode Island,50.8,2008
+RI,Rhode Island,49.8,2009
+RI,Rhode Island,52,2010
+RI,Rhode Island,51.6,2011
+RI,Rhode Island,52.9,2012
+RI,Rhode Island,50.6,2013
+RI,Rhode Island,49.7,2014
+RI,Rhode Island,50.4,2015
+RI,Rhode Island,52.2,2016
+RI,Rhode Island,51.5,2017
+SC,South Carolina,61.6,1978
+SC,South Carolina,61.5,1979
+SC,South Carolina,61.9,1980
+SC,South Carolina,61.2,1981
+SC,South Carolina,62.7,1982
+SC,South Carolina,61.3,1983
+SC,South Carolina,62.4,1984
+SC,South Carolina,63,1985
+SC,South Carolina,64.1,1986
+SC,South Carolina,62.3,1987
+SC,South Carolina,61.2,1988
+SC,South Carolina,62.2,1989
+SC,South Carolina,65,1990
+SC,South Carolina,63.8,1991
+SC,South Carolina,61.9,1992
+SC,South Carolina,62.6,1993
+SC,South Carolina,62.8,1994
+SC,South Carolina,62.5,1995
+SC,South Carolina,61.8,1996
+SC,South Carolina,62.2,1997
+SC,South Carolina,64.7,1998
+SC,South Carolina,63.4,1999
+SC,South Carolina,62.2,2000
+SC,South Carolina,63.3,2001
+SC,South Carolina,63.7,2002
+SC,South Carolina,62.4,2003
+SC,South Carolina,63.2,2004
+SC,South Carolina,63.1,2005
+SC,South Carolina,63.6,2006
+SC,South Carolina,64.3,2007
+SC,South Carolina,62.9,2008
+SC,South Carolina,62.7,2009
+SC,South Carolina,62.6,2010
+SC,South Carolina,64.1,2011
+SC,South Carolina,64.5,2012
+SC,South Carolina,62.3,2013
+SC,South Carolina,62.2,2014
+SC,South Carolina,64.5,2015
+SC,South Carolina,64.9,2016
+SC,South Carolina,65.2,2017
+SD,South Dakota,42.2,1978
+SD,South Dakota,42.6,1979
+SD,South Dakota,46.2,1980
+SD,South Dakota,47.5,1981
+SD,South Dakota,43,1982
+SD,South Dakota,45,1983
+SD,South Dakota,45,1984
+SD,South Dakota,42.9,1985
+SD,South Dakota,45.8,1986
+SD,South Dakota,48.6,1987
+SD,South Dakota,46.7,1988
+SD,South Dakota,44.3,1989
+SD,South Dakota,46.9,1990
+SD,South Dakota,46.8,1991
+SD,South Dakota,45.6,1992
+SD,South Dakota,42.3,1993
+SD,South Dakota,44.9,1994
+SD,South Dakota,44.7,1995
+SD,South Dakota,41.6,1996
+SD,South Dakota,44.8,1997
+SD,South Dakota,47.4,1998
+SD,South Dakota,47.8,1999
+SD,South Dakota,46,2000
+SD,South Dakota,46.5,2001
+SD,South Dakota,46.2,2002
+SD,South Dakota,46.1,2003
+SD,South Dakota,46.3,2004
+SD,South Dakota,47.3,2005
+SD,South Dakota,48.1,2006
+SD,South Dakota,46.8,2007
+SD,South Dakota,43.8,2008
+SD,South Dakota,43.6,2009
+SD,South Dakota,45.1,2010
+SD,South Dakota,44.8,2011
+SD,South Dakota,49.3,2012
+SD,South Dakota,44,2013
+SD,South Dakota,43.7,2014
+SD,South Dakota,47.5,2015
+SD,South Dakota,48.4,2016
+SD,South Dakota,46.8,2017
+TN,Tennessee,56.1,1978
+TN,Tennessee,55.8,1979
+TN,Tennessee,57.2,1980
+TN,Tennessee,56.7,1981
+TN,Tennessee,57.6,1982
+TN,Tennessee,56.7,1983
+TN,Tennessee,57.5,1984
+TN,Tennessee,57.3,1985
+TN,Tennessee,58.8,1986
+TN,Tennessee,58.4,1987
+TN,Tennessee,56.7,1988
+TN,Tennessee,56.6,1989
+TN,Tennessee,59.4,1990
+TN,Tennessee,59.1,1991
+TN,Tennessee,57,1992
+TN,Tennessee,57.2,1993
+TN,Tennessee,57.6,1994
+TN,Tennessee,57.4,1995
+TN,Tennessee,56.6,1996
+TN,Tennessee,56.8,1997
+TN,Tennessee,60.1,1998
+TN,Tennessee,59.3,1999
+TN,Tennessee,58,2000
+TN,Tennessee,58.2,2001
+TN,Tennessee,58.7,2002
+TN,Tennessee,57.5,2003
+TN,Tennessee,58.5,2004
+TN,Tennessee,58.7,2005
+TN,Tennessee,58.9,2006
+TN,Tennessee,59.9,2007
+TN,Tennessee,57.6,2008
+TN,Tennessee,57.6,2009
+TN,Tennessee,57.9,2010
+TN,Tennessee,58.9,2011
+TN,Tennessee,60.3,2012
+TN,Tennessee,57.1,2013
+TN,Tennessee,56.6,2014
+TN,Tennessee,59,2015
+TN,Tennessee,60.3,2016
+TN,Tennessee,60,2017
+TX,Texas,63.8,1978
+TX,Texas,62.9,1979
+TX,Texas,65,1980
+TX,Texas,65,1981
+TX,Texas,64.6,1982
+TX,Texas,63.4,1983
+TX,Texas,64.8,1984
+TX,Texas,64.4,1985
+TX,Texas,65.5,1986
+TX,Texas,63.8,1987
+TX,Texas,64.3,1988
+TX,Texas,64.3,1989
+TX,Texas,65.6,1990
+TX,Texas,64.8,1991
+TX,Texas,64.4,1992
+TX,Texas,64.1,1993
+TX,Texas,65.6,1994
+TX,Texas,65.2,1995
+TX,Texas,65.4,1996
+TX,Texas,63.9,1997
+TX,Texas,67,1998
+TX,Texas,66.6,1999
+TX,Texas,66.5,2000
+TX,Texas,65.7,2001
+TX,Texas,65,2002
+TX,Texas,65.5,2003
+TX,Texas,65.2,2004
+TX,Texas,66,2005
+TX,Texas,67.1,2006
+TX,Texas,64.8,2007
+TX,Texas,65.5,2008
+TX,Texas,65.8,2009
+TX,Texas,65.1,2010
+TX,Texas,67.3,2011
+TX,Texas,67.8,2012
+TX,Texas,65.1,2013
+TX,Texas,64.8,2014
+TX,Texas,65.8,2015
+TX,Texas,67.2,2016
+TX,Texas,67.3,2017
+UT,Utah,47.9,1978
+UT,Utah,46.6,1979
+UT,Utah,48.5,1980
+UT,Utah,50,1981
+UT,Utah,46.4,1982
+UT,Utah,47.8,1983
+UT,Utah,45.9,1984
+UT,Utah,47,1985
+UT,Utah,49.3,1986
+UT,Utah,48.4,1987
+UT,Utah,48.5,1988
+UT,Utah,48.6,1989
+UT,Utah,48.7,1990
+UT,Utah,47.5,1991
+UT,Utah,49,1992
+UT,Utah,46.8,1993
+UT,Utah,49.7,1994
+UT,Utah,49.2,1995
+UT,Utah,49.6,1996
+UT,Utah,48.2,1997
+UT,Utah,48.3,1998
+UT,Utah,49.2,1999
+UT,Utah,50.2,2000
+UT,Utah,50,2001
+UT,Utah,48.8,2002
+UT,Utah,50.6,2003
+UT,Utah,48.7,2004
+UT,Utah,49.3,2005
+UT,Utah,49.2,2006
+UT,Utah,49.9,2007
+UT,Utah,48.1,2008
+UT,Utah,48.4,2009
+UT,Utah,48.3,2010
+UT,Utah,47.6,2011
+UT,Utah,50.9,2012
+UT,Utah,47.8,2013
+UT,Utah,50.4,2014
+UT,Utah,50.7,2015
+UT,Utah,50.2,2016
+UT,Utah,50.8,2017
+VA,Virginia,53.6,1978
+VA,Virginia,53.8,1979
+VA,Virginia,54.4,1980
+VA,Virginia,53.7,1981
+VA,Virginia,54.7,1982
+VA,Virginia,54.4,1983
+VA,Virginia,55,1984
+VA,Virginia,55.4,1985
+VA,Virginia,55.6,1986
+VA,Virginia,55.2,1987
+VA,Virginia,53.9,1988
+VA,Virginia,54.4,1989
+VA,Virginia,57.4,1990
+VA,Virginia,57,1991
+VA,Virginia,54.4,1992
+VA,Virginia,55.1,1993
+VA,Virginia,55.3,1994
+VA,Virginia,55,1995
+VA,Virginia,54,1996
+VA,Virginia,54.5,1997
+VA,Virginia,57.4,1998
+VA,Virginia,56.3,1999
+VA,Virginia,54.9,2000
+VA,Virginia,55.8,2001
+VA,Virginia,56.6,2002
+VA,Virginia,55,2003
+VA,Virginia,55.9,2004
+VA,Virginia,55.9,2005
+VA,Virginia,56.6,2006
+VA,Virginia,56.8,2007
+VA,Virginia,55.7,2008
+VA,Virginia,55.2,2009
+VA,Virginia,55.9,2010
+VA,Virginia,57,2011
+VA,Virginia,57.6,2012
+VA,Virginia,55.1,2013
+VA,Virginia,54.4,2014
+VA,Virginia,56.5,2015
+VA,Virginia,57.1,2016
+VA,Virginia,57.3,2017
+VT,Vermont,40,1978
+VT,Vermont,42.4,1979
+VT,Vermont,40.6,1980
+VT,Vermont,42.2,1981
+VT,Vermont,41.3,1982
+VT,Vermont,42.6,1983
+VT,Vermont,42.5,1984
+VT,Vermont,41.5,1985
+VT,Vermont,41.8,1986
+VT,Vermont,42.2,1987
+VT,Vermont,41.8,1988
+VT,Vermont,40.7,1989
+VT,Vermont,44,1990
+VT,Vermont,43.5,1991
+VT,Vermont,40.6,1992
+VT,Vermont,41.2,1993
+VT,Vermont,41.3,1994
+VT,Vermont,42.3,1995
+VT,Vermont,42,1996
+VT,Vermont,41.1,1997
+VT,Vermont,45.2,1998
+VT,Vermont,44.3,1999
+VT,Vermont,41.8,2000
+VT,Vermont,43.8,2001
+VT,Vermont,43.6,2002
+VT,Vermont,41.5,2003
+VT,Vermont,41.8,2004
+VT,Vermont,43.4,2005
+VT,Vermont,45.1,2006
+VT,Vermont,42.2,2007
+VT,Vermont,43,2008
+VT,Vermont,42.3,2009
+VT,Vermont,44.9,2010
+VT,Vermont,44.3,2011
+VT,Vermont,45.8,2012
+VT,Vermont,43.2,2013
+VT,Vermont,42,2014
+VT,Vermont,42.6,2015
+VT,Vermont,44.6,2016
+VT,Vermont,43.8,2017
+WA,Washington,45.9,1978
+WA,Washington,46.4,1979
+WA,Washington,46.1,1980
+WA,Washington,47.3,1981
+WA,Washington,45.5,1982
+WA,Washington,46.7,1983
+WA,Washington,45.3,1984
+WA,Washington,43.9,1985
+WA,Washington,47.3,1986
+WA,Washington,48.2,1987
+WA,Washington,47.3,1988
+WA,Washington,46.6,1989
+WA,Washington,47.3,1990
+WA,Washington,47.1,1991
+WA,Washington,48.6,1992
+WA,Washington,45.6,1993
+WA,Washington,47.9,1994
+WA,Washington,47.5,1995
+WA,Washington,45.6,1996
+WA,Washington,47.1,1997
+WA,Washington,48.6,1998
+WA,Washington,46.9,1999
+WA,Washington,46.2,2000
+WA,Washington,46.9,2001
+WA,Washington,46.9,2002
+WA,Washington,48.2,2003
+WA,Washington,48.4,2004
+WA,Washington,47.3,2005
+WA,Washington,47.5,2006
+WA,Washington,46.8,2007
+WA,Washington,45.8,2008
+WA,Washington,46.4,2009
+WA,Washington,47.1,2010
+WA,Washington,45.5,2011
+WA,Washington,47.1,2012
+WA,Washington,47.2,2013
+WA,Washington,48.4,2014
+WA,Washington,50,2015
+WA,Washington,48.6,2016
+WA,Washington,46.8,2017
+WI,Wisconsin,41,1978
+WI,Wisconsin,40.4,1979
+WI,Wisconsin,42.2,1980
+WI,Wisconsin,43.5,1981
+WI,Wisconsin,41.4,1982
+WI,Wisconsin,43.4,1983
+WI,Wisconsin,43.2,1984
+WI,Wisconsin,41.4,1985
+WI,Wisconsin,43.3,1986
+WI,Wisconsin,46.3,1987
+WI,Wisconsin,43.4,1988
+WI,Wisconsin,41.1,1989
+WI,Wisconsin,44.5,1990
+WI,Wisconsin,43.7,1991
+WI,Wisconsin,42.7,1992
+WI,Wisconsin,41.7,1993
+WI,Wisconsin,43,1994
+WI,Wisconsin,42.8,1995
+WI,Wisconsin,40.5,1996
+WI,Wisconsin,42.6,1997
+WI,Wisconsin,47.3,1998
+WI,Wisconsin,45.4,1999
+WI,Wisconsin,43.9,2000
+WI,Wisconsin,45.3,2001
+WI,Wisconsin,44.6,2002
+WI,Wisconsin,43.2,2003
+WI,Wisconsin,43.5,2004
+WI,Wisconsin,45.1,2005
+WI,Wisconsin,46,2006
+WI,Wisconsin,44.7,2007
+WI,Wisconsin,41.8,2008
+WI,Wisconsin,42.4,2009
+WI,Wisconsin,45.5,2010
+WI,Wisconsin,44.1,2011
+WI,Wisconsin,47.4,2012
+WI,Wisconsin,41.8,2013
+WI,Wisconsin,40.2,2014
+WI,Wisconsin,44.8,2015
+WI,Wisconsin,46.2,2016
+WI,Wisconsin,44.7,2017
+WV,West Virginia,49.9,1978
+WV,West Virginia,50.2,1979
+WV,West Virginia,50.5,1980
+WV,West Virginia,50,1981
+WV,West Virginia,51.6,1982
+WV,West Virginia,51.2,1983
+WV,West Virginia,51.6,1984
+WV,West Virginia,51.6,1985
+WV,West Virginia,52.3,1986
+WV,West Virginia,52.3,1987
+WV,West Virginia,50.9,1988
+WV,West Virginia,50.9,1989
+WV,West Virginia,53.9,1990
+WV,West Virginia,53.8,1991
+WV,West Virginia,51.3,1992
+WV,West Virginia,51.9,1993
+WV,West Virginia,51.8,1994
+WV,West Virginia,51.6,1995
+WV,West Virginia,50.7,1996
+WV,West Virginia,51,1997
+WV,West Virginia,54.2,1998
+WV,West Virginia,53,1999
+WV,West Virginia,51.8,2000
+WV,West Virginia,52.7,2001
+WV,West Virginia,53.2,2002
+WV,West Virginia,51.6,2003
+WV,West Virginia,52.7,2004
+WV,West Virginia,52.8,2005
+WV,West Virginia,53,2006
+WV,West Virginia,53.3,2007
+WV,West Virginia,51.8,2008
+WV,West Virginia,51.7,2009
+WV,West Virginia,52,2010
+WV,West Virginia,53.5,2011
+WV,West Virginia,54.3,2012
+WV,West Virginia,51.8,2013
+WV,West Virginia,50.8,2014
+WV,West Virginia,53.1,2015
+WV,West Virginia,54.1,2016
+WV,West Virginia,54.1,2017
+WY,Wyoming,39.4,1978
+WY,Wyoming,40,1979
+WY,Wyoming,41.9,1980
+WY,Wyoming,43.7,1981
+WY,Wyoming,39.8,1982
+WY,Wyoming,40.9,1983
+WY,Wyoming,39.9,1984
+WY,Wyoming,39.2,1985
+WY,Wyoming,42.3,1986
+WY,Wyoming,42.5,1987
+WY,Wyoming,42.8,1988
+WY,Wyoming,41.2,1989
+WY,Wyoming,41.8,1990
+WY,Wyoming,41.7,1991
+WY,Wyoming,42.5,1992
+WY,Wyoming,38.9,1993
+WY,Wyoming,42.9,1994
+WY,Wyoming,41.7,1995
+WY,Wyoming,41,1996
+WY,Wyoming,41.2,1997
+WY,Wyoming,42.5,1998
+WY,Wyoming,43.2,1999
+WY,Wyoming,42.5,2000
+WY,Wyoming,43.2,2001
+WY,Wyoming,41.4,2002
+WY,Wyoming,43,2003
+WY,Wyoming,42.4,2004
+WY,Wyoming,42.8,2005
+WY,Wyoming,43.2,2006
+WY,Wyoming,43.3,2007
+WY,Wyoming,40.7,2008
+WY,Wyoming,40.9,2009
+WY,Wyoming,42,2010
+WY,Wyoming,41.1,2011
+WY,Wyoming,44.8,2012
+WY,Wyoming,41.7,2013
+WY,Wyoming,42.1,2014
+WY,Wyoming,44.2,2015
+WY,Wyoming,43.9,2016
+WY,Wyoming,43.2,2017
+ALL,all,51.0,1978
+ALL,all,50.9,1979
+ALL,all,52.4,1980
+ALL,all,53.1,1981
+ALL,all,51.3,1982
+ALL,all,51.4,1983
+ALL,all,52.0,1984
+ALL,all,51.3,1985
+ALL,all,53.3,1986
+ALL,all,53.3,1987
+ALL,all,52.6,1988
+ALL,all,51.8,1989
+ALL,all,53.5,1990
+ALL,all,53.2,1991
+ALL,all,52.6,1992
+ALL,all,51.3,1993
+ALL,all,52.9,1994
+ALL,all,52.7,1995
+ALL,all,51.9,1996
+ALL,all,52.2,1997
+ALL,all,54.2,1998
+ALL,all,53.9,1999
+ALL,all,53.3,2000
+ALL,all,53.7,2001
+ALL,all,53.2,2002
+ALL,all,53.3,2003
+ALL,all,53.1,2004
+ALL,all,53.6,2005
+ALL,all,54.3,2006
+ALL,all,53.7,2007
+ALL,all,52.3,2008
+ALL,all,52.4,2009
+ALL,all,53.0,2010
+ALL,all,52.2,2011
+ALL,all,55.3,2012
+ALL,all,52.4,2013
+ALL,all,52.5,2014
+ALL,all,54.4,2015
+ALL,all,55.0,2016
+ALL,all,54.5,2017

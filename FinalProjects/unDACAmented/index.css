@@ -1,0 +1,125 @@
+p.credits{
+	font-size:14px;
+	margin-top:6px;
+	margin-bottom:4px;
+}
+
+p.label{
+	margin-bottom: 2px;
+}
+p.label_selected{
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+ul.credits{
+	margin-top:4px;
+	font-size:12px;
+}
+
+/* path {
+	fill:none;
+} */
+
+/* Source: https://bl.ocks.org/mbostock/1087001 */
+div.world_tooltip {
+	display: none;
+	position: absolute;
+	text-align: center;
+	width: auto;
+	min-width:100px;
+	height: 55px;
+	padding: 8px;
+	margin-top: -20px;
+	font: 10px sans-serif;
+	background-color: #ddd;
+	pointer-events: none;
+}
+
+div.potential_text {
+	position: absolute;
+	top: 100%;
+	left: 20%;
+}
+
+ul.footnote_list {
+	list-style-type:circle !important;
+}
+
+div.main_tooltip {
+	width: 25%;
+	height: 40%;
+	padding: 10px;
+	border: solid 1px black;
+}
+
+div.main_tt_title {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+rect.disabled {
+    fill: #DFDFDF;
+}
+
+text.disabled {
+    fill: #9F9F9F;
+}
+
+div.main_tt_header {
+	font-weight: lighter;
+}
+
+div.tt_left {
+	text-align: left;
+	padding-left: 0px;
+}
+
+div.tt_right {
+	text-align: right;
+	padding-right: 0px;
+}
+
+p.main_label {
+	position: absolute;
+	top:18px;
+	font-weight:lighter;
+}
+p.main_title {
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	text-align: center;
+	width: 290px;
+	height: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+p.world_p {
+	font-size: 16px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+p.main_p {
+	position: relative;
+	top: -135px;
+	font-size: 16px;
+	margin-top: 4px;
+	margin-bottom: 8px;
+	width: 120;
+}
+
+.no_domain .domain{
+	display: none;
+}
+
+svg.pop_bar {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90%;
+
+}

@@ -1,0 +1,101 @@
+/* Education and Voting Power of Hispanics in the US
+** Jonathan Ortiz
+** UCSC CMPS 165
+*/
+
+html {
+    
+}
+
+body {
+    font: 13px sans-serif;
+    max-width: 1080px;
+    margin: 0 auto 4em auto;
+}
+
+.title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.font {
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+#bt1 {
+    margin-top: 100px;
+    border: 2px solid black;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+#bt2 {
+    margin-top: 20px;
+    border: 2px solid black;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+#bt3 {
+    margin-top: 20px;
+    border: 2px solid black;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.rightcol {
+    text-align: center;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+  opacity: 0.5;
+}
+
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 80px;
+  /* height: auto; */
+  background: none repeat scroll 0 0 #BBCCFF;
+  border: 0px;
+  border-style: solid;
+  border-radius: 8px;
+  /* padding: 14px; */
+  /* text-align: left; */
+  font-weight: bold;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke-width: 0;
+}

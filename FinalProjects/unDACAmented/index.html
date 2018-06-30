@@ -1,0 +1,157 @@
+<html>
+	<head>
+		<!-- Meta Tag -->
+		<meta charset="utf-8">
+		<title>unDACAmented</title>
+
+		<!-- Materialize CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+		<!-- Materialize JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- CSS Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<!-- D3.js Source -->
+		<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+		<script type="text/javascript" src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+		<script type= "text/javascript" src="origin.js"></script>
+		<script src="https://d3js.org/d3-color.v1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+		<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+		<script type="text/javascript" src="draw_gdp.js"></script>
+		<script type="text/javascript" src="origin.js"></script>
+		<script type="text/javascript" src="draw_integration.js"></script>
+		<style>
+			.pie {
+				margin-top: 20px;
+			}
+			.pie text {
+				font-family: "Verdana";
+				fill: #888;
+			}
+
+			.pie .name-text{
+				font-size: 1em;
+			}
+
+			.pie .value-text{
+				font-size: 3em;
+			}
+			.footnote {
+				text-align: left !important;
+			}
+			.legend	{
+				text-transform: uppercase;
+			}
+			.state-labels{
+				fill: white;
+				pointer-events: none;
+			}
+</style>
+	</head>
+
+	<body style="margin: 20px;">
+		<script type="text/javascript" src="index.js"></script>
+
+		<h5 style="text-align: center;"><b>Life, unDACAmented: an American Story</b></h5>
+		<p class="subtitle">Under then President Barack Obama in 2012, DACA - Deferred Actions for Childhood Arrival, saved more than 800,000 undocumented youth from deportation, and gave us an opportunity to pursue the American dream. This is an American story.</p>
+
+		<div class="section row center timeline" style="margin-top: -30px;">
+			<div class="col s4">
+				<p id="Origin_Label" class="labels label_selected">Where we come from</p>
+				<a id="Origin_Btn" class="btn-floating waves-effect waves-light blue"></a>
+			</div>
+			<div class="col s4">
+				<p id="Integration_Label" class="labels">What we do</p>
+				<a id="Integration_Btn" class="btn-floating waves-effect waves-light grey"></a>
+			</div>
+			<div id="GDP" class="col s4">
+				<p id="GDP_Label" class="labels">How we contribute</p>
+				<a id="GDP_Btn" class="btn-floating waves-effect waves-light grey"></a>
+			</div>
+		</div>
+		<div class="center-align" >
+			<p class=credits> Created By </p>
+			<ul class="credits">
+				<li>Vien Van (vhvan@ucsc.edu)</li>
+				<li>Samuel Knight (sdknight@ucsc.edu)</li>
+				<li>In collaboration with Suresh K Lodha</li>
+				<li>In collaboration with Karthik Balakrishna</li>
+			</ul>
+			<p><a href="https://github.com/SamKnightGit/unDACAmented">Github Link</a></p>
+			<p>Designed for CMPS 165: Data programming for Visualization, Spring 2018</p>
+
+		</div>
+		<div class="divider"></div>
+		<div class="section row">
+			<div class="col s3">
+				<p>Files (excludes data):</p>
+				<ul>
+					<li>index.html - wrapper for visualization</li>
+					<li>index.css - stylesheet</li>
+					<li>index.js - jquery control flow</li>
+					<li>draw_gdp.js - script to draw GDP geomap</li>
+					<li>origin.js - script to draw world map and US Map</li>
+					<li>draw_integration.js - script to draw pie and bar graph</li>
+				</ul>
+			</div>
+			<div class="col s3">
+				<p>Data Sources:</p>
+				<p>Raw Files:</p>
+				<ul>
+					<li><a href="https://gist.github.com/hrbrmstr/91ea5cc9474286c72838?short_path=f3fde31">Continents.json</a></li>
+					<li><a href="https://github.com/VienVan/vienvan.github.io/blob/master/data/pdf/DACA-Occupational-2017-FINAL.pdf">DACA_data_1.csv</a></li>
+					<li><a href="https://github.com/balakrishna-k/USData/blob/master/us-states.json">US_States.json</a></li>
+				</ul>
+				<p>Country of Origin:</p>
+				<li><a href="https://www.americanimmigrationcouncil.org/sites/default/files/research/who_and_where_the_dreamers_are_two.pdf">American Immigration Council, WHO AND WHERE THE DREAMERS ARE, REVISED ESTIMATES (2012)</a></li>
+				<li><a href="https://github.com/VienVan/vienvan.github.io/tree/master/data/csv">Country of Residence 2017</a></li>
+				<p>Employment Data: </p>
+								<p style="font-size:14px">-- Bureau of Labor Statistics</p>
+								<li><a href="https://www.bls.gov/cps/cpsaat22.pdf">Total US Employment Rate (2017)</a></li>
+								<li><a href="https://www.bls.gov/cps/cpsaat34.pdf">Total US Unemployment Rate (2017)</a></li>
+								<li><a href="https://www.bls.gov/cps/cpsaat35.pdf">Total Not In Labor Force in US (2017)</a></li><br/>
+
+								<p style="font-size:14px">-- Migration Policy Institute</p>
+				<li><a href="https://www.migrationpolicy.org/data/unauthorized-immigrant-population/state/US">Undocumented Immigrants Employment Statistics</a></li>
+				<li><a href="https://www.migrationpolicy.org/research/education-and-work-profiles-daca-population">The Education and Work Profiles of the DACA Population</a></li>
+				<li><a href="https://www.migrationpolicy.org/research/profile-current-daca-recipients-education-industry-and-occupation">A Profile of Current DACA Recipients by Education, Industry, and Occupation (2017)</a></li>
+				<p>GDP Projections:</p>
+
+								<p style="font-size:14px">-- Center for American Progress</p>
+				<li><a href="https://www.americanprogress.org/issues/immigration/news/2017/07/21/436419/new-threat-daca-cost-states-billions-dollars/">A New Threat to DACA Could Cost States Billions of Dollars (2017)</a></li>
+				<li><a href="https://www.americanprogress.org/issues/immigration/news/2017/10/26/441298/the-state-by-state-economic-benefits-of-passing-the-dream-act/">The State-by-State Economic Benefits of Passing the Dream Act (2017)</a></li>
+				<p>Insights:</p>
+				<li><a href="https://cdn.americanprogress.org/content/uploads/2017/11/02125251/2017_DACA_study_economic_report_updated.pdf">Results from Tom K. Wong1 et al., 2017 National DACA Study</a></li>
+			</div>
+			<div class="col s3">
+				<p>Visualizations Inspirations/Sources:</p>
+				<li><a href="https://www.amazon.com/Atlas-California-Mapping-Challenge-University/dp/0520272021">
+					<strong>The Atlas of California - Mapping the Challenges of a New Era</strong></a> by
+					<em>Richard A. Walker & Suresh K. Lodha</em>
+
+				</li>
+				<li><a href="https://github.com/balakrishna-k/USData">US Data visualization</a> by <em>Karthik Balakrishna</em></li>
+				<li><a href="https://kabylkas.github.io/cmps263/">Triple Bar Chart</a> by <em>CMPS263 Winter 2018 Students</em></li>
+								<li><a href="https://www.migrationpolicy.org/programs/data-hub/charts/unauthorized-immigrant-populations-country-and-region-top-state-and-county">Unauthorized Immigrant Populations by Country and Region 2010-2014</a> by <em>Migration Policy Institute</em></li>
+								<li><a href="https://www.brookings.edu/research/immigration-facts-deferred-action-for-childhood-arrivals-daca/">Immigration Facts: DACA</a> by <em>Brookings Institute</em></li>
+			</div>
+			<div class="col s3">
+				<p>Code Sources:</p>
+				<ul>
+										<li><a href="https://bl.ocks.org/mbostock/7555321">Wrapping Text on Axis Labels</a> by <em>Mike Bostock</em></li>
+										<li><a href="https://bl.ocks.org/mbostock/5562380">California Population Density</a> by <em>Mike Bostock</em></li>
+										<li><a href="https://bl.ocks.org/mbostock/3887235">D3 Pie Chart tutorial</a> by <em>Mike Bostock</em></li>
+					<li><a href="http://bl.ocks.org/palewire/d2906de347a160f38bc0b7ca57721328">World Choropleth</a> by <em>Ben Welsh</em></li>
+					<li><a href="https://github.com/kabylkas/cmps263">Triple Bar Chart</a> by <em>Kabylkas</em></li>
+				</ul>
+			</div>
+		</div>
+
+
+
+	</body>
+</html>

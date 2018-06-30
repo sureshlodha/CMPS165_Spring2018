@@ -1,0 +1,51 @@
+state,abbreviation,bees,temps
+Alabama,AL,38,3.1
+Alaska,AK,,0.2
+Arizona,AZ,38,3.2
+Arkansas,AR,16,3.6
+California,CA,169,2.7
+Colorado,CO,8,3.4
+Connecticut,CT,,4.3
+Delaware,DE,,4.7
+Florida,FL,151,3.0
+Georgia,GA,51,3.3
+Hawaii,HI,-3,
+Idaho,ID,5,1.8
+Illinois,IL,27,4.8
+Indiana,IN,69,5
+Iowa,IA,51,4.7
+Kansas,KS,36,3.8
+Kentucky,KY,41,4.4
+Louisiana,LA,-12,3.7
+Maine,ME,-7,3.1
+Maryland,MD,,4.2
+Massachusetts,MA,,3.8
+Michigan,MI,16,3.9
+Minnesota,MN,19,3.7
+Mississippi,MS,39,3.6
+Missouri,MO,104,4.6
+Montana,MT,-46,4.3
+Nebraska,NE,85,4.6
+Nevada,NV,,2.8
+New Hampshire,NH,,3.7
+New Jersey,NJ,22,4.4
+New Mexico,NM,,3.1
+New York,NY,53,4.1
+North Carolina,NC,179,3.6
+North Dakota,ND,-295,3.9
+Ohio,OH,74,4.9
+Oklahoma,OK,,3.3
+Oregon,OR,-18,1.6
+Pennsylvania,PA,62,4.2
+Rhode Island,RI,,4.1
+South Carolina,SC,40,3.5
+South Dakota,SD,-84,4.6
+Tennessee,TN,133,3.9
+Texas,TX,65,3.5
+Utah,UT,20,2.8
+Vermont,VT,2,3.9
+Virginia,VA,72,3.7
+Washington,WA,5,0.9
+West Virginia,WV,87,4.1
+Wisconsin,WI,71,3.7
+Wyoming,WY,2,3.7

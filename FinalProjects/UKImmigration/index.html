@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>UK Immigration</title>
+        <script src="https://cdn.jsdelivr.net/bluebird/3.5.0/bluebird.min.js"></script>
+<!--        <script src="./bluebird.js"></script>-->
+        <script type= "text/javascript" src="https://d3js.org/d3.v4.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+    <body>
+        <h1>UK Immigration</h1>
+
+        <div id="stack_area_div">
+            <h4>Number of Granted Visas Per Year</h4>
+            <select id="stack_area_type">
+                <option disabled selected>Pick a visa type</option>
+            </select>
+            <script type="text/javascript" src="stacks2.js"></script>
+        </div>
+
+        <div id="ro_visa_pies">
+            <div id="pie_charts">
+                <h4>Percentages of Foreign-Born Population in the UK by Category </h4>
+            </div>
+            <script type="text/javascript" src="pie_charts.js"></script>
+            <div id="pie_charts_2">
+                <h4>Only Categories Without UK Data</h4>
+            </div>
+        </div>
+
+        <div id="stack_svg_div">
+            <div><h4>Number of Granted Visas by Type</h4></div>
+            <svg id="stack_svg"></svg>
+    <!--        <div id="stacked_bar" style="width:800px"></div>-->
+            <script type="text/javascript" src="stacked_bar.js"></script>
+            <p>
+                *Other refers to visas that do not fit the standard classification (i.e Transit visas, Returning Resident visas).
+            </p>
+        </div>
+
+        <div id="blurb-div">
+            <p>UK Immigration aims to look at the influx of people coming into the United Kingdom and see who is coming into the United Kingdom and why. The visualizations display long term and short term movement through the United Kingdom through visa information as well as general population data.
+            If we continued the project we would have liked to relate the data more to Brexit, when the United Kingdom left the European Union, and other topical events that may have influenced movement in the region.
+
+            </p>
+            <p>The regions displayed here are generally limited to South Asia, East Asia, Europe (non-EU), Sub-Saharan Africa, Middle East, and South East Asia. All other regions are colored as Other. The regions which are included therein are: Oceania, North America, North Africa, The EU, Central Asia, Central and South America.</p>
+        </div>
+
+
+
+
+
+
+
+
+    <!--Info-->            
+        <div class = "note" id ="note"  style="position:relative;right:0px; font-size:16px; text-align:center;">
+            <div class = 'author'>
+                <h4 style="font-weight: bold; text-align: center"><br/>Created by</h4>
+                    <p style="position:relative;top:0px;right:0px; font-size:16px; text-align:center;" id="myParagraph">
+                        Danny Boyd (dacboyd@ucsc.edu)<br> 
+                        Ryan Oliver (rdoliver@ucsc.edu)<br>
+                        Winston Wu (wkwu@ucsc.edu) <br>
+                        In collaboration with Professor Suresh Lodha</p>
+                    <p><a href="https://github.com/dannycboyd/dannycboyd.github.io/tree/master/UK_Immigration">Github Link</a></p>
+                <h4 style="font-weight: bold; text-align: center"><br/>Designed for</h4>
+                    <p>
+                        University of California, Santa Cruz<br>
+                        CMPS 165: Data Visualization, Spring 2018<br>
+                        <br>
+
+                    </p>
+            </div>
+
+
+            <div class="row">
+                <div class="column left">
+                    <b>Files Submitted</b>
+                    <ul>
+                        <li>index.html</li>
+                        <li>stylesheet.css</li>
+                        <li>stacks2.js</li>
+                        <li>pie_charts.js</li>
+                        <li>stacked_bar.js</li>
+                        <li>visas_yearly_regions.csv</li>
+                        <li>visa_totals_type_totals.csv</li>
+                        <li>immigrant_population_data.csv</li>
+                    </ul>
+                </div>
+                <div class="column middle1">
+                    <b>Data Sources</b>
+                    <p>
+                        <a href="https://www.gov.uk/government/statistics/immigration-statistics-year-ending-march-2018-data-tables">
+                            UK Visas Data</a><br>
+                        <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/datasets/populationoftheunitedkingdombycountryofbirthandnationality">
+                            Foreign Born Population of the UK</a><br>
+                    </p>
+                </div>
+                <div class="column middle2">
+                    <b>Visualization sources</b>
+                    <ul>
+                        <li>
+                            <a href="https://www.telegraph.co.uk/news/worldnews/11529421/Mapped-The-worlds-immigration-landscape.html">Telegraph UK Global/UK Immigration</a>
+                        </li>
+                        <li>
+                            <a href="http://migrationsmap.net/#/GBR/arrivals">Geomap of UK Arrivals</a>
+                        </li>
+                        <li>
+                            <a href="http://xtagelabs.com/blog/7-insightful-visualizations-brexit-explain-cause-and-effect/">Brexit Analysis</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column right">
+                    <b>Code Sources</b>
+                    <ul>
+                        <li>
+                            <a href="https://www.blurbirdjs.org">Bluebird.js</a>
+                        </li>
+                        <li>
+                            <a href="http://d3-legend.susielu.com">D3 Legend</a> 
+                        </li>
+                        <li>
+                            <a href="https://github.com/d3/d3-scale-chromatic/">d3-scale-chromatic</a>
+                        </li>
+                        <li>
+                            <a href = "http://bl.ocks.org/arpitnarechania/577bd1d188d66dd7dffb69340dc2d9c9">Pie Chart and Tooltip Example</a>
+                        </li>
+                        <li>
+                            <a href="https://bl.ocks.org/mbostock/3886208">Stacked Bar Chart Example</a>
+                        </li>
+                        <li>
+                            <p>Interactive Data Visualization for the Web v2 Chp 16</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!--
+    <h4>This project uses several 3rd-party libraries</h4>
+                <ul>
+                    <li><a href="https://www.blurbirdjs.org">Bluebird.js</a> for async promises</li>
+                    <li><a href="http://d3-legend.susielu.com">D3 Legend</a> by Susie Lu for the pretty legend</li>
+                    <li><a href="https://github.com/d3/d3-scale-chromatic/">d3-scale-chromatic</a> for the color interpolation. It's a standard in v5 but not v4, so it's included in a script tag at the top</li>
+                </ul>
+    -->
+
+	</body>
+</html>

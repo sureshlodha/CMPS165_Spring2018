@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Food Diet Theories</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+      
+    <!--  Bootstrap 4 CDN  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+      
+    <link rel="stylesheet" href="css/diet_theory.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top justify-content-center" style="background-color:transparent !important;">
+      <h1>Food Diet Theories</h1>
+      <p>The objective of this project is to compare and contrast three prevelant diet theories: the paleo diet, the zone diet, and the vegan diet. Each theory advocates individuality of food choices that differ according to nutritional value, such as a protein-heavy or insulin-focused lifestyle. The project offers visualizations to compare and contrast the nutritional requirement for each diet as well as a sample meal with relevant nutritional information. This information may reveal differ scenarios of eating properly from unique angles and how closely they align with recommended nutrition intakes.</p>
+      <br />
+    </div>
+      
+    <p><b>Disclaimer: This visualization can be laggy on Google Chrome. Use Mozilla Firefox for potentially better performance.</b></p>
+    
+    <hr>
+      
+    <div class ="container-fluid">
+      <div class ="row">
+        <div class ="col-md-5 col-sm-5">
+            <div class="bar_chart" id="nutrition_chart">
+            </div>
+        </div>
+        <div class ="col-md-7 col-sm-7">
+            <div class="pyramid" id="pyramid_chart" style="text-align: center">
+            </div>
+        </div>
+      </div>
+    
+      <br>
+      <h2><center>Nutritional Values Per 100 Grams</center></h2>        
+      <div class="row">
+        <div class ="col-md-3 col-sm-3" id="Paleo_Plate"></div>
+        <div class ="col-md-3 col-sm-3" id="Zone_Plate"></div>
+        <div class ="col-md-3 col-sm-3" id="Vegan_Plate"></div>
+        <div class ="col-md-3 col-sm-3" id="USDA_Plate"></div>
+      </div>
+    </div>
+
+    <br />
+      
+    <p style="font-size:8px">Disclaimer: Other food choices and preparations are available. We selected a small subset of foods available to people following the diet. The meals were crafted for a healthy young adult male.</p>  
+    <br />
+    <hr>
+      
+    <script type="text/javascript" src="js/diet_theory.js"></script>
+    <script type="text/javascript" src="js/pyramid.js"></script>
+    <script type="text/javascript" src="js/plates.js"></script>
+  </body>
+    
+  <footer >
+      <div style="text-align: center;">
+          <hX><b>Created By:</b></hX>
+          <p></p>
+          Ryan Bautista (rjbautis@ucsc.edu) <br />
+          Soham Saha (sjsaha@ucsc.edu)<br />
+          Kristine Nguyen (krkinguy@ucsc.edu)<br />
+          Nikolai Chen (nmchen@ucsc.edu)<br />
+          <p></p>
+          
+          In collaboration with Suresh K. Lodha, Karthik Balakrishna, Christopher Bui, Janesh Chhabra <br />
+          
+          <p></p>
+            <a href="https://rjbautis-cs165.github.io/FinalProject/index.html">Github Link</a> <br />
+          <p></p>
+          
+          <b>Designed For:</b> <br />
+          <p></p>
+          
+          CMPS 165: Data Programming for Visualization, Spring 2018 <br />
+          <p></p>
+          <hr>
+          
+      </div>
+      <div class="row">
+        
+        <div class="col-3">
+            <hX>Files Submitted</hX>
+            <ol>
+                <li>
+                    <a href="https://github.com/rjbautis-cs165/rjbautis-cs165.github.io/tree/master/FinalProject">Repository</a>
+                </li>
+                index.html <br />
+                diet_theory.css <br />
+                diet_theory.js <br />
+                plates.js <br />
+                pyramid.js <br />
+                food.csv <br />
+                foods.json <br />
+                imagesources.txt <br />
+                nutrients.csv <br />
+                various images <br />
+                plate.svg
+            </ol>
+        </div>
+        
+        <div class="col-3">
+            <hX>Data Sources</hX>
+            <ol>
+                <li>
+                    <a href="https://health.usnews.com/best-diet/paleo-diet/health-and-nutrition">Paleo Diet Health & Nutrition</a>
+                </li>
+                <li>
+                    <a href="https://health.usnews.com/best-diet/vegan-diet/health-and-nutrition">Vegan Diet Health & Nutrition</a>
+                </li>
+                <li>
+                    <a href="https://health.usnews.com/best-diet/zone-diet/health-and-nutrition">Zone Diet Health & Nutrition</a>
+                </li>
+
+                <li>
+                    <a href="https://www.cnpp.usda.gov/sites/default/files/archived_projects/FGPPamphlet.pdf">USDA Serving Size</a>
+                </li>
+                <li>
+                    <a href="https://ultimatepaleoguide.com/assess-dont-guess-serving-sizes-fat-loss-performance/">Paleo Serving Size</a>
+                </li>
+                <li>
+                    <a href="https://www.internationalvegan.org/nutrition/">Vegan Serving Size</a>
+                </li>
+                <li>
+                    <a href="http://catalystfitness.typepad.com/files/food-block-guide.pdf">Zone Serving Size</a>
+                </li>
+                <li>
+                    <a href="https://www.fns.usda.gov/tn/usda-recipes-schools">USDA Lunch Example</a>
+                </li>
+                <li>
+                    <a href="https://www.healthline.com/nutrition/paleo-diet-meal-plan-and-menu#section3">Paleo Lunch Example</a>
+                </li>
+                <li>
+                    <a href="https://www.peta.org/living/food/sample-two-week-vegan-meal-plan/">Vegan Lunch Example</a>
+                </li>
+                <li>
+                    <a href="https://diet.lovetoknow.com/wiki/Menu_for_the_Zone_Diet">Zone Lunch Example</a>
+                </li>
+                <li>
+                    <a href=https://ndb.nal.usda.gov/ndb/search/list>Food Nutrition Values</a>
+                </li>
+            </ol>
+        </div>
+          
+        <div class="col-3">
+            <hX>Visualizations Sources</hX>
+            <ol>
+                <li>
+                    <a href="https://sureshlodha.github.io/CMPS165_Winter15_FinalProjects/FruitsAndVegetables/">Inside Fruits and Vegetables</a>    
+                </li>
+                <li>
+                    <a href="https://www.choosemyplate.gov/brief-history-usda-food-guides">A BRIEF HISTORY OF USDA FOOD GUIDES</a>
+                </li>
+                <li>
+                    <a href="http://sureshlodha.github.io/CMPS165_Spring2016_FinalProjects/projects/breakfast/index.html">Choose Your Breakfast</a>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="col-3">
+            <hX>Code Sources</hX>
+            <ol>
+                <li>
+                    <a href="https://stackoverflow.com/questions/20626150/display-text-on-rect-using-d3-js">Display text on rect using D3.js </a>
+                </li>
+                <li>
+                    <a href="https://bl.ocks.org/shimizu/e6209de87cdddde38dadbb746feaf3a3">D3 v4 - force layout</a>
+                </li>
+                <li>
+                    <a href="http://jsfiddle.net/5acQ4/15/">JS Fiddle</a>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/questions/22456235/force-layout-nodes-filled-with-images">Force layout nodes filled with images</a>
+                </li>
+                <li>
+                    <a href="https://bl.ocks.org/alandunning/274bf248fd0f362d64674920e85c1eb7">Bar Chart with Tooltip with Tooltip D3 V4</a>
+                </li>
+                <li>
+                    <a href="https://joshtronic.com/2016/02/14/how-to-capitalize-the-first-letter-in-a-string-in-javascript/">How to Capitalize the First Letter in a String in JavaScript</a>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/questions/25044997/creating-population-pyramid-with-d3-js?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa">Creating Population Pyramid with D3.js</a>
+                </li>
+                <li>
+                    <a href="https://bl.ocks.org/borgar/b952bb581923c9993d68">Population Pyramid</a>
+                </li>                
+                <li>
+                    <a href="https://bl.ocks.org/mbostock/3886208">Stacked Bar Chart</a>
+                </li> 
+                <li>
+                    <a href="https://bl.ocks.org/mbostock/1014829">External SVG</a>
+                </li> 
+                
+            </ol>
+        </div>
+    </div>
+  </footer>
+</html>
